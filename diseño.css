@@ -11,12 +11,11 @@ h1 {
     padding: 80px 40px 0;
 }
 .titulo{
-    font-size: 25px;
     color: black;
     text-decoration: none;
     align-items: center;
     font-family: 'Teko';
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .contenedorlogo{
@@ -51,8 +50,8 @@ nav{
     align-items: center;
 }
 .bar-btn{
-    font-size: 35px;
-    color: #fff;
+    font-size: 30px;
+    color: white;
     margin-right: 20px;
     margin-top: 20px;
     cursor: pointer;
@@ -71,7 +70,7 @@ nav{
 .nav-menu li{
     display: none;
     line-height: 30px;
-    margin: 125px 0;
+    margin: 100px 0;
     transition: all .5s;
 }
 .nav-menu li a{
@@ -92,35 +91,26 @@ nav{
 }
 #check:checked ~ .nav-menu li {
     display: block;
-}
+} 
+
+
+/*BANNER*/
+
 .banner{
-    padding: 50px 20px;
+    padding: 30px;
     background: rgb(192,192,192,0.6);
-    width: 600px;
-    height: 180px;
-    margin: 40px;
+    width: 576px;
+    height: 135px;
     border-radius: 5%;
     font-family: 'Teko';
-    margin-left: 35%;
-    margin-top: 150px;
+    margin-left: 33%;
+    margin-top: 10%;
 }
 .text-banner{
-    font-size: 60px;
+    font-size: 50px;
+    margin-left: 30px;
 }
 /*BANNER
-.banner-text{
-    color: black;
-    background-color: grey;
-    padding: 20px 30px;
-    margin-left: 40%;
-    border-radius: 5%;
-    font-size: 40px;
-    font-family: 'Teko';
-  
-}
-.banner{
-    margin-top: 12%;
-}*/
 
 /*.list{
     padding-bottom: 20%;
