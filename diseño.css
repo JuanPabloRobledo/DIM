@@ -23,14 +23,98 @@ h1 {
     top: 10px;
     left: 650px;
 }*/
-.titulo{
-    color: black;
-    text-decoration: none;
-    align-items: center;
-    font-family: 'Teko';
-    font-size: 30px;
-}
+
 /*logo*/
+.contenedorlogo{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 60px;
+    height: 75px;
+    border-radius: 10%;
+    margin-left: 10px;
+    transition: 0.5s
+}
+.logo:hover{
+    box-shadow: 0 0.1rem 1rem #fff;
+}
+/*.titulo{
+    font-family:sans-serif;
+    color: #D9D9D9;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 32px;
+}*/
+header{
+    background-color: rgb(112,128,144);
+    width: 100%;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*icons*/
+
+.icons{
+    padding-right: 40px;
+    display: flex;
+    gap: 20px;
+}
+a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
+    color: orange;
+    filter: none;
+    transition: all .6s;
+}
+.fa-brands{
+    cursor: pointer;
+    background: #333;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+    color: white;
+    font-size: 30px;
+    position: relative;
+}
+.fa-whatsapp:hover{
+    color: rgb(1, 196, 1);
+}
+.fa-facebook:hover{
+    color:#55acee;
+}
+.fa-instagram:hover{
+    color: #e4405f;
+}
+
+/*lista*/
+
+.list{
+    padding-left: 15%;
+    gap: 80px;
+    position: absolute;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.list-edit > a{
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 17px;
+    transition: all .6s;
+}
+a:hover{
+    color:#333;
+}
+
+/*
+/*logo
 .contenedorlogo{
     display: flex;
     flex-direction: row;
@@ -55,7 +139,7 @@ header{
     background-size: cover;
     padding-bottom: 20%;
 }
-/*menu*/
+/*menu
 nav{
     height: 100px;
     width: 100%;
@@ -77,7 +161,7 @@ nav{
     width: 25%;
     height: 0vh;
     top: 90px;
-    background: rgb(112,128,144,0.8)/*rgb(255, 140, 0,0.8)*/;
+    background: rgb(112,128,144,0.8)/*rgb(255, 140, 0,0.8);
     text-align: center;
     transition: all .6s;
 }
@@ -101,25 +185,22 @@ nav{
     display: none;
 }
 #check:checked ~ .nav-menu {
-    height: 600px; /*probar con 500px*/
+    height: 600px; /*probar con 500px
 }
 #check:checked ~ .nav-menu li {
     display: block;
-} 
-
+} */
 
 /*BANNER*/
 
 .banner-text{
-   /* background: rgb(192,192,192,0.6);
-    width: 576px;
-    height: 135px;
-    border-radius: 15px;*/
     font-size: 20px;
     font-family: 'Teko';
     color: #fff;
     margin-top: 3%;
     text-align: center;
+    position: relative;
+    top: -120px;
 }
 .text-banner h1{
     font-size: 10px;
@@ -137,18 +218,17 @@ nav{
     font-size: 20px;
     margin-right: 10px;
     padding: 10px 30px;
-    background-color: black;
+    background-color: #333;
     color: #fff;
     border-radius: 5px;
     position: relative;
     top: 20px;
 }
 .button1:hover{
-    background-color: #fff;
-    color: black;
+    background-color: rgb(112,128,144);
+    color: #333;
     transition: .5s;
 }
-
 /*.list{
     padding-bottom: 20%;
     padding-left: 70%;
@@ -174,7 +254,33 @@ a:hover{
      /*object-fit: contain*/
 }
 /*body*/
+.contenedor-imagen{
+    background-image: url(img/fondo2.jpeg);
+    background-image: url(img/fondo2.jpeg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding:190px 100px;
+    opacity: 0.9;
+}
 
+  /*quienes somos*/
+.titulo-body{
+    position: relative;
+    text-align: center;
+
+    margin-top: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.parrafo{
+    font-family: 'Source Sans Pro', sans-serif;
+    top:-15px;
+    font-size: 20px;
+    text-align: center;
+
+}
 
 
 
