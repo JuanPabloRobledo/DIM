@@ -187,7 +187,7 @@ a:hover{
     width: 300px;
     height: 70px;
     display: block;
-    background:rgb(255, 140, 0,0.95);
+    background:rgb(112,128,144);
     position: relative;
     border-radius: 10px;
 
@@ -200,11 +200,12 @@ a:hover{
     background:black;
 }
 .text-caja{
-    font-size: 35px;
-    font-family: 'Teko';
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 15px;
 }
 .imagen-caja-2{
     width: 450px;
@@ -219,7 +220,7 @@ section article{
     background-color:#efefef;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
  }
  section article:hover {
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.8);

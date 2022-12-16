@@ -51,12 +51,18 @@ nav{
     gap: 20px;
 }
 a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
     color: orange;
+    filter: none;
     transition: all .6s;
 }
-
 .fa-brands{
     cursor: pointer;
+    background: #333;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
     color: white;
     font-size: 30px;
     position: relative;
@@ -72,6 +78,8 @@ a:hover{
 }
 .list-edit > a{
     text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
     color:#fff;
     font-size: 17px;
     transition: all .6s;
@@ -79,6 +87,16 @@ a:hover{
 a:hover{
     color:orange;
 }
+.fa-whatsapp:hover{
+    color: rgb(1, 196, 1);
+}
+.fa-facebook:hover{
+    color:#55acee;
+}
+.fa-instagram:hover{
+    color: #e4405f;
+}
+
 /*BANNER*/
 
 .banner-text{
@@ -174,13 +192,16 @@ a:hover{
 } */
 
 footer{
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(112,128,144);
     padding: 3rem 2rem;
     color: #fff;
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
 }
 footer div{
     float: left;
-    width: 100%;
+    display: block;
 
 }
