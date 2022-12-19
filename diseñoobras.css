@@ -6,7 +6,7 @@
     list-style: none;
 }
 body{
-    background-color:white;
+    background-color:#d9d9d9;
 }
 
 /*logo*/
@@ -32,7 +32,7 @@ body{
     padding-top: 32px;
 }*/
 header{
-    background-color: rgb(112,128,144);
+    background-color: #fff;
     width: 100%;
 }
 nav{
@@ -80,8 +80,9 @@ a:hover{
     text-decoration: none;
     padding: 10px 10px;
     border-radius: 10px;
-    color:#fff;
-    font-size: 17px;
+    color:rgb(112,128,144);
+    font-size: 20px;
+    font-weight: 600;
     transition: all .6s;
 }
 a:hover{
@@ -187,7 +188,7 @@ h1{
 } */
 
 footer{
-    background-color: rgb(112,128,144);
+    background-color:#fff;
     padding: 3rem 2rem;
     color: #fff;
     position: absolute;

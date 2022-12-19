@@ -7,22 +7,14 @@
     list-style: none;
 }
 body{
-    background-color:white;
+    background: #d9d9d9;;
 }
 /*titulo*/
 
 h1 { 
     padding: 80px 40px 0;
 }
-/*.fa-brands{
-    font-size: 40px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 10px;
-    left: 650px;
-}*/
+
 
 /*logo*/
 .contenedorlogo{
@@ -37,7 +29,7 @@ h1 {
     transition: 0.5s
 }
 .logo:hover{
-    box-shadow: 0 0.1rem 1rem #fff;
+    box-shadow: 0 0.1rem 1rem orange;
 }
 /*.titulo{
     font-family:sans-serif;
@@ -47,7 +39,7 @@ h1 {
     padding-top: 32px;
 }*/
 header{
-    background-color: rgb(112,128,144);
+    background-color: #fff/*rgb(112,128,144)*/;
     width: 100%;
 }
 nav{
@@ -103,14 +95,16 @@ a:hover{
 }
 .list-edit > a{
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 20px 20px;
     border-radius: 10px;
-    color:#fff;
-    font-size: 17px;
+    color: rgb(112,128,144);
+    font-size: 20px;
+    font-weight: 600;
     transition: all .6s;
 }
 a:hover{
     color:#333;
+    background-color: #d9d9d9;
 }
 
 /*
@@ -225,8 +219,8 @@ nav{
     top: 20px;
 }
 .button1:hover{
-    background-color: rgb(112,128,144);
-    color: #333;
+    background-color: #fff;
+    color: rgb(112,128,144);
     transition: .5s;
 }
 /*.list{
@@ -364,7 +358,7 @@ p{
     flex-wrap: wrap; /* esto es para amoldarse al tamaño*/
 }
 footer{
-    background-color:rgb(0, 0, 0);
+    background-color:#fff;
     padding: 3rem 2rem;
     color: #fff;
     margin-top: auto;
