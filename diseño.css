@@ -7,7 +7,7 @@
     list-style: none;
 }
 body{
-    background: #d9d9d9;;
+    background: #fff;
 }
 /*titulo*/
 
@@ -97,16 +97,15 @@ a:hover{
     text-decoration: none;
     padding: 20px 20px;
     border-radius: 10px;
-    color: rgb(112,128,144);
+    color: #333;
     font-size: 20px;
     font-weight: 600;
-    transition: all .6s;
+    transition: all .3s;
 }
 a:hover{
     color:#333;
-    background-color: #d9d9d9;
+    background-color: rgb(112,128,144,0.1);
 }
-
 /*
 /*logo
 .contenedorlogo{
@@ -261,20 +260,75 @@ a:hover{
 }
 
   /*quienes somos*/
+
+.conten-text1{
+    display: flex;
+    margin-top: 40px;
+    background-color:#fff;
+}
+.textos-text1{
+    margin: 50px;
+    padding: 30px;
+}
 .titulo-body{
     position: relative;
+    bottom: 40px;
     text-align: center;
-
-    margin-top: 30px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .parrafo{
     font-family: 'Source Sans Pro', sans-serif;
-    top:-15px;
-    font-size: 20px;
-    text-align: center;
-
+    font-size: 25px;
 }
+.parrafo2{
+    padding: 30px 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    border-left: 3px solid orange;
+}
+/*BOX CONTENT*/
+.boxcontent{
+    margin-top: 10%;
+}
+.secboxcontent{
+    position: relative;
+    background-color: transparent;
+    left: 20%;
+    width: 400px;
+}
+.h1boxcontent{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:35px;
+    border-bottom: 10px solid orange;
+}
+.sec2boxcontent{
+    display: block;
+    position: relative;
+    background-image: url(img/foto-pareja.webp);
+    height: 500px;
+    width: 820px;
+}
+.imgsec2{
+    width: 100%;
+    height: 100%;
+}
+.sec3boxcontent{
+    display: block;
+    position: relative;
+    left: 250px;
+    bottom: 400px;
+    width: 700px;
+    height: 500px;
+    background-color: rgb(255, 140, 0,0.3);
+}
+
+
+
+
+
+
+
 
 
 
@@ -402,3 +456,25 @@ textarea{
 
 /*obras*/
 
+.new{
+    font-size: 2rem;
+    font-family: "Courier New";
+    border-right: .15em solid #18BDEC;
+    animation: blink 1s steps(1) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(38) 5s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
