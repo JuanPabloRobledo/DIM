@@ -32,7 +32,7 @@ body{
     padding-top: 32px;
 }*/
 header{
-    background-color: #fff;
+    background-color: antiquewhite;
     width: 100%;
 }
 nav{
@@ -91,7 +91,7 @@ a:hover{
     text-decoration: none;
     padding: 20px 20px;
     border-radius: 10px;
-    color:rgb(112,128,144);
+    color:#333;
     font-size: 20px;
     font-weight: 600;
     transition: all .6s;

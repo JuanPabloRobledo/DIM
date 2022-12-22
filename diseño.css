@@ -91,7 +91,7 @@ a:hover{
     gap: 80px;
     position: absolute;
     display: flex;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .list-edit > a{
     text-decoration: none;
@@ -246,9 +246,9 @@ a:hover{
     height: 680px;
      /*object-fit: contain*/
 }
+
 /*body*/
 .contenedor-imagen{
-    background-image: url(img/fondo2.jpeg);
     background-image: url(img/fondo2.jpeg);
     background-repeat: no-repeat;
     height: 100%;
@@ -271,56 +271,77 @@ a:hover{
     padding: 30px;
 }
 .titulo-body{
+    color: #333;
     position: relative;
     bottom: 40px;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .parrafo{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 25px;
 }
 .parrafo2{
-    padding: 30px 30px;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding: 30px 40px;
+    font-family: 'Barlow', sans-serif;
     font-size: 35px;
     border-left: 3px solid orange;
 }
+.span1{
+    color: orange;
+    font-weight: bold;
+}
+
+
+/*tu hogar soñado*/
+
+.tucasasoñada{
+    padding-left: 23%;
+    background-color: antiquewhite;
+}
+.h3boxcontent{
+    font-family: 'Barlow Condensed', sans-serif;
+    border-bottom: 5px solid orange;
+    width: 25%;
+    font-size: 35px;
+}
+
 /*BOX CONTENT*/
+
 .boxcontent{
-    margin-top: 10%;
-}
-.secboxcontent{
-    position: relative;
-    background-color: transparent;
-    left: 20%;
-    width: 400px;
-}
-.h1boxcontent{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:35px;
-    border-bottom: 10px solid orange;
+    display: flex;
+    width: 100%;
+    margin-bottom: 10%;
+    padding-bottom: 200px;
+    background-image: url(img/engineer-meeting-for-architectural-project-working-with-partner.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 .sec2boxcontent{
-    display: block;
     position: relative;
     background-image: url(img/foto-pareja.webp);
     height: 500px;
-    width: 820px;
-}
-.imgsec2{
-    width: 100%;
-    height: 100%;
+    width: 920px;
+    z-index: 1;
 }
 .sec3boxcontent{
-    display: block;
     position: relative;
-    left: 250px;
-    bottom: 400px;
+    height: 500px;
+    width: 920px;
+    background-color: rgb(255, 140, 0,0.8);
+    right: 500px;
+    top: 100px;
+}
+.sec4boxcontent{
+    position: relative;
+    right: 100px;
     width: 700px;
     height: 500px;
-    background-color: rgb(255, 140, 0,0.3);
+    font-family: 'Barlow', sans-serif;
 }
 
 
@@ -328,45 +349,6 @@ a:hover{
 
 
 
-
-
-
-
-/*Cajas*/
-
-.caja-1{
-    margin-top: 10%;
-    margin-left: 5%;
-    top: 35px;
-    width: 300px;
-    height: 70px;
-    display: block;
-    background:rgb(112,128,144);
-    position: relative;
-    border-radius: 10px;
-
-}
-/* grey: rgb(169,169,169,0.95) */
-.caja-2{
-    width: 100%;
-    height: 500px;
-    display: block;
-    background:black;
-}
-.text-caja{
-    font-size: 25px;
-    color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    position: relative;
-    top: 15px;
-}
-.imagen-caja-2{
-    width: 450px;
-    height: 300px;
-    margin-left: 100px;
-    margin-top: 100px;
-}
 
 section article{
     padding-top: 10px;
@@ -412,7 +394,7 @@ p{
     flex-wrap: wrap; /* esto es para amoldarse al tamaño*/
 }
 footer{
-    background-color:#fff;
+    background-color:#FF8C05;
     padding: 3rem 2rem;
     color: #fff;
     margin-top: auto;
@@ -455,26 +437,3 @@ textarea{
 
 
 /*obras*/
-
-.new{
-    font-size: 2rem;
-    font-family: "Courier New";
-    border-right: .15em solid #18BDEC;
-    animation: blink 1s steps(1) infinite;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 4s steps(38) 5s 1 normal both, blink 1s steps(1) infinite;
-}
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
