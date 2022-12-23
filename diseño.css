@@ -9,12 +9,6 @@
 body{
     background: #fff;
 }
-/*titulo*/
-
-h1 { 
-    padding: 80px 40px 0;
-}
-
 
 /*logo*/
 .contenedorlogo{
@@ -57,7 +51,7 @@ nav{
     display: flex;
     gap: 20px;
 }
-a:hover{
+.fa-brands:hover{
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
     color: orange;
@@ -76,35 +70,46 @@ a:hover{
 }
 .fa-whatsapp:hover{
     color: rgb(1, 196, 1);
+    background-color: #fff;
 }
 .fa-facebook:hover{
     color:#55acee;
+    background-color: #fff;
 }
 .fa-instagram:hover{
     color: #e4405f;
+    background-color: #fff;
 }
 
 /*lista*/
-
-.list{
-    padding-left: 10%;
-    gap: 2em;
-    position: absolute;
-    display: flex;
+.lista{
     font-family: 'Barlow Condensed', sans-serif;
-}
-.list-edit > a{
-    text-decoration: none;
-    padding: 20px 20px;
-    border-radius: 10px;
-    color: #333;
-    font-size: 18px;
+    margin: auto;
     font-weight: 600;
-    transition: all .3s;
 }
-a:hover{
-    color:#333;
-    background-color: rgb(112,128,144,0.1);
+.botoneslistas{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 40px;
+}
+.botoneslistas::after{
+    content: "";
+    position: absolute;
+    background-color: #FF8C05;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.botoneslistas:hover{
+    color: grey;
+}
+.botoneslistas:hover::after{
+    width: 100%;
 }
 /*
 /*logo
@@ -201,6 +206,7 @@ nav{
 }
 .banner-text span{
     color:#FF8C05;
+    letter-spacing: 0.5px;
 }
 .banner-text h2{
     font-size: 40px;
@@ -262,6 +268,7 @@ a:hover{
   /*quienes somos*/
 
 .conten-text1{
+    padding: 80px 40px;
     display: flex;
     margin-top: 20px;
     background-color:#fff;
@@ -353,19 +360,28 @@ a:hover{
 }
 .sec1box{
     position: relative;
-    width: 50%;
+    top: 100px;
+    width: 40%;
+}
+.h1secbox{
+    padding: 80px 40px;
+    font-family: 'barlow', sans-serif;
+    text-align: center;
 }
 .sec2box{
     position: relative;
-    width: 50%;
+    width: 60%;
     height: 30rem;
 }
+.lista-productos{
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    list-style-type: decimal;
+}
 
-
-
-
+/*   ------CARROUSEL------   */
 @charset "UTF-8";
-/* Aquí definimos las Custom properties */
+/* Aca estan los colores */
 :root {
   --negro: #393939;
   --blanco: #ececec;
@@ -375,12 +391,15 @@ a:hover{
 }
 .fondo{
     width: 100%;
-    background-image: linear-gradient(-45deg, #fff 50%, antiquewhite 50%);
+    background-image: linear-gradient(-180deg, #fff 50%, antiquewhite 50%);
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-top: 100px;
 }
 .carrousel {
     position: relative;
     left: 15%;
-    width: 70%;
+    width: 80%;
     max-width: 120em;
     padding: 2em;
     color: var(--negro);
