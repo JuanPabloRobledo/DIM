@@ -371,7 +371,7 @@ a:hover{
 .h1secbox{
     font-size: 30px;
     padding: 80px 40px 0;
-    font-family: 'barlow', sans-serif;
+    font-family: 'barlow Condensed', sans-serif;
     text-align: center;
     border-bottom: 5px solid orange;
     width: 300px;
@@ -388,7 +388,7 @@ a:hover{
     font-family: 'Barlow', sans-serif;
 }
 .lista-productos:hover{
-    background-color: antiquewhite;
+    background-color: rgb(112,128,144,0.2);
     border-radius: 10px;
     margin:0px 20px 0px 20px;
     transition: 0.7s;
@@ -406,7 +406,7 @@ a:hover{
 }
 .fondo{
     width: 100%;
-    background-image: linear-gradient(-180deg, #fff 50%, antiquewhite 50%);
+    background-image: linear-gradient(-180deg, #fff 50%, rgb(112,128,144,0.2) 50%);
     margin-bottom: 100px;
     margin-right: 50px;
     margin-top: 100px;
