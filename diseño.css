@@ -291,7 +291,6 @@ a:hover{
 }
 
 
-
 .parrafo2{
     padding: 30px 40px;
     font-family: 'Barlow', sans-serif;
@@ -388,10 +387,9 @@ a:hover{
     font-family: 'Barlow', sans-serif;
 }
 .lista-productos:hover{
-    background-color: rgb(112,128,144,0.2);
-    border-radius: 10px;
+    font-weight: 600;
     margin:0px 20px 0px 20px;
-    transition: 0.7s;
+    transition: 0.1s;
 }
 
 /*   ------CARROUSEL------   */
