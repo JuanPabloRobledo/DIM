@@ -14,6 +14,7 @@ body{
 .contenedorlogo{
     display: flex;
     flex-direction: row;
+    z-index:1;
 }
 .logo{
     width: 60px;
@@ -37,8 +38,8 @@ header{
     width: 100%;
 }
 nav{
-    height: 100px;
     width: 100%;
+    height: 5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +86,6 @@ nav{
 .lista{
     font-family: 'Barlow Condensed', sans-serif;
     margin: auto;
-    font-weight: 600;
 }
 .botoneslistas{
     position: relative;
@@ -195,8 +195,8 @@ nav{
     font-size: 18px;
     font-family: 'Teko';
     color: #fff;
-    margin-top: 3%;
-    text-align: center;
+    padding-top: 5%;
+    text-align: left;
     position: relative;
     top: -120px;
 }
@@ -255,7 +255,7 @@ a:hover{
 
 /*body*/
 .contenedor-imagen{
-    background-image: url(img/fondo2.jpeg);
+    background-image: url(img/FONDONEW\ \(1\).png);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -268,9 +268,9 @@ a:hover{
   /*quienes somos*/
 
 .conten-text1{
-    padding: 80px 40px;
+    padding: 80px 40px 0;
     display: flex;
-    margin-top: 20px;
+    margin-top: 60px 0;
     background-color:#fff;
 }
 .textos-text1{
@@ -278,9 +278,9 @@ a:hover{
     padding: 30px;
 }
 .titulo-body{
-    color: #333;
+    color: black;
     position: relative;
-    bottom: 40px;
+    bottom: 30px;
     font-size: 30px;
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
@@ -290,6 +290,9 @@ a:hover{
     font-family: 'Barlow', sans-serif;
     font-size: 20px;
 }
+
+
+
 .parrafo2{
     padding: 30px 40px;
     font-family: 'Barlow', sans-serif;
@@ -313,7 +316,7 @@ a:hover{
     width: 10em;
     font-size: 35px;
     padding-top:40px;
-    margin-top: 10%;
+    margin-top: 4%;
 }
 
 /*BOX CONTENT*/
@@ -323,7 +326,7 @@ a:hover{
     width: 100%;
     height: 100%;
     margin-bottom: 10%;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     background-image: url(img/engineer-meeting-for-architectural-project-working-with-partner.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -338,12 +341,13 @@ a:hover{
     z-index: 1;
 }
 .sec3boxcontent{
+    flex-wrap: wrap;
     position: relative;
-    height: 500px;
-    width: 920px;
+    height: 400px;
+    width: 820px;
     background-image: linear-gradient(-45deg, #fff 50%, antiquewhite 50%);
-    right: 28em;
-    top: 100px;
+    right: 25em;
+    top: 8em;
 }
 .sec4boxcontent{
     position: relative;
@@ -352,6 +356,7 @@ a:hover{
     height: 500px;
     font-family: 'Barlow', sans-serif;
 }
+
 
  /*box tercera*/
 .box3sec{
@@ -362,8 +367,10 @@ a:hover{
     position: relative;
     top: 100px;
     width: 40%;
+    margin-bottom: 12%;
 }
 .h1secbox{
+    font-size: 30px;
     padding: 80px 40px;
     font-family: 'barlow', sans-serif;
     text-align: center;
@@ -374,9 +381,15 @@ a:hover{
     height: 30rem;
 }
 .lista-productos{
+    padding: 40px 20px 20px 30px;
+    font-size: 20px;
     font-family: 'Barlow', sans-serif;
-    text-align: center;
-    list-style-type: decimal;
+}
+.lista-productos:hover{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin:0px 20px 0px 20px;
+    transition: 0.7s;
 }
 
 /*   ------CARROUSEL------   */
@@ -398,7 +411,7 @@ a:hover{
 }
 .carrousel {
     position: relative;
-    left: 15%;
+    left: 10%;
     width: 80%;
     max-width: 120em;
     padding: 2em;
@@ -409,7 +422,6 @@ a:hover{
   }
   
   .carrousel .grande {
-
     width: 400%;
     display: flex;
     flex-flow: row nowrap;
@@ -505,7 +517,7 @@ p{
     justify-content: center;
     flex-wrap: wrap; /* esto es para amoldarse al tamaño*/
 footer{
-    background-color:antiquewhite;
+    background-color:white;
     padding: 3rem 2rem;
     color: #fff;
     margin-top: auto;
