@@ -6,6 +6,9 @@
     box-sizing: border-box;
     list-style: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #fff;
 }
@@ -91,7 +94,7 @@ nav{
     position: relative;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.5px;
     padding: 0 40px;
 }
@@ -225,7 +228,8 @@ nav{
 .button1:hover{
     background-color: #fff;
     color: #333;
-    transition: .5s;
+    margin:0px 20px 0px 20px;
+    transition: 0.3s;
 }
 /*.list{
     padding-bottom: 20%;
@@ -293,7 +297,7 @@ a:hover{
 
 .parrafo2{
     padding: 30px 40px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 25px;
     border-left: 3px solid orange;
 }
@@ -357,29 +361,25 @@ a:hover{
 
 
  /*box tercera*/
-.box3sec{
+
+.flex-container{
     display: flex;
-    margin-top: -150px;
+    justify-content: space-evenly;
+}
+.flex-items{
+    flex-wrap: wrap;
 }
 .sec1box{
-    position: relative;
-    top: 100px;
-    width: 40%;
-    margin-bottom: 12%;
+    padding: 0 0 0 20px;
 }
 .h1secbox{
     font-size: 30px;
     padding: 80px 40px 0;
     font-family: 'barlow Condensed', sans-serif;
     text-align: center;
-    border-bottom: 5px solid orange;
+    border-bottom: 5px solid rgb(0,191,255);
     width: 300px;
     margin-left: 20px;
-}
-.sec2box{
-    position: relative;
-    width: 60%;
-    height: 30rem;
 }
 .lista-productos{
     padding: 40px 20px 20px 30px;
@@ -402,16 +402,9 @@ a:hover{
   --sombra-sec: #ffffff;;
 
 }
-.fondo{
-    width: 100%;
-    background-image: linear-gradient(-180deg, #fff 50%, rgb(112,128,144,0.2) 50%);
-    margin-bottom: 100px;
-    margin-right: 50px;
-    margin-top: 100px;
-}
 .carrousel {
     position: relative;
-    left: 10%;
+    left: 20%;
     width: 80%;
     max-width: 120em;
     padding: 2em;
@@ -419,7 +412,7 @@ a:hover{
     transition: all 0.4s ease;
     border-radius: 1em;
     overflow: hidden;
-  }
+}
   
   .carrousel .grande {
     width: 400%;
@@ -434,7 +427,7 @@ a:hover{
     padding: 2em;
     transition: all 0.5s ease;
     transform: translateX(0%);
-  }
+}
   
   .carrousel .img {
     width: calc( 100% / 4 - 2em);
@@ -444,7 +437,7 @@ a:hover{
     border-radius: 1em;
     background-color: var(--blanco);
     box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  }
+}
   
   .carrousel .puntos {
     width: 100%;
@@ -468,11 +461,25 @@ a:hover{
   }
   
   .carrousel .punto.activo {
-    background-color:orange;
-  }
+    background-color:rgb(0,191,255);
+}
 
+.section4{
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+}
+.section4-1{
+    width: 50%;
+    height: 500px;
+    background-color: #e4405f;
+}
 
-
+.section4-2{
+    width: 50%;
+    height: 500px;
+    background-color: #FF8C05;
+}
 
 /*section article{
     padding-top: 10px;
@@ -517,15 +524,16 @@ p{
     justify-content: center;
     flex-wrap: wrap; /* esto es para amoldarse al tamaño*/
 footer{
-    background-color:white;
+    background-color:black;
     padding: 3rem 2rem;
-    color: #fff;
+    color: black;
     margin-top: auto;
 }
 footer div{
     float: left;
     width: 100%;
 }
+
 
 
 
