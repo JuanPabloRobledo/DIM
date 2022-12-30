@@ -592,6 +592,14 @@ h3{
     height: 300px;
     margin: 40px;
 }
+.h2Contacto{
+    display: flex;
+    justify-content: center;
+    font-family:'barlow condensed', sans-serif;
+    font-weight: 200;
+    border-bottom: 1px solid orange;
+    padding-bottom: 20px;
+}
 .section5{
     background-color: #fff;
     display: flex;
