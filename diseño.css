@@ -29,7 +29,7 @@ body{
     transition: 0.5s
 }
 .logo:hover{
-    box-shadow: 0 0.1rem 1rem orange;
+    box-shadow: 0 0.1rem 0.3rem orange;
 }
 /*.titulo{
     font-family:sans-serif;
@@ -217,7 +217,7 @@ nav{
     font-weight: 600;
 }
 .button1{
-    font-size: 20px;
+    font-size: 17px;
     padding: 10px 30px;
     background-color: #333;
     color: #fff;
@@ -259,20 +259,21 @@ nav{
 .titulo-body{
     color: black;
     position: relative;
-    bottom: 30px;
-    font-size: 30px;
+    font-size: 27px;
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
 }
 
 .parrafo{
     font-family: 'Barlow', sans-serif;
     font-size: 20px;
+    margin-top: 40px;
 }
 
 
 .parrafo2{
-    padding: 30px 40px;
+    padding: 30px 40px 0;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 25px;
     border-left: 3px solid orange;
@@ -292,7 +293,8 @@ nav{
     font-family: 'Barlow Condensed', sans-serif;
     border-bottom: 5px solid orange;
     width: 10em;
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 400;
     padding-top:40px;
     margin-top: 4%;
 }
@@ -350,7 +352,8 @@ nav{
 }
 .h1secbox{
     font-size: 30px;
-    padding: 80px 40px 0;
+    font-weight: 400;
+    padding: 80px 40px 0 0;
     font-family: 'barlow Condensed', sans-serif;
     text-align: center;
     border-bottom: 5px solid antiquewhite;
@@ -381,8 +384,8 @@ nav{
 }
 .carrousel { 
     position: relative;
-    left: 20%;
-    width: 80%;
+    left: 10%;
+    width: 90%;
     max-width: 120em;
     padding: 2em;
     color: var(--negro);
@@ -421,6 +424,8 @@ nav{
     margin: 1em 0 0;
     padding: 0.4em;
     display: flex;
+    position: relative;
+    bottom: 9em;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
@@ -432,9 +437,9 @@ nav{
     margin: 1em 1em 0;
     color: var(--negro);
     transition: all 0.4s ease;
-    background-color: grey;
+    background-color: rgb(211,211,211,.8);
     border-radius: 1em;
-    box-shadow: 0.3em 0.3em 1em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    /*box-shadow: 0.3em 0.3em 1em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;*/
   }
   
   .carrousel .punto.activo {
@@ -452,7 +457,7 @@ nav{
 }
 .section4-1{
     margin: 20px;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -461,7 +466,7 @@ nav{
 }
 .section4-2{
     margin: 20px;
-    padding: 20px;
+    padding: 20px 0 0 0;
     font-size: 10px;
     display: flex;
     align-items: center;
@@ -469,7 +474,7 @@ nav{
 }
 .parrafo1{
     font-family: 'barlow Condensed', sans-serif;
-    padding: 10px;
+    padding: 10px 0 0 0;
     margin: 10px;
     font-size: 18px;
 }
@@ -514,50 +519,47 @@ h3{
 }
 
 /* ------------- PAGINA OBRAS ---------------  */ 
-
-.body2{
-    background-image: linear-gradient(-45deg, #fff 50%, antiquewhite 50%);
-    background-repeat: no-repeat;
+.bordeheader{
+    width: 100%;
+    height: 28px;
+    background-color:#f4f4f4;
+    font-family:'barlow condensed', sans-serif;
+    color: #333;
+    font-weight: 200;
+    padding: 2px 70px;
 }
 .h1obras{
     text-align: left;
     position: relative;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 70px;
     font-family:'barlow condensed', sans-serif;
     font-weight: 200;
 }
-/*Cajas*/
-
-.caja-1{
-    left: 170px;
-    top: 450px;
-    width: 300px;
-    height: 70px;
-    display: block;
-    background:rgb(112,128,144);
-    position: relative;
-    border-radius: 10px;
-
+.lista-items{
+    width: 20%;
 }
-/* grey: rgb(169,169,169,0.95) */
-.caja-2{
-    width: 100%;
-    height: 500px;
-    display: block;
+.separador{
+    display: flex;
 }
-
-.text-caja{
-    font-size: 25px;
-    color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    position: relative;
-    top: 15px;
-}
-.imagen-caja-2{
-    width: 450px;
-    height: 300px;
+.grid-container{ 
+    padding: 30px;
     margin-left: 100px;
-    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-columns: 420px 420px;
+    grid-gap: 50px;
+}
+.grid-item{
+    border: 2px solid #000;
+}
+/*     GRID        */
+
+
+/* ---------- PAGINA QUIENES SOMOS ------------- */
+
+.body3{
+    background-image: linear-gradient(-45deg, #fff 50%, antiquewhite 50%);
+    background-repeat: no-repeat;
+  
 }
