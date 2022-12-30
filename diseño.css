@@ -432,8 +432,8 @@ nav{
   }
   
   .carrousel .punto {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     margin: 1em 1em 0;
     color: var(--negro);
     transition: all 0.4s ease;
@@ -443,7 +443,7 @@ nav{
   }
   
   .carrousel .punto.activo {
-    background-color: orange;
+    background-color: #fff;
 }
 
  /* SECTION 4 */
@@ -546,12 +546,12 @@ h3{
     padding: 30px;
     margin-left: 100px;
     display: grid;
-    grid-template-rows: 450px 450px 450px 450px;
-    grid-template-columns: 420px 420px;
+    grid-template-rows: repeat(4, minmax(100px, 450px));
+    grid-template-columns: repeat(2, 420px);
     grid-gap: 50px;
 }
 .grid-item{
-    border: 2px solid #000;
+    border: 1px solid #000;
 }
 /*     GRID        */
 
