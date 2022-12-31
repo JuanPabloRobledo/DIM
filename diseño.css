@@ -530,6 +530,7 @@ h3{
     padding: 2px 70px;
 }
 .h1paginas{
+    color: orange;
     text-align: left;
     position: relative;
     margin-top: 30px;
@@ -546,7 +547,7 @@ h3{
 .titulo-lista{
     font-size: 20px;
     font-weight: 200;
-    border-bottom: solid 1px grey;
+    border-bottom: solid 3px antiquewhite;
     padding-bottom: 6px;
 }
 .listaObras{
@@ -588,16 +589,14 @@ h3{
 /* -------------- PAGINA CONTACTO -------------- */
 
 .contendorConsulta{
-    background-color: #333;
-    height: 300px;
-    margin: 40px;
+   
 }
 .h2Contacto{
     display: flex;
     justify-content: center;
     font-family:'barlow condensed', sans-serif;
     font-weight: 200;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid antiquewhite;
     padding-bottom: 20px;
 }
 .section5{
@@ -631,4 +630,61 @@ h3{
     display: flex;
     justify-content: center;
     margin: 50px;
+}
+/* form */
+input, textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-family:'barlow condensed', sans-serif; 
+}
+
+.contendorConsulta, .form{
+    color: #000;
+    font-family:'barlow condensed', sans-serif;
+    font-weight: 400;
+    background-color: antiquewhite;
+    max-width: 650px;
+    margin: auto;
+    margin-top: 30px;
+}
+.contendorConsulta, .form, .form-label{
+    display: block; /* para que quede uno abajo de otro*/
+    font-size: 18px;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+.contendorConsulta, .form, .form-iput, .form-textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.contendorConsulta, .form, .form-textarea{
+    resize: vertical;
+    min-height: 50px;
+}
+.btn-submit {
+    width: 30%;
+    border-radius: 10px;
+    font-family:'barlow condensed', sans-serif;
+    outline: none;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background: #fff;
+    color: #333;
+    transition: all .3s ease;
+}
+.form-title{
+    font-weight: 400;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
 }
