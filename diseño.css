@@ -643,15 +643,12 @@ h3{
 
 /* -------------- PAGINA CONTACTO -------------- */
 .bodyC{
-    background-image: url(img/old-black-background-grunge-texture-blackboard-chalkboard-concrete.jpg);
-    background-attachment: fixed;
-    width: 100%;
     font-family:'barlow condensed', sans-serif;
 }
 .contendorConsulta{
 }
 .h2Contacto{
-    color: #fff;
+    color: black;
     display: flex;
     justify-content: center;
     font-weight: 400;
@@ -698,10 +695,10 @@ input, textarea{
 }
 
 .contendorConsulta, .form{
-    color: white;
+    color: black;
     font-family:'barlow condensed', sans-serif;
     font-weight: 400;
-    background-color: transparent;
+    background-color: antiquewhite;
     max-width: 650px;
     margin: auto;
     margin-top: 30px;
@@ -713,7 +710,8 @@ input, textarea{
     padding: 10px;
     text-align: center;
 }
-.contendorConsulta, .form, .form-iput, .form-textarea{
+.contendorConsulta, .form, .form-input, .form-textarea{
+    font-family:'barlow condensed', sans-serif;
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
