@@ -608,16 +608,16 @@ h3{
     opacity: .8;
 }
 .h1QS{
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     color: #000;
     font-weight: 400;
-    padding: 40px;
+    margin: 40px;
 }
 .h2QS{
     text-align: center;
     color: orange;
-    font-size: 30px ;
+    font-size: 20px ;
     padding: 30px;
 }
 .contenedorQS{
@@ -627,14 +627,10 @@ h3{
     background-color: #fff;
     padding: 50px;
 }
-.h1QS, .pQS{
-    font-family:'barlow condensed', sans-serif;
-    padding: 0 70px 30px 70px
-}
-.pQS2{
-    font-family:'barlow condensed', sans-serif;
-    padding: 0 70px 0 70px;
-    margin-top: -20px;
+.pQS, .pQS2{
+    font-weight: 200;
+    font-size: 18px;
+    padding: 0 70px ;
 }
 .logoQS{
     width: 200px;
