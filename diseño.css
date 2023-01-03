@@ -213,9 +213,9 @@ nav{
     border: 2px solid #fff;
 }
 .button1:hover{
-    background-color: #000;
+    background-color: #333;
     border: none;
-    color: #FF8C05;
+    color: #fff;
     margin:0px 20px 0px 20px;
     transition: 0.3s;
 }
@@ -377,6 +377,7 @@ nav{
  /*box tercera*/
 
 .flex-container{
+    border-top: #FF8C05 3px solid;
     width: 100%;
     background-color: #f4f4f4;
     display: block;
