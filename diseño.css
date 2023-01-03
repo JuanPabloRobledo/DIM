@@ -12,7 +12,6 @@ html{
 body{
     background: #fff;
     min-height: 100vh;
-    
 }
 
 /*logo*/
@@ -31,13 +30,6 @@ body{
 .logo:hover{
     box-shadow: 0 0.1rem 0.3rem orange;
 }
-/*.titulo{
-    font-family:sans-serif;
-    color: #D9D9D9;
-    font-size: 17px;
-    padding-left: 20px;
-    padding-top: 32px;
-}*/
 header{
     background-color: #fff/*rgb(112,128,144)*/;
     width: 100%;
@@ -60,9 +52,10 @@ nav{
 .fa-brands:hover{
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
-    color: orange;
     filter: none;
     transition: all .6s;
+    color: #fff;
+    background-color: orange;
 }
 .fa-brands{
     cursor: pointer;
@@ -83,10 +76,6 @@ nav{
 .fa-instagram{
     color: #e4405f;
     background-color: #fff;
-}
-.fa-brands:hover{
-    color: #fff;
-    background-color: orange;
 }
 
 /*lista*/
@@ -118,7 +107,6 @@ nav{
 .botoneslistas:hover::after{
     width: 100%;
 }
-/*
 /*logo
 .contenedorlogo{
     display: flex;
@@ -199,17 +187,13 @@ nav{
 /*BANNER*/
 
 .banner-text{
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Barlow Condensed', sans-serif;
     color: #fff;
     padding-top: 5%;
     text-align: left;
     position: relative;
     top: -120px;
-}
-.text-banner h1{
-    font-size: 10px;
-    margin-left: 30px;
 }
 .banner-text span{
     color:#FF8C05;
@@ -221,15 +205,17 @@ nav{
 .button1{
     font-size: 17px;
     padding: 10px 30px;
-    background-color: #333;
-    color: #fff;
+    background-color: transparent;
+    color: #FFf;
     border-radius: 5px;
     position: relative;
     top: 20px;
+    border: 2px solid #fff;
 }
 .button1:hover{
-    background-color: #fff;
-    color: #333;
+    background-color: #000;
+    border: none;
+    color: #FF8C05;
     margin:0px 20px 0px 20px;
     transition: 0.3s;
 }
@@ -246,7 +232,6 @@ nav{
     background-size: cover;
     padding:200px 100px;
     opacity: 0.9;
-    border-bottom: 3px solid orange;
 }
 
   /*quienes somos*/
@@ -264,7 +249,7 @@ nav{
 .titulo-body{
     color: black;
     position: relative;
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
@@ -279,10 +264,10 @@ nav{
     padding: 30px 40px 0;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 25px;
-    border-left: 3px solid orange;
+    border-left: 3px solid #FF8C05;
 }
 .span1{
-    color: orange;
+    color: #FF8C05;
     font-weight: bold;
 }
 
@@ -294,7 +279,7 @@ nav{
 }
 .h3boxcontent{
     font-family: 'Barlow Condensed', sans-serif;
-    border-bottom: 5px solid orange;
+    border-bottom: 5px solid #FF8C05;
     width: 10em;
     font-size: 30px;
     font-weight: 400;
@@ -341,39 +326,72 @@ nav{
     font-family: 'Barlow', sans-serif;
 }
 
+/* flexbox */
+
+.flexbox{
+    font-family: 'barlow Condensed', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+.flexbox-banner{
+    min-height: 400px;
+    position: relative;
+    text-align: center;
+    top: 100px;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+}
+.flexbox-bannerh1{
+    font-weight: 200;
+    font-size: 60px;
+}
+.spanh1{
+    color: #FF8C05;
+    font-weight: 600;
+}
+.button2{
+    font-size: 17px;
+    padding: 10px 30px;
+    background-color: #FF8C05;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    top: 40px;
+}
+.button2:hover{
+    background-color: #fff;
+    color: orange;
+    margin:0px 20px 0px 20px;
+    transition: 0.3s;
+}
+
+.flexbox-img{
+    background-image: url(img/beautiful-kitchen-with-modern-interior.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
 
  /*box tercera*/
 
 .flex-container{
-    display: flex;
+    width: 100%;
+    background-color: #f4f4f4;
+    display: block;
     justify-content: space-evenly;
+    margin-top: 50px;
+}
+.flexContainer-h1{
+    font-family: 'barlow Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    text-align: center;
+    padding: 40px;
 }
 .flex-items{
     flex-wrap: wrap;
-}
-.sec1box{
-    padding: 0 0 0 20px;
-}
-.h1secbox{
-    font-size: 30px;
-    font-weight: 400;
-    padding: 80px 40px 0 0;
-    font-family: 'barlow Condensed', sans-serif;
-    text-align: center;
-    border-bottom: 5px solid antiquewhite;
-    width: 300px;
-    margin-left: 20px;
-}
-
-.lista-productos{
-    padding: 40px 20px 20px 30px;
-    font-size: 20px;
-    font-family: 'Barlow', sans-serif;
-}
-.lista-productos:hover{
-    font-weight: 600;
-    margin:0px 20px 0px 20px;
-    transition: 0.1s;
 }
 
 /*   ------CARROUSEL------   */
@@ -388,8 +406,8 @@ nav{
 }
 .carrousel { 
     position: relative;
+    width: 80%;
     left: 10%;
-    width: 90%;
     max-width: 120em;
     padding: 2em;
     color: var(--negro);
@@ -407,7 +425,7 @@ nav{
     color: var(--negro);
     transition: all 0.4s ease;
     border-radius: 1em;
-    box-shadow:/*1em 1em 2em var(--sombra-ppal)*/ -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    box-shadow:/*1em 1em 2em var(--sombra-ppal) -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent*/;
     padding: 2em;
     transition: all 0.5s ease;
     transform: translateX(0%);
@@ -418,7 +436,6 @@ nav{
     min-height: 1vh;
     color: var(--negro);
     transition: all 0.4s ease;
-    border-radius: 1em;
     background-color: var(--blanco);
     box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
@@ -457,7 +474,6 @@ nav{
     margin-top: auto;
     width: 100%;
     height: 200px;
-    margin: 50px 0 50px 0;
 }
 .section4-1{
     margin: 20px;
@@ -489,11 +505,11 @@ nav{
 footer{
     font-family:'barlow condensed', sans-serif;
     display: flex;
-    background-color: #282825;
+    background-color: #2e333f;;
     color: black;
     margin-top: auto;
     width: 100%;
-    height: 150px;
+    height: 200px;
     padding-top: 25px;
 }
 .logo2{
@@ -538,7 +554,7 @@ h3{
 }
 .h1paginas{
     font-family:'barlow condensed', sans-serif;
-    color: orange;
+    color: #FF8C05;
     text-align: left;
     position: relative;
     margin-top: 30px;
@@ -628,7 +644,7 @@ h3{
     padding: 50px;
 }
 .pQS, .pQS2{
-    font-weight: 200;
+    font-weight: 00;
     font-size: 18px;
     padding: 0 70px ;
 }
