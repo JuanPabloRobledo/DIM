@@ -6,8 +6,20 @@ window.sr = ScrollReveal();
         distance: '-100px'
     });
 
-    sr.reveal('.flexbox', {
+    sr.reveal('.parrafo2', {
         duration: 1999,
+        origin: 'bottom' ,
+        distance: '-100px'
+    });
+
+    sr.reveal('.flexbox-img', {
+        duration: 1999,
+        origin: 'bottom' ,
+        distance: '-100px'
+    });
+
+    sr.reveal('.flexbox-banner', {
+        duration: 4000,
         origin: 'bottom' ,
         distance: '-100px'
     });
