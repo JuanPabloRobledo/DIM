@@ -35,3 +35,9 @@ window.sr = ScrollReveal();
         origin: 'bottom' ,
         distance: '-100px'
     });
+
+    sr.reveal('.section4-1', {
+        duration: 1999,
+        origin: 'bottom' ,
+        distance: '-100px'
+    });
