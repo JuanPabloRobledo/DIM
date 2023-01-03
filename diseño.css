@@ -362,6 +362,7 @@ nav{
     top: 40px;
 }
 .button2:hover{
+    border: 2px solid #FF8C05;
     background-color: #fff;
     color: orange;
     margin:0px 20px 0px 20px;
@@ -378,7 +379,7 @@ nav{
  /*box tercera*/
 
 .flex-container{
-    border-top: #FF8C05 3px solid;
+    border-top: #FF8C05 1px solid;
     width: 100%;
     background-color: #f4f4f4;
     display: block;
