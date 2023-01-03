@@ -40,6 +40,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFf;
 }
 
 /*icons*/
@@ -231,7 +232,7 @@ nav{
     background-position: center;
     background-size: cover;
     padding:200px 100px;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
   /*quienes somos*/
@@ -470,7 +471,6 @@ nav{
 
  /* SECTION 4 */
 .section4{
-    background-color: antiquewhite;
     display: flex;
     margin-top: auto;
     width: 100%;
@@ -498,6 +498,9 @@ nav{
     padding: 10px 0 0 0;
     margin: 10px;
     font-size: 18px;
+}
+.fa-sharp, .fa-solid{
+    color: #FF8C05;
 }
 
 
@@ -571,7 +574,7 @@ h3{
 .titulo-lista{
     font-size: 20px;
     font-weight: 200;
-    border-bottom: solid 3px antiquewhite;
+    border-bottom: solid 3px #FF8C05;
     padding-bottom: 6px;
 }
 .listaObras{
