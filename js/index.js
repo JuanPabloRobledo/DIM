@@ -53,3 +53,8 @@ window.sr = ScrollReveal();
         origin: 'bottom' ,
         distance: '-100px'
     });
+    sr.reveal('.logoQS', {
+        duration: 1999,
+        origin: 'bottom' ,
+        distance: '-100px'
+    });
