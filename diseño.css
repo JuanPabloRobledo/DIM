@@ -10,6 +10,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    position: relative;
+    margin: 0;
     background: #fff;
     min-height: 100vh;
 }
@@ -55,8 +57,8 @@ nav{
     box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
     filter: none;
     transition: all .6s;
-    color: #fff;
-    background-color: orange;
+    color: #FF8C05;
+    background-color: #fff;
 }
 .fa-brands{
     cursor: pointer;
@@ -247,14 +249,14 @@ nav{
     margin: 50px;
     padding: 30px;
 }
-.titulo-body{
+/*.titulo-body{
     color: black;
     position: relative;
     font-size: 30px;
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-}
+}*/
 .parrafo{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
@@ -442,7 +444,7 @@ nav{
     background-color: var(--blanco);
     box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
-  
+
   .carrousel .puntos {
     width: 100%;
     margin: 1em 0 0;
@@ -456,18 +458,23 @@ nav{
   }
   
   .carrousel .punto {
-    width: 1em;
-    height: 1em;
+    width: 3em;
+    height: .8em;
     margin: 1em 1em 0;
     color: var(--negro);
     transition: all 0.4s ease;
     background-color: rgb(211,211,211);
-    border-radius: 1em;
+    border-radius: 10%;
+   
     /*box-shadow: 0.3em 0.3em 1em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;*/
   }
   
   .carrousel .punto.activo {
-    background-color: #000;
+    background-color: #FF8C05;
+    border-radius: 1em;
+    transition: 1s;
+    width: 1em;
+    height: 1em;
 }
 
  /* SECTION 4 */
@@ -769,4 +776,10 @@ input, textarea{
     background: #fff;
     color: #333;
     transition: all .3s ease;
+}
+
+@media (max-width: 845px) { 
+    .parrafo{
+        
+    }
 }

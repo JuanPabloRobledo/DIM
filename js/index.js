@@ -3,7 +3,7 @@ window.sr = ScrollReveal();
     sr.reveal('.navbar', {
         duration: 500,
         origin: 'bottom' ,
-        distance: '-100px'
+        distance: '-200px'
     });
 
     sr.reveal('.parrafo2', {
@@ -20,7 +20,7 @@ window.sr = ScrollReveal();
 
     sr.reveal('.flexbox-banner', {
         duration: 4000,
-        origin: 'bottom' ,
+        origin: 'right' ,
         distance: '-100px'
     });
 
@@ -45,5 +45,11 @@ window.sr = ScrollReveal();
     sr.reveal('.textos-text1', {
         duration: 1000,
         origin: 'top' ,
+        distance: '-100px'
+    });
+
+    sr.reveal('.grid-item', {
+        duration: 1999,
+        origin: 'bottom' ,
         distance: '-100px'
     });
