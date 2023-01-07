@@ -32,7 +32,7 @@ window.sr = ScrollReveal();
 
     sr.reveal('.flex-container', {
         duration: 1999,
-        origin: 'right' ,
+        origin: 'left' ,
         distance: '-100px'
     });
 
@@ -48,7 +48,7 @@ window.sr = ScrollReveal();
         distance: '-100px'
     });
 
-    sr.reveal('.grid-item', {
+    sr.reveal('.card', {
         duration: 1999,
         origin: 'bottom' ,
         distance: '-100px'
@@ -56,5 +56,5 @@ window.sr = ScrollReveal();
     sr.reveal('.logoQS', {
         duration: 1999,
         origin: 'bottom' ,
-        distance: '-100px'
+        distance: '-50px'
     });
