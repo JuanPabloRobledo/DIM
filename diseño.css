@@ -783,6 +783,13 @@ input, textarea{
     transition: all .3s ease;
 }
 
+
+/* ----------MENU HAMBURGUESA-------- */
+.menu-ham{
+    font-size: 60px;
+    display: none;
+}
+
 /*---------------------------------------------------------------------------RESPONSIVE CON 1500PX INICIO------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1500px) {
 
@@ -797,6 +804,12 @@ input, textarea{
     nav{
         width: 100%;
         height: 10em;
+    }
+    .menu-ham{
+        font-size: 60px;
+    }
+    .botoneslistas{
+        display: none;
     }
     .contenedor-imagen{
         height: 900px;
@@ -840,31 +853,50 @@ input, textarea{
     .parrafo1{
         font-size: 27px;
     }
-    .carrousel{
-        width: 100%;
-        margin-left: -10%;
-    }
     .sec3boxcontent{
         padding-left: 300px;
     }
+     /* quienes somos */
     .pQS, .pQS2{
         font-weight: 400;
-        font-size: 20px;
+        font-size: 27px;
     }
     .sectionQS{
-        margin-top: 90px;
+        margin-top: 35%;
+    }
+    /*  obras */
+    .lista-items{
+        font-size: 30px;
+    }
+    .titulo-lista{
+        font-size: 40px;
+    }
+    .card{
+        margin-bottom: 25px;
+    }
+    .gallery{ 
+        margin: 60px;
+        display: grid;
+        grid-auto-rows: 30rem;
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        gap: 2rem;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .imgGrid{
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
     }
 }
 /*---------------------------------------------------------------------------RESPONSIVE CON 768PX INICIO------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
-    .conten-text1{
-        flex-wrap: wrap;
-    }
+
 }
 /*----------- MOBILE ------------------------*/
 @media screen and (max-width: 576px) {
-    .conten-text1{
-        flex-wrap: wrap;
-    }
+
+    
 }

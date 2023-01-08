@@ -32,7 +32,7 @@ window.sr = ScrollReveal();
 
     sr.reveal('.flex-container', {
         duration: 1999,
-        origin: 'left' ,
+        origin: 'top' ,
         distance: '-100px'
     });
 
