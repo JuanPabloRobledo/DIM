@@ -26,8 +26,6 @@ body::-webkit-scrollbar-thumb{
 
 /*logo*/
 .contenedorlogo{
-    display: flex;
-    flex-direction: row;
     z-index:1;
 }
 .logo{
@@ -43,21 +41,30 @@ body::-webkit-scrollbar-thumb{
 header{
     background-color: #fff/*rgb(112,128,144)*/;
     width: 100%;
+    height: 5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 nav{
-    width: 100%;
-    height: 5em;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #FFf;
+}
+.lista1 /*nav menu item*/{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
 }
 
 /*icons*/
 
 .icons{
+    position: relative;
+    top: 20px;
     padding-right: 40px;
-    display: flex;
     gap: 20px;
 }
 .fa-brands:hover{
@@ -90,21 +97,21 @@ nav{
 }
 
 /*lista*/
-.lista{
+.lista /*nav-menu*/{
     font-family: 'Barlow Condensed', sans-serif;
-    margin: auto;
+    display: flex;
+    margin-right: 40px;
 }
-.botoneslistas{
-    position: relative;
+.botoneslistas /*nav link*/{
     text-decoration: none;
     color: black;
     font-size: 16px;
     letter-spacing: 0.5px;
-    padding: 0 40px;
+    line-height: 80px;
+    padding: 40px;
 }
 .botoneslistas::after{
     content: "";
-    position: absolute;
     background-color: #FF8C05;
     height: 3px;
     width: 0;
@@ -233,6 +240,7 @@ nav{
 
 /*body*/
 .contenedor-imagen{
+    margin-top: 80px;
     background-image: url(img/FONDONEW\ \(1\).png);
     /*clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);*/
     /*background-attachment: fixed;
@@ -787,7 +795,9 @@ input, textarea{
 /* ----------MENU HAMBURGUESA-------- */
 .menu-ham{
     font-size: 60px;
+    margin: 20px;
     display: none;
+    cursor: pointer;
 }
 
 /*---------------------------------------------------------------------------RESPONSIVE CON 1500PX INICIO------------------------------------------------------------------------------------*/
@@ -801,16 +811,63 @@ input, textarea{
 /*---------------------------------------------------------------------------RESPONSIVE CON 992PX INICIO------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
-    nav{
+    header{
+        background-color: #fff/*rgb(112,128,144)*/;
         width: 100%;
-        height: 10em;
+        height: 7em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .lista1 /*nav menu item*/{
+        line-height: 200px;
+    }
+    .lista /*nav-menu*/{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #2e333f;
+        position: fixed;
+        left: 0;
+        top: 7em;
+        width: 100%;
+        height: 100vh;
+        padding: 20px 0;
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .lista_visible{ 
+        left: 0;
+    }
+    .botoneslistas /*nav link*/{
+        text-decoration: none;
+        color: #fff;
+        font-size: 40px;
     }
     .menu-ham{
         font-size: 60px;
+        display: block;
     }
-    .botoneslistas{
-        display: none;
+    .logo{
+        width: 80px;
+        height: 100px;
+        border-radius: 10%;
+        margin-left: 20px;
     }
+
+
+
+
+
+
+
     .contenedor-imagen{
         height: 900px;
         width: 100%;
