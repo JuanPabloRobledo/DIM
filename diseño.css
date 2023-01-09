@@ -20,7 +20,7 @@ body::-webkit-scrollbar{
     width: 8px;
 }
 body::-webkit-scrollbar-thumb{
-    background: #FF8C05;
+    background: #2e333f;
     border-radius: 5px;
     padding-right: 2px;
 }
@@ -54,10 +54,11 @@ nav{
 }
 .lista1 /*nav menu item*/{
     font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
+    margin: 0 40px;
     text-transform: uppercase;
     width: max-content;
+    display: block;
+    padding-top: 25px;
 }
 
 /*icons*/
@@ -75,7 +76,7 @@ nav{
     box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
     filter: none;
     transition: all .6s;
-    color: #FF8C05;
+    color: grey;
     background-color: #fff;
 }
 .fa-brands{
@@ -110,16 +111,14 @@ nav{
     color: black;
     font-size: 16px;
     letter-spacing: 0.5px;
-    line-height: 80px;
-    padding: 40px;
 }
 .botoneslistas::after{
     content: "";
     background-color: #FF8C05;
+    display: block;
     height: 3px;
     width: 0;
-    left: 0;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .botoneslistas:hover{
     color: grey;
@@ -565,6 +564,9 @@ h3{
 .body2{
     font-family:'barlow condensed', sans-serif;
     margin-top: 80px;
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
 }
 /* ESTO ES PARA TODAS LAS PAGINAS */
 .bordeheader{
@@ -643,6 +645,9 @@ h3{
 .bodyQS{
     font-family:'barlow condensed', sans-serif;
     margin-top: 80px;
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
 }
 .fondoQS{
     background-image: url(img/Construction-Banner-IMage-1900-x-500.jpg);
@@ -704,6 +709,9 @@ h3{
 .bodyC{
     font-family:'barlow condensed', sans-serif;
     margin-top: 80px;
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
 }
 .h2Contacto{
     color: black;
@@ -914,7 +922,10 @@ input, textarea{
         font-size: 26px;
     }
     .parrafo1{
-        font-size: 27px;
+        font-size: 21px;
+    }
+    .parrafo2{
+        font-size: 21px;
     }
     .sec3boxcontent{
         padding-left: 300px;
