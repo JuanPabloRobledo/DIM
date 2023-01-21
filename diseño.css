@@ -184,7 +184,7 @@ nav .logo {
 
 .logo .menu-icon {
     color: #000;
-    font-size: 24px;
+    font-size: 30px;
     margin-right: 14px;
     cursor: pointer;
 }
@@ -1020,6 +1020,10 @@ textarea {
         font-size: 25px;
     }
 
+    .logo .menu-icon {
+        font-size: 45px;
+    }
+
 
     .logo1 {
         width: 60px;
@@ -1162,65 +1166,30 @@ textarea {
         justify-content: space-between;
     }
 
-    .lista1
-
-    /*nav menu item*/
-        {
-        line-height: 200px;
+    .nav-link .link {
+        margin-top: 50px;
+        font-size: 25px;
     }
 
-    .lista
-
-    /*nav-menu*/
-        {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color: #2e333f;
-        position: fixed;
-        left: 0;
-        top: 7em;
-        width: 100%;
-        height: 100vh;
-        padding: 20px 0;
-        overflow-y: auto;
-
-        left: 100%;
-        transition: left 0.3s;
+    .logo .menu-icon {
+        font-size: 45px;
     }
 
-    .lista_visible {
-        left: 0;
-    }
 
-    .botoneslistas
-
-    /*nav link*/
-        {
-        text-decoration: none;
-        color: #fff;
-        font-size: 30px;
-    }
-
-    .menu-ham {
-        font-size: 60px;
-        display: block;
-    }
-
-    .logo {
-        width: 80px;
-        height: 100px;
+    .logo1 {
+        width: 60px;
+        height: 80px;
         border-radius: 10%;
-        margin-left: 20px;
-    }
-
-    .icons {
-        display: none;
+        margin-left: 80px;
+        margin-top: 7px;
     }
 
     .contenedor-imagen {
         height: 900px;
         width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .flexbox-banner {
@@ -1256,7 +1225,7 @@ textarea {
     }
 
     .mailto {
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .parrafo {
@@ -1264,7 +1233,11 @@ textarea {
     }
 
     .parrafo1 {
-        font-size: 27px;
+        font-size: 26px;
+    }
+
+    .parrafo2 {
+        font-size: 26px;
     }
 
     .sec3boxcontent {
@@ -1279,7 +1252,7 @@ textarea {
     .pQS,
     .pQS2 {
         font-weight: 400;
-        font-size: 27px;
+        font-size: 26px;
     }
 
     .sectionQS {
@@ -1323,6 +1296,7 @@ textarea {
         margin-top: 110px;
     }
 }
+
 
 /*----------- MOBILE ------------------------*/
 @media screen and (max-width: 576px) {}
