@@ -1017,6 +1017,11 @@ textarea {
         justify-content: space-between;
     }
 
+    nav .sidebar {
+        width: 400px;
+        z-index: 10;
+    }
+
     .nav-link .link {
         margin-top: 50px;
         font-size: 25px;
