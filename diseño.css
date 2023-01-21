@@ -33,7 +33,14 @@ body::-webkit-scrollbar-thumb {
     width: 55px;
     height: 70px;
     position: relative;
+    transition: 1s;
 
+}
+
+.abajo .logo1 {
+    width: 45px;
+    height: 60px;
+    transition: 1s;
 }
 
 /*icons*/
