@@ -88,7 +88,7 @@ li {
 }
 
 .boton:hover {
-    color: var(--color-secondary);
+    color: #aaa;
 }
 
 .boton::after {
@@ -414,10 +414,10 @@ nav.open~.overlay {
     font-size: 17px;
     padding: 10px 30px;
     background-color: transparent;
-    color: #FFf;
+    color: #fff;
     position: relative;
     top: 20px;
-    border: 2px solid #fff;
+    border: 2px solid var(--color-secondary);
 }
 
 .button1:hover {
@@ -450,12 +450,11 @@ nav.open~.overlay {
 
 .flexbox-banner {
     min-height: 400px;
-    margin: 100px;
+    margin-left: 20%;
     position: relative;
     text-align: left;
-    top: 150px;
     width: 40%;
-    height: 100%;
+    margin: 200px;
 }
 
 .flexbox-bannerh1 {
@@ -464,13 +463,12 @@ nav.open~.overlay {
 }
 
 .parrafo {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 
 .spanh1 {
     color: var(--color-secondary);
-    ;
     font-weight: 600;
 }
 
@@ -479,7 +477,6 @@ nav.open~.overlay {
     padding: 10px 30px;
     background-color: var(--color-secondary);
     color: #fff;
-    border-radius: 5px;
     position: relative;
     top: 40px;
 }
@@ -488,22 +485,18 @@ nav.open~.overlay {
     border: 2px solid var(--color-secondary);
     background-color: transparent;
     color: var(--color-secondary);
-    margin: 0px 20px 0px 20px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .flexbox-img {
+    object-fit: contain;
+    background-image: url(img/fondo3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     min-height: 100%;
     height: 100%;
     width: 100%;
-    margin: 50px;
-}
-
-.video {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-
 }
 
 .eleccion {
