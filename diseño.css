@@ -456,9 +456,8 @@ nav.open~.overlay {
 
 /* ----- body ------ */
 .banner_instagram {
-    margin-top: 1rem;
     width: 100%;
-    height: 230px;
+    height: 238px;
     background-image: url(img/banner_instagram.png);
     background-repeat: no-repeat;
     background-position: center;
