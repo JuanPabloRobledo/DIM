@@ -635,7 +635,7 @@ nav.open~.overlay {
 }
 
 .card-objects p {
-    color: #fff;
+    color: var(--color-primary);
     margin-top: 0.5rem;
 }
 
