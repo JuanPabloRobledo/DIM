@@ -550,6 +550,12 @@ nav.open~.overlay {
 
 /* --------PRODUCTOS H1----------------- */
 .productos_h1 {
+    position: relative;
+    left: 33%;
+    width: 25rem;
+    padding: 20px;
+    transform: scale(1.07, 1.05) skewX(-10deg);
+    background-image: var(--gradient-primary);
     letter-spacing: 2px;
     display: flex;
     text-align: center;
