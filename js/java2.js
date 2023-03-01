@@ -35,7 +35,7 @@ sr.reveal('.flexbox-banner', {
 });
 sr.reveal('.card', {
     duration: 1500,
-    origin: 'left',
+    origin: 'right',
     distance: '-200px'
 });
 sr.reveal('.banner-h1-3', {

@@ -560,7 +560,7 @@ nav.open~.overlay {
 .card-principal {
     margin: 10px;
     display: grid;
-    grid-auto-rows: 30rem;
+    grid-auto-rows: 31rem;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     gap: 2rem;
     background-color: #fff;
