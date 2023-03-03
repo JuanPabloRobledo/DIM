@@ -42,13 +42,13 @@ header {
 
 /* BORRAR EN CASO DE CAMBIO */
 .abajo {
-    background: #fff;
+    background: rgba(0, 0, 0, 0.6);
     padding: 0px;
     z-index: 20;
 }
 
 .abajo .boton {
-    color: #000;
+    color: #fff;
 }
 
 .logo {
@@ -397,7 +397,7 @@ nav.open~.overlay {
 }
 
 .banner-text span {
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .banner-text h2 {
@@ -412,11 +412,11 @@ nav.open~.overlay {
     color: #fff;
     position: relative;
     top: 20px;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-primary);
 }
 
 .button1:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     border: none;
     color: #fff;
     margin: 0px 20px 0px 20px;
@@ -713,6 +713,7 @@ nav.open~.overlay {
     color: #fff;
     position: relative;
     border: 2px solid var(--color-secondary);
+    text-align: center;
 }
 
 .button4:hover {
