@@ -3,7 +3,7 @@ window.addEventListener("scroll", function () {
     nav.classList.toggle("abajo", window.scrollY > 0);
 })
 const navBar = document.querySelector("nav"),
-    menuBtns = document.querySelectorAll(".menu-icon"),
+    menuBtns = document.querySelectorAll(".material-symbols-outlined"),
     overlay = document.querySelector(".overlay");
 
 menuBtns.forEach((menuBtn) => {

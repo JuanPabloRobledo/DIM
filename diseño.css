@@ -42,13 +42,13 @@ header {
 
 /* BORRAR EN CASO DE CAMBIO */
 .abajo {
-    background: rgba(0, 0, 0, 0.6);
+    background: #fff;
     padding: 0px;
     z-index: 20;
 }
 
 .abajo .boton {
-    color: #fff;
+    color: #000;
 }
 
 .logo {
@@ -203,11 +203,11 @@ nav .logo {
     z-index: 10;
 }
 
-.sidebar .menu-icon {
+.sidebar .material-symbols-outlined {
     color: #fff;
 }
 
-.abajo .menu-icon {
+.abajo .material-symbols-outlined {
     color: #000;
 }
 
@@ -217,7 +217,7 @@ nav .logo {
     font-weight: 500;
 }
 
-.logo .menu-icon {
+.logo .material-symbols-outlined {
     visibility: hidden;
 }
 
@@ -381,7 +381,6 @@ nav.open~.overlay {
 .banner-h1 {
     color: #fff;
     letter-spacing: 3px;
-    font-size: 200px;
     justify-content: center;
     position: relative;
     display: flex;
@@ -412,7 +411,7 @@ nav.open~.overlay {
     color: #fff;
     position: relative;
     top: 20px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid #fff;
 }
 
 .button1:hover {
@@ -786,10 +785,10 @@ nav.open~.overlay {
         margin-top: 2.3rem;
     }
 
-    .logo .menu-icon {
+    .logo .material-symbols-outlined {
         visibility: visible;
         display: flex;
-        color: #000;
+        color: var(--color-secondary);
         margin-left: 3em;
         font-size: 40px;
         z-index: 30;
@@ -797,10 +796,11 @@ nav.open~.overlay {
 
     .sidebar {
         opacity: .9;
+        z-index: 20;
     }
 
-    .abajo .menu-icon {
-        color: #000;
+    .abajo .material-symbols-outlined {
+        color: var(--color-secondary);
         z-index: 30;
     }
 
@@ -814,6 +814,10 @@ nav.open~.overlay {
 
     nav.abajo {
         height: 6rem;
+    }
+
+    li.list {
+        border-bottom: solid 3px var(--color-primary);
     }
 
     /* ------- SLIDER ------- */
@@ -848,7 +852,7 @@ max-height: 100vh;
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-bottom: 30%;
+        margin-bottom: 40%;
     }
 
     .barra {
@@ -879,6 +883,7 @@ max-height: 100vh;
         }
     }
 
+
     /*BANNER*/
     .banner-h1 {
         color: #fff;
@@ -887,7 +892,7 @@ max-height: 100vh;
         justify-content: center;
         position: relative;
         display: flex;
-        bottom: 1000px;
+        bottom: 1050px;
         z-index: 15;
     }
 
@@ -900,11 +905,11 @@ max-height: 100vh;
     }
 
     .banner-text span {
-        color: var(--color-secondary);
+        color: var(--color-primary);
     }
 
     .banner-text h2 {
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 600;
     }
 
@@ -915,11 +920,11 @@ max-height: 100vh;
         color: #fff;
         position: relative;
         top: 20px;
-        border: 2px solid var(--color-secondary);
+        border: 2px solid #fff;
     }
 
     .button1:hover {
-        background-color: var(--color-secondary);
+        background-color: var(--color-primary);
         border: none;
         color: #fff;
         margin: 0px 20px 0px 20px;
@@ -927,7 +932,7 @@ max-height: 100vh;
     }
 
     .flexbox {
-        margin-top: -12.5rem;
+        margin-top: -15.4rem;
     }
 
     .flexbox-bannerh1 {
