@@ -410,11 +410,10 @@ nav.open~.overlay {
     font-family: 'Roboto Condensed', serif;
     font-size: 17px;
     padding: 10px 30px;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     position: relative;
     top: 20px;
-    border: 2px solid #fff;
 }
 
 .button1:hover {
@@ -912,11 +911,7 @@ max-height: 100vh;
     .button1 {
         font-size: 25px;
         padding: 10px 30px;
-        background-color: transparent;
-        color: #fff;
-        position: relative;
         top: 20px;
-        border: 2px solid #fff;
     }
 
     .button1:hover {
