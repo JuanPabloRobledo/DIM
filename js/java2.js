@@ -28,7 +28,17 @@ sr.reveal('.flexbox-img', {
     origin: 'top',
     distance: '-200px'
 });
+sr.reveal('.flexbox-img2', {
+    duration: 3000,
+    origin: 'top',
+    distance: '-200px'
+});
 sr.reveal('.flexbox-banner', {
+    duration: 1000,
+    origin: 'right',
+    distance: '-200px'
+});
+sr.reveal('.flexbox-banner2', {
     duration: 1000,
     origin: 'right',
     distance: '-200px'

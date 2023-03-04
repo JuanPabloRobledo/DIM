@@ -442,12 +442,19 @@ nav.open~.overlay {
     height: 600px;
 }
 
+.flexbox2 {
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    height: 600px;
+}
+
 .flexbox-banner {
     min-height: 400px;
     margin-left: ;
     position: relative;
     text-align: left;
-    width: 40%;
+    width: 47.5%;
     margin: 200px;
 }
 
@@ -458,7 +465,7 @@ nav.open~.overlay {
 
 .parrafo {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .spanh1 {
@@ -493,6 +500,17 @@ nav.open~.overlay {
     width: 100%;
 }
 
+.flexbox-img2 {
+    object-fit: contain;
+    background-image: url(img/32.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
 .eleccion {
     display: flex;
     justify-content: center;
@@ -513,14 +531,14 @@ nav.open~.overlay {
 .contenedor_divisor {
     display: flex;
     width: 100%;
-    height: 180px;
-    background-color: var(--color-footer);
+    height: 400px;
+    background-color: #eee;
 }
 
 .contenedor_divisor_h1 {
     font-size: 26px;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -535,7 +553,7 @@ nav.open~.overlay {
     padding: 10px 30px;
     background-color: transparent;
     border: solid 2px var(--color-secondary);
-    color: #fff;
+    color: #000;
     position: relative;
     text-align: center;
 
@@ -788,19 +806,14 @@ nav.open~.overlay {
     .logo .material-symbols-outlined {
         visibility: visible;
         display: flex;
-        color: var(--color-secondary);
+        color: #000;
         margin-left: 3em;
         font-size: 40px;
         z-index: 30;
     }
 
-    .sidebar {
-        opacity: .9;
-        z-index: 20;
-    }
-
     .abajo .material-symbols-outlined {
-        color: var(--color-secondary);
+        color: #000;
         z-index: 30;
     }
 
@@ -817,7 +830,7 @@ nav.open~.overlay {
     }
 
     li.list {
-        border-bottom: solid 3px var(--color-primary);
+        border-bottom: solid 3px var(--color-secondary);
     }
 
     /* ------- SLIDER ------- */
@@ -881,6 +894,18 @@ max-height: 100vh;
         to {
             opacity: 1;
         }
+    }
+
+
+    /* flexbox */
+    .flexbox-banner {}
+
+    .flexbox-banner {
+        min-height: 400px;
+        position: relative;
+        text-align: left;
+        width: 47.5%;
+        margin: 155px;
     }
 
 
