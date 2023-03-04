@@ -523,7 +523,7 @@ nav.open~.overlay {
 }
 
 .eleccion-h1 {
-    border-bottom: solid 3px rgb(0, 206, 209);
+    border-bottom: solid 3px var(--color-secondary);
     font-size: 40px;
     width: 80%;
     padding: 40px;
@@ -531,46 +531,39 @@ nav.open~.overlay {
 }
 
 /* background-color: rgb(175,238,238, .3);*/
-/* CONTENEDOR DIVISOR*/
+
+/* ----------------PROVEEDORES---------- */
 .contenedor_divisor {
-    display: flex;
     width: 100%;
-    height: 400px;
-    background-color: #eee;
+    height: 300px;
+    background-color: #fff;
 }
 
 .contenedor_divisor_h1 {
-    font-size: 26px;
-    font-weight: 300;
-    color: #000;
+    font-weight: 400;
+    margin: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.proveedores {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 80px;
-}
-
-.button3 {
-    margin-top: 73px;
-    width: 150px;
-    height: 40px;
-    font-size: 17px;
-    padding: 10px 30px;
-    background-color: transparent;
-    border: solid 2px var(--color-secondary);
-    color: #000;
     position: relative;
-    text-align: center;
-
+    justify-content: center;
+    gap: 5rem;
 }
 
-.button3:hover {
-    background-color: transparent;
-    background-color: var(--color-secondary);
-    color: #fff;
-    transition: 0.1s;
+.img-sponsor {
+    width: 150px;
+    height: 140px;
 }
 
 /* --------PRODUCTOS H1----------------- */
+.productos {
+    background-color: #eee;
+    padding: 50px;
+}
+
 .productos_h1 {
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
@@ -578,13 +571,11 @@ nav.open~.overlay {
     width: 25rem;
     padding: 20px;
     border-bottom: solid px var(--color-secondary);
-    display: flex;
     text-align: center;
-    justify-content: center;
     margin: 4rem;
-    font-weight: 500;
-    font-size: 33px;
-    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 37px;
+    /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
 /* -------- CARD ---------- */
@@ -594,7 +585,8 @@ nav.open~.overlay {
     grid-auto-rows: 31rem;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    background-color: #fff;
+    background-color: #eee;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -712,20 +704,11 @@ nav.open~.overlay {
 }
 
 /* CONTENEDOR A PAGINA */
-.contenedor_link {
-    margin-top: 4px;
-    width: 100%;
-    height: 200px;
-    background-color: #eee;
-    margin-bottom: 5rem;
-}
-
 .link_a_productos {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 40%;
 }
 
 .button4 {
@@ -733,10 +716,9 @@ nav.open~.overlay {
     width: 17rem;
     font-weight: 500;
     padding: 10px 30px;
-    background-color: transparent;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     position: relative;
-    border: 2px solid var(--color-secondary);
     text-align: center;
 }
 
@@ -904,17 +886,6 @@ max-height: 100vh;
     }
 
 
-    /* flexbox */
-    .flexbox-banner {}
-
-    .flexbox-banner {
-        min-height: 400px;
-        position: relative;
-        text-align: left;
-        width: 47.5%;
-        margin: 155px;
-    }
-
 
     /*BANNER*/
     .banner-h1 {
@@ -964,7 +935,7 @@ max-height: 100vh;
     }
 
     .flexbox {
-        margin-top: -15.4rem;
+        margin-top: -13.5rem;
     }
 
     .flexbox-bannerh1 {
@@ -983,8 +954,21 @@ max-height: 100vh;
         margin-left: -2rem;
     }
 
+    /* flexbox */
+
+    .flexbox-banner {
+        min-height: 400px;
+        position: relative;
+        text-align: left;
+        margin: 155px;
+    }
+
     .flexbox-img {
-        margin-left: -7rem;
+        margin-left: -2rem;
+    }
+
+    .flexbox-img2 {
+        width: 140%;
     }
 
     .contenedor_divisor_h1 {
@@ -1009,6 +993,27 @@ max-height: 100vh;
     .banner_instagram {
         width: 100%;
         height: 150px;
+    }
+
+    /* PROVEEDORES */
+    .contenedor_divisor_h1 {
+        font-size: 35px;
+        font-weight: 400;
+        margin: 50px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+    }
+
+    .proveedores {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .img-sponsor {
+        width: 120px;
+        height: 110px;
     }
 }
 
