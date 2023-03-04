@@ -174,6 +174,7 @@ li{
 }
 */
 nav {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     position: fixed;
     display: flex;
     align-items: center;
@@ -379,6 +380,7 @@ nav.open~.overlay {
 
 /*BANNER*/
 .banner-h1 {
+    font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     letter-spacing: 3px;
     justify-content: center;
@@ -405,6 +407,7 @@ nav.open~.overlay {
 }
 
 .button1 {
+    font-family: 'Roboto Condensed', serif;
     font-size: 17px;
     padding: 10px 30px;
     background-color: transparent;
@@ -459,7 +462,8 @@ nav.open~.overlay {
 }
 
 .flexbox-bannerh1 {
-    font-weight: 200;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
     font-size: 40px;
 }
 
@@ -568,21 +572,24 @@ nav.open~.overlay {
 
 /* --------PRODUCTOS H1----------------- */
 .productos_h1 {
+    font-family: 'Josefin Sans', sans-serif;
     position: relative;
     left: 33%;
     width: 25rem;
     padding: 20px;
-    border-bottom: solid 3px var(--color-secondary);
+    border-bottom: solid px var(--color-secondary);
     display: flex;
     text-align: center;
     justify-content: center;
     margin: 4rem;
     font-weight: 500;
     font-size: 33px;
+    box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2);
 }
 
 /* -------- CARD ---------- */
 .card-principal {
+    font-family: 'Josefin Sans', sans-serif;
     display: grid;
     grid-auto-rows: 31rem;
     gap: 1rem;
