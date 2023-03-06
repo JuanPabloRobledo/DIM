@@ -788,8 +788,8 @@ nav.open~.overlay {
         visibility: visible;
         display: flex;
         color: #000;
-        margin-left: 3em;
-        font-size: 40px;
+        margin-left: 1em;
+        font-size: 70px;
         z-index: 30;
     }
 
@@ -799,15 +799,15 @@ nav.open~.overlay {
     }
 
     .logo {
-        width: 300px;
+        width: 400px;
     }
 
     nav {
-        height: 6rem;
+        height: 11rem;
     }
 
     nav.abajo {
-        height: 6rem;
+        height: 10rem;
     }
 
     li.list {
@@ -892,9 +892,8 @@ max-height: 100vh;
     }
 
     .banner-text {
-        font-size: 30px;
+        font-size: 50px;
         color: #fff;
-        padding-top: 5%;
         text-align: center;
         position: relative;
     }
@@ -909,9 +908,9 @@ max-height: 100vh;
     }
 
     .button1 {
-        font-size: 25px;
-        padding: 10px 30px;
-        top: 20px;
+        font-size: 40px;
+        padding: 20px 40px;
+        top: 40px;
     }
 
     .button1:hover {
@@ -923,7 +922,7 @@ max-height: 100vh;
     }
 
     .flexbox {
-        margin-top: -13.5rem;
+        margin-top: -23rem;
     }
 
     .flexbox-bannerh1 {
