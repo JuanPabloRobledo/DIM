@@ -942,6 +942,10 @@ max-height: 100vh;
     }
 
     /* flexbox */
+    .img_logos {
+        display: flex;
+        width: 100px;
+    }
 
     .flexbox-banner {
         min-height: 400px;
@@ -968,13 +972,14 @@ max-height: 100vh;
     }
 
     .productos_h1 {
-        left: 27%;
+        font-size: 50px;
+        left: 20%;
     }
 
     .button4 {
         text-align: center;
-        font-size: 25px;
-        width: 24rem;
+        font-size: 35px;
+        width: 28rem;
     }
 
     .banner_instagram {
@@ -1001,6 +1006,36 @@ max-height: 100vh;
     .img-sponsor {
         width: 120px;
         height: 110px;
+    }
+
+    footer {
+        height: 900px;
+    }
+
+    .footer__nav {
+        position: relative;
+        text-align: center;
+        left: 5%;
+    }
+
+    .footer__item {
+        margin-right: 1rem;
+    }
+
+    .footer__link {
+        font-size: 30px;
+    }
+
+    .footer__logo {
+        height: 100px;
+    }
+
+    .footer__copyright {
+        font-size: 35px;
+    }
+
+    .footer__link .twitter-link {
+        font-size: 35px;
     }
 }
 
