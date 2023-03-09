@@ -53,3 +53,9 @@ sr.reveal('.banner-h1-3', {
     origin: 'right',
     distance: '-200px'
 });
+sr.reveal('', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-200px'
+});
+

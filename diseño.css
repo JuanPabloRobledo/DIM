@@ -594,7 +594,7 @@ nav.open~.overlay {
     height: 450px;
     position: relative;
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/2.jpg);
-    background-position: center;
+    object-fit: cover;
     background-size: 800px;
     padding: 1rem;
     overflow: hidden;
@@ -708,7 +708,7 @@ nav.open~.overlay {
     width: 17rem;
     font-weight: 500;
     padding: 10px 30px;
-    background-color: #000;
+    background-color: var(--color-footer);
     color: #fff;
     position: relative;
     text-align: center;
