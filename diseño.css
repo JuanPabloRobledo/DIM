@@ -560,20 +560,19 @@ nav.open~.overlay {
 /* --------PRODUCTOS H1----------------- */
 .productos {
     background-color: #eee;
-    padding: 50px;
+    padding: 10px;
 }
 
 .productos_h1 {
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
-    left: 33%;
+    left: 35%;
     width: 25rem;
-    padding: 20px;
     border-bottom: solid px var(--color-secondary);
     text-align: center;
-    margin: 4rem;
+    margin: 2rem;
     font-weight: 700;
-    font-size: 37px;
+    font-size: 38px;
     /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
