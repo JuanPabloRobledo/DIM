@@ -79,15 +79,14 @@ li {
 
 .boton {
     color: #000;
-    letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     position: relative;
     padding: 10px;
 }
 
 .boton:hover {
-    color: #aaa;
+    color: var(--color-secondary);
 }
 
 .boton::after {
@@ -541,7 +540,7 @@ nav.open~.overlay {
 }
 
 .single-team:hover:before {
-    opacity: 1;
+    opacity: .7;
 }
 
 .single-team:hover .team-text {
@@ -616,6 +615,7 @@ nav.open~.overlay {
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
+    gap: 2px;
 }
 
 .footer__item {
@@ -722,18 +722,13 @@ nav.open~.overlay {
         font-weight: 400;
         color: #fff;
         font-size: 30px;
-        left: 7%;
+        left: 10%;
         top: 11px;
     }
 
     .barra-h1-icons {
-        display: flex;
-        position: relative;
-        font-weight: 400;
-        color: #000;
-        font-size: 30px;
-        left: 7rem;
-        top: 11px;
+        display: none;
+
     }
 
     /*icons*/
@@ -742,8 +737,8 @@ nav.open~.overlay {
         display: flex;
         justify-content: right;
         gap: 1rem;
-        position: relative;
-        left: 10%;
+        position: absolute;
+        margin-left: 5rem;
     }
 
     .fa-brands:hover {
@@ -775,7 +770,7 @@ nav.open~.overlay {
     }
 
     .single-team {
-        width: 360px;
+        width: 440px;
         height: 400px;
         padding: 24px;
         background-color: #fff;
@@ -783,12 +778,12 @@ nav.open~.overlay {
         position: relative;
         display: flex;
         align-items: flex-end;
-        transition: .6s ease-out;
+        transition: 1s ease-out;
         cursor: pointer;
     }
 
     .single-team:hover:before {
-        opacity: 1;
+        opacity: .7;
     }
 
     .single-team:hover .team-text {
@@ -852,6 +847,38 @@ nav.open~.overlay {
         text-decoration: none;
     }
 
+    /* ////////// TITULO A PRODUCTOS /////////// */
+    .productos_titulo {
+        position: relative;
+        width: 100%;
+        height: 8rem;
+        padding: 20px;
+    }
+
+    .productos_titulo_h1 {
+        font-size: 45px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .productos_titulo span {
+        color: var(--color-secondary);
+    }
+
+    .productos_titulo p {
+        margin-left: 5rem;
+        padding-top: 1rem;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .fa-sharp {
+        font-size: 18px;
+        padding-left: 5px;
+        color: var(--color-secondary);
+    }
+
+
+
     /*/////////////////// OPERATIONS ////////////////////////*/
     .operations {
         max-width: 100%;
@@ -860,6 +887,7 @@ nav.open~.overlay {
     }
 
     .operations__tab-container {
+        margin-top: 7rem;
         position: relative;
         display: flex;
         justify-content: center;
@@ -867,13 +895,13 @@ nav.open~.overlay {
     }
 
     .operations__tab {
-        margin-right: 1rem;
-        transform: translateY(-50%);
+        margin-right: 3rem;
+        transform: translateY(-40%);
     }
 
     .operations__tab span {
-
-        font-weight: 500;
+        font-size: 25px;
+        font-weight: 600;
         display: inline-block;
         color: #fff;
     }
