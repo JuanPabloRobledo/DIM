@@ -339,7 +339,7 @@ nav.open~.overlay {
     position: relative;
     font-weight: 400;
     color: #000;
-    font-size: 17px;
+    font-size: 16px;
     left: 58%;
     top: 9px;
 }
@@ -384,7 +384,7 @@ nav.open~.overlay {
 }
 
 /* /////// FONDO ///////// */
-
+/* 
 .fondoQS {
     background-image: url(img/fondoparadim2.jpg);
     margin-top: 3.3rem;
@@ -405,10 +405,11 @@ nav.open~.overlay {
     left: 20rem;
     top: 13rem;
     gap: 20rem;
-}
+} */
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
+    margin-top: 5rem;
     position: relative;
     width: 100%;
     height: 8rem;
@@ -462,8 +463,8 @@ nav.open~.overlay {
 }
 
 .operations__tab span {
-
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     display: inline-block;
     color: #fff;
 }
@@ -704,6 +705,7 @@ nav.open~.overlay {
         border-bottom: solid 3px var(--color-secondary);
     }
 
+
     /* ///////////BODY////////////// */
 
     /* ------- body ------------------- */
@@ -849,6 +851,7 @@ nav.open~.overlay {
 
     /* ////////// TITULO A PRODUCTOS /////////// */
     .productos_titulo {
+        margin-top: 15rem;
         position: relative;
         width: 100%;
         height: 8rem;
@@ -952,7 +955,7 @@ nav.open~.overlay {
     }
 
     /* /////// FONDO ///////// */
-
+    /* 
     .fondoQS {
         background-image: url(img/fondoparadim2.jpg);
         margin-top: 11rem;
@@ -974,7 +977,7 @@ nav.open~.overlay {
         position: absolute;
         right: 18rem;
         top: 30%;
-    }
+    } */
 
 
     footer {
