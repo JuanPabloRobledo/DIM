@@ -329,9 +329,9 @@ nav.open~.overlay {
     position: relative;
     font-weight: 400;
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
     left: 7%;
-    top: 9px;
+    top: 10px;
 }
 
 .barra-h1-icons {
@@ -339,9 +339,9 @@ nav.open~.overlay {
     position: relative;
     font-weight: 400;
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
     left: 58%;
-    top: 9px;
+    top: 10px;
 }
 
 /*icons*/
@@ -417,9 +417,9 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 {
-    margin-left: 5rem;
+    font-size: 45px;
+    margin-left: 9rem;
     padding-top: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 .productos_titulo span {
@@ -427,14 +427,14 @@ nav.open~.overlay {
 }
 
 .productos_titulo p {
-    margin-left: 5rem;
+    margin-left: 9rem;
     padding-top: 1rem;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 300;
 }
 
 .fa-sharp {
-    font-size: 13px;
+    font-size: 14px;
     padding-left: 5px;
     color: var(--color-secondary);
 }
@@ -542,6 +542,7 @@ nav.open~.overlay {
     align-items: flex-end;
     transition: .6s ease-out;
     cursor: pointer;
+
 }
 
 .single-team:hover:before {
