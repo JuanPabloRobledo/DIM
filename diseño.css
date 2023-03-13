@@ -35,6 +35,32 @@ body::-webkit-scrollbar-thumb {
     padding-right: 2px;
 }
 
+/* WHATSAPP */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
 /*----- HEADER -------*/
 header {
     width: 100%;
@@ -48,7 +74,7 @@ header {
 }
 
 .abajo .boton {
-    color: #000;
+    color: var(--color-footer);
 }
 
 .logo {
@@ -79,7 +105,7 @@ li {
 
 .boton {
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     position: relative;
     padding: 10px;
@@ -425,7 +451,7 @@ nav.open~.overlay {
 
 
 /* ----- body ------ */
-.banner_instagram {
+/* .banner_instagram {
     width: 100%;
     height: 238px;
     background-image: url(img/banner_instagram.png);
@@ -433,7 +459,7 @@ nav.open~.overlay {
     background-position: center;
     background-size: cover;
     margin-bottom: 1rem;
-}
+} */
 
 /* flexbox */
 
@@ -452,7 +478,7 @@ nav.open~.overlay {
 
 .flexbox-banner {
     min-height: 400px;
-    margin-left: ;
+    margin-left: 3rem;
     position: relative;
     text-align: left;
     width: 47.5%;
