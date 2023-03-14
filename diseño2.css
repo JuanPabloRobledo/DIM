@@ -472,8 +472,8 @@ nav.open~.overlay {
 
 /*/////////////////// OPERATIONS ////////////////////////*/
 .operations {
-    max-width: 80%;
-    width: 80%;
+    max-width: 100%;
+    width: 100%;
     margin: 4rem auto 0 auto;
 }
 
@@ -481,20 +481,24 @@ nav.open~.overlay {
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: #eee;
+    margin-bottom: 5rem;
 }
 
 .operations__tab {
-    margin-right: 1rem;
-    transform: translateY(-50%);
-    background-color: #fff;
+    /* margin-right: 1rem; */
+    /* transform: translateY(-50%); */
+    background-color: #eee;
 }
 
 .operations__tab span {
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 600;
     display: inline-block;
+}
 
+button p {
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 /* 
@@ -513,12 +517,12 @@ nav.open~.overlay {
 .operations__tab--active {
     color: #fff;
     background-color: var(--color-footer);
-    transform: translateY(-66%);
+    /* transform: translateY(-66%); */
 }
 
 .operations__content {
     display: none;
-    background-color: #eee;
+    background-color: #fff;
     /* JUST PRESENTATIONAL */
     font-size: 1.7rem;
 }
@@ -531,25 +535,26 @@ nav.open~.overlay {
 }
 
 .btn {
+    width: 33%;
+    height: 10rem;
     display: inline-block;
     font-size: 13px;
     font-family: inherit;
     border: none;
     padding: .7rem 4rem;
     cursor: pointer;
-    transition: all 0.3s;
-
+    transition: all 0.3s
 }
 
 .btn:hover {
     background-color: #eee;
 }
 
-/* GRID////// */
+/*////////// GRID VENTANAS////// */
 .grid-container {
     display: grid;
     grid-template-rows: repeat(2, 420px);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .team-area {
@@ -636,6 +641,34 @@ nav.open~.overlay {
     border-radius: 50%;
     margin: 0 5px;
     text-decoration: none;
+}
+
+/*////////// GRID ALUMINIO24////// */
+.grid-container3 {
+    display: grid;
+    grid-template-rows: repeat(2, 600px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item3 {
+    text-align: center;
+}
+
+.grid-item3 h1 {
+    color: var(--color-primary);
+    font-size: 40px;
+}
+
+.grid-item3 h2 {
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.grid-item3 p {
+    color: #999;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
 }
 
 /* ----------------PROVEEDORES---------- */
