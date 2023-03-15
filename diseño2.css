@@ -631,15 +631,31 @@ button p {
 }
 
 /*////////// GRID ALUMINIO24////// */
+.contenedor_tdv {
+    background-color: rgb(189, 236, 182, .8);
+    margin-top: 10rem;
+    padding: 5rem 0 5rem 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .h1_ventanas {
-    margin-top: 11rem;
-    margin-bottom: 3rem;
     color: var(--color-footer);
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 50px;
     font-weight: 600;
+}
+
+.p_ventanas {
+    text-align: left;
+    font-weight: 500;
+    color: #000;
+    padding: 20px 250px 20px 250px;
+    font-size: 18px;
 }
 
 .h1_ventanas2 {
