@@ -51,6 +51,15 @@ body::-webkit-scrollbar-thumb {
     z-index: 100;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .float {
+        font-size: 60px;
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
 .float:hover {
     text-decoration: none;
     color: #25d366;
@@ -81,6 +90,14 @@ header {
     width: 200px;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .logo {
+        width: 300px;
+    }
+
+}
+
+
 .logo-link {
     cursor: pointer;
     position: relative;
@@ -110,6 +127,13 @@ li {
     position: relative;
     padding: 10px;
 }
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .boton {
+        font-size: 17px;
+    }
+}
+
 
 .boton:hover {
     color: var(--color-secondary);
@@ -350,6 +374,13 @@ nav.open~.overlay {
     top: 3.3rem;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .barra {
+        top: 4.5rem;
+        height: 2.5rem;
+    }
+}
+
 .barra-h1 {
     display: flex;
     position: relative;
@@ -508,6 +539,15 @@ button p {
     /* transform: translateY(-66%); */
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+    .operations__tab--active {
+        color: #fff;
+        background-color: var(--color-footer);
+        /* transform: translateY(-66%); */
+    }
+}
+
 .operations__content {
     display: none;
     background-color: #fff;
@@ -522,7 +562,7 @@ button p {
 }
 
 .btn {
-    width: 32rem;
+    width: 33%;
     height: 10rem;
     display: inline-block;
     font-size: 13px;
