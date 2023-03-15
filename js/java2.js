@@ -24,14 +24,14 @@ sr.reveal('.banner-h1', {
     distance: '-500px'
 });
 sr.reveal('.flexbox-img', {
-    duration: 3000,
+    duration: 1500,
     origin: 'top',
-    distance: '-200px'
+    distance: '-100px'
 });
 sr.reveal('.flexbox-img2', {
-    duration: 3000,
+    duration: 1500,
     origin: 'top',
-    distance: '-200px'
+    distance: '-100px'
 });
 sr.reveal('.flexbox-banner', {
     duration: 1000,

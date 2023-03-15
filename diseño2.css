@@ -475,6 +475,7 @@ nav.open~.overlay {
     max-width: 100%;
     width: 100%;
     margin: 4rem auto 0 auto;
+    margin-bottom: 20rem;
 }
 
 .operations__tab-container {
@@ -501,19 +502,6 @@ button p {
     font-size: 14px;
 }
 
-/* 
-.operations__tab--1:hover {
-    background-color: #39b385;
-}
-
-.operations__tab--2:hover {
-    background-color: #5ec576;
-}
-
-.operations__tab--3:hover {
-    background-color: #9be15d;
-} */
-
 .operations__tab--active {
     color: #fff;
     background-color: var(--color-footer);
@@ -530,12 +518,11 @@ button p {
 .operations__content--active {
     display: grid;
     width: 100%;
-    height: 80rem;
-
+    height: 110rem;
 }
 
 .btn {
-    width: 33%;
+    width: 32rem;
     height: 10rem;
     display: inline-block;
     font-size: 13px;
@@ -644,9 +631,41 @@ button p {
 }
 
 /*////////// GRID ALUMINIO24////// */
+.h1_ventanas {
+    margin-top: 11rem;
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.h1_ventanas2 {
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.imagenes_ventanas {
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.img_tdv {
+    width: 150px;
+    height: 150px;
+}
+
 .grid-container3 {
+    margin-top: 2rem;
     display: grid;
-    grid-template-rows: repeat(2, 600px);
+    grid-template-rows: repeat(2, 50rem);
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -655,7 +674,8 @@ button p {
 }
 
 .grid-item3 h1 {
-    color: var(--color-primary);
+    margin: 2rem;
+    color: var(--color-footer);
     font-size: 40px;
 }
 
@@ -666,9 +686,9 @@ button p {
 
 .grid-item3 p {
     color: #999;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-    padding: 10px;
+    padding: 40px;
 }
 
 /* ----------------PROVEEDORES---------- */
