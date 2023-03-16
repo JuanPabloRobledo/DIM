@@ -82,10 +82,6 @@ header {
     z-index: 20;
 }
 
-.abajo .boton {
-    color: var(--color-footer);
-}
-
 .logo {
     width: 200px;
 }
@@ -558,12 +554,12 @@ button p {
 .operations__content--active {
     display: grid;
     width: 100%;
-    height: 110rem;
+    height: 150rem;
 }
 
 .btn {
     width: 33%;
-    height: 10rem;
+    height: 8rem;
     display: inline-block;
     font-size: 13px;
     font-family: inherit;
@@ -574,7 +570,7 @@ button p {
 }
 
 .btn:hover {
-    background-color: #eee;
+    background-color: var(--color-footer);
 }
 
 /*////////// GRID VENTANAS////// */
@@ -708,10 +704,22 @@ button p {
 }
 
 .imagenes_ventanas {
-    width: 100%;
-    gap: 2rem;
+    width: 70%;
     display: flex;
     justify-content: center;
+}
+
+.flex_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_img h1 {
+    color: var(--color-footer);
+    margin-left: 2rem;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .img_tdv {
@@ -751,6 +759,16 @@ button p {
 .grid-item3 img {
     width: 250px;
     height: 280px;
+}
+
+.section_final_tdv {
+    margin: 5rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.section_final_tdv img {
+    width: 35rem;
 }
 
 /* ----------------PROVEEDORES---------- */
