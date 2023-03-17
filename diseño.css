@@ -475,6 +475,22 @@ nav.open~.overlay {
     transition: 0.3s;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+    .banner-text {
+        font-size: 40px;
+    }
+
+    .banner-text h2 {
+        font-size: 80px;
+    }
+
+    .button1 {
+        font-family: 'Roboto Condensed', serif;
+        font-size: 23px;
+    }
+}
+
 
 /* ----- body ------ */
 /* .banner_instagram {
@@ -524,11 +540,11 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .flexbox {
-        height: 700px;
+        height: 900px;
     }
 
     .flexbox2 {
-        height: 700px;
+        height: 900px;
     }
 
     .parrafo {
