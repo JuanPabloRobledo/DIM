@@ -141,6 +141,7 @@ li {
     color: var(--color-secondary);
 }
 
+/* 
 .boton::after {
     content: "";
     width: 0;
@@ -157,7 +158,7 @@ li {
     width: 100%;
     right: 0;
     color: #D3D3D3;
-}
+} */
 
 /*
 nav{
@@ -690,7 +691,7 @@ nav.open~.overlay {
 .card-principal {
     font-family: 'Josefin Sans', sans-serif;
     display: grid;
-    grid-auto-rows: 31rem;
+    grid-auto-rows: 30rem;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     background-color: #eee;
