@@ -578,7 +578,7 @@ button p {
 }
 
 .btn {
-    width: 10rem;
+    width: 20rem;
     height: 5rem;
     display: flex;
     flex-direction: column;
@@ -615,7 +615,7 @@ button p {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .btn {
-        width: 15rem;
+        width: 25rem;
         height: 8rem;
         padding: 20px;
     }
