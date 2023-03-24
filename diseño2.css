@@ -475,7 +475,8 @@ nav.open~.overlay {
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
-    background-color: rgb(70, 130, 180);
+    margin-bottom: 4rem;
+    background-color: #000;
     height: 12rem;
     display: flex;
     margin-top: 3rem;
@@ -490,18 +491,23 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 {
-    color: #ffff;
+    color: #fff;
     font-size: 45px;
     font-weight: 600;
     margin-left: 9rem;
     padding-top: 1rem;
 }
 
+.productos_titulo_h1 span {
+    color: var(--color-primary);
+}
+
+
 
 .productos_titulo p {
-    color: #ffff;
+    color: #D3D3D3;
     margin-left: 9rem;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -559,7 +565,7 @@ button p {
 }
 
 .operations__tab--active {
-    color: rgb(70, 130, 180);
+    color: var(--color-primary);
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
@@ -586,13 +592,14 @@ button p {
     cursor: pointer;
     border-bottom: 1px solid #D3D3D3;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
     position: relative;
+    left: 3rem;
     padding: 15px;
 }
 
 .btn:hover {
-    color: rgb(70, 130, 180);
+    background-color: #eee;
 }
 
 /* .btn::after {
@@ -617,7 +624,7 @@ button p {
     .btn {
         width: 25rem;
         height: 8rem;
-        padding: 20px;
+        padding: 30px;
     }
 
     .operations__tab span {
@@ -629,7 +636,7 @@ button p {
     }
 
     .operations__tab--active {
-        color: rgb(70, 130, 180);
+        color: var(--color-primary);
         /* background-color: var(--color-footer); */
         /* transform: translateY(-66%); */
     }

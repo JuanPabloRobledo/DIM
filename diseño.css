@@ -625,13 +625,13 @@ nav.open~.overlay {
 }
 
 .contenedor_divisor_h1 {
-    font-weight: 400;
+    font-weight: 500;
     margin: 50px;
-    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
 
 .proveedores {
+    margin-top: 5rem;
     display: flex;
     position: relative;
     justify-content: center;
@@ -639,7 +639,16 @@ nav.open~.overlay {
 }
 
 .img-sponsor {
+    filter: grayscale(100%);
+    opacity: .6;
     width: 150px;
+    height: 140px;
+}
+
+.img-sponsor1 {
+    filter: grayscale(100%);
+    opacity: .6;
+    width: 170px;
     height: 140px;
 }
 
