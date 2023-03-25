@@ -18,34 +18,44 @@ overlay.addEventListener("click", () => {
 
 window.sr = ScrollReveal();
 
-sr.reveal('.banner-h1', {
+sr.reveal('.prueba3', {
     duration: 3000,
     origin: 'right',
     distance: '-500px'
 });
-sr.reveal('.flexbox-img', {
-    duration: 1500,
-    origin: 'top',
-    distance: '-100px'
+sr.reveal('.prueba4', {
+    duration: 4000,
+    origin: 'right',
+    distance: '-500px'
 });
-sr.reveal('.flexbox-img2', {
-    duration: 1500,
-    origin: 'top',
-    distance: '-100px'
-});
-sr.reveal('.flexbox-banner', {
+sr.reveal('.prueba1', {
     duration: 1000,
     origin: 'right',
     distance: '-200px'
 });
-sr.reveal('.flexbox-banner2', {
-    duration: 1000,
+sr.reveal('.prueba2', {
+    duration: 2000,
+    origin: 'right',
+    distance: '-200px'
+});
+sr.reveal('.button1', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-200px'
+});
+sr.reveal('.button2', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '-200px'
+});
+sr.reveal('.proveedores', {
+    duration: 1500,
     origin: 'right',
     distance: '-200px'
 });
 sr.reveal('.card', {
     duration: 1500,
-    origin: 'right',
+    origin: 'top',
     distance: '-200px'
 });
 sr.reveal('.banner-h1-3', {

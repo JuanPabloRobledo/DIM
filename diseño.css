@@ -133,7 +133,7 @@ li {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .boton {
-        font-size: 17px;
+        font-size: 19px;
     }
 }
 
@@ -377,11 +377,13 @@ nav.open~.overlay {
     overflow: hidden;
 }
 
-/* .miSlider{
-    display:none;
+/* 
+.miSlider {
+    display: none;
     transition: 2s;
     max-height: 100vh;
-}*/
+} */
+
 .miSlider img {
     width: 100%;
     height: auto;
@@ -454,7 +456,7 @@ nav.open~.overlay {
 }
 
 .banner-text h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
 }
 
@@ -483,84 +485,54 @@ nav.open~.overlay {
     }
 
     .banner-text h2 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .button1 {
-        font-family: 'Roboto Condensed', serif;
-        font-size: 23px;
+        padding: 15px 40px;
+        font-size: 25px;
     }
 }
 
 
 /* ----- body ------ */
-/* .banner_instagram {
-    width: 100%;
-    height: 238px;
-    background-image: url(img/banner_instagram.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 1rem;
-} */
 
-/* flexbox */
-
-.flexbox {
-    display: flex;
-    width: 100%;
-    height: 600px;
+.grid-container {
+    justify-content: center;
+    margin: 0 10rem 0 10rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 400px);
+    grid-template-rows: repeat(3, 16rem);
+    gap: 1.5rem;
 }
 
-.flexbox2 {
+/* PRIMER GRID */
+.grid-item:first-child {
     display: flex;
-    flex-flow: row-reverse;
-    width: 100%;
-    height: 600px;
-}
-
-.flexbox-banner {
-    min-height: 400px;
-    margin-left: 3rem;
     position: relative;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
-    width: 103vh;
-    margin: 200px;
 }
 
-.flexbox-bannerh1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
+.grid-item:first-child div {
+    position: relative;
+    left: 3rem;
+    top: 4rem;
 }
 
-.parrafo {
-    font-size: 17px;
-    font-weight: 200;
+.grid-item:first-child div h1 {
+    font-size: 50px;
+    margin-top: 1rem;
 }
 
-@media (min-width: 1920px) and (max-width: 2560px) {
-    .flexbox {
-        height: 900px;
-    }
-
-    .flexbox2 {
-        height: 900px;
-    }
-
-    .parrafo {
-        font-size: 1.6rem;
-    }
-
-    .flexbox-bannerh1 {
-        font-size: 3.5rem;
-    }
-}
-
-.spanh1 {
+.grid-item:first-child div h2 {
     color: var(--color-secondary);
-    font-weight: 600;
 }
+
+/* SEGUNDO GRID */
+
+.grid-item:nth-child(2) {}
 
 .button2 {
     font-size: 1.2rem;
@@ -568,7 +540,8 @@ nav.open~.overlay {
     background-color: var(--color-secondary);
     color: #fff;
     position: relative;
-    top: 40px;
+    top: 12rem;
+    left: 3rem;
 }
 
 .button2:hover {
@@ -578,41 +551,59 @@ nav.open~.overlay {
     transition: 0.1s;
 }
 
-.flexbox-img {
-    object-fit: contain;
-    background-image: url(img/fondo3.jpeg);
+.grid-item:nth-child(3) {
+    background-image: url(img/image00018.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
 }
 
-.flexbox-img2 {
-    object-fit: contain;
-    background-image: url(img/32.jpg);
+.grid-item:nth-child(4) {
+    background-image: url(img/image00023.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
 }
 
-.eleccion {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 50px;
+.grid-item:nth-child(5) {
+    background-image: url(img/aluminio-aluar.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 
-.eleccion-h1 {
-    border-bottom: solid 3px var(--color-secondary);
-    font-size: 40px;
-    width: 80%;
-    padding: 40px;
-    font-weight: 200;
+.grid-item:nth-child(6) {
+    background-image: url(img/vidrio.laminado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .grid-container {
+        justify-content: center;
+        margin: 0 10rem 0 10rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr 600px);
+        grid-template-rows: repeat(3, 23rem);
+        gap: 1.5rem;
+    }
+
+    .button2 {
+        top: 16rem;
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
+
+    .grid-item:first-child div h1 {
+        font-size: 70px;
+        margin-top: 1rem;
+    }
+
+    .grid-item:first-child div h2 {
+        color: var(--color-secondary);
+        font-size: 35px;
+    }
 }
 
 /* background-color: rgb(175,238,238, .3);*/
@@ -624,14 +615,8 @@ nav.open~.overlay {
     background-color: #fff;
 }
 
-.contenedor_divisor_h1 {
-    font-weight: 500;
-    margin: 50px;
-    text-align: center;
-}
-
 .proveedores {
-    margin-top: 5rem;
+    margin-top: 7rem;
     display: flex;
     position: relative;
     justify-content: center;
@@ -639,15 +624,15 @@ nav.open~.overlay {
 }
 
 .img-sponsor {
-    filter: grayscale(100%);
-    opacity: .6;
+    /* filter: grayscale(100%);
+    opacity: .6; */
     width: 150px;
     height: 140px;
 }
 
 .img-sponsor1 {
-    filter: grayscale(100%);
-    opacity: .6;
+    /* filter: grayscale(100%);
+    opacity: .6; */
     width: 170px;
     height: 140px;
 }
@@ -676,22 +661,19 @@ nav.open~.overlay {
 }
 
 .productos_h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    position: relative;
-    left: 35%;
-    width: 25rem;
+    display: flex;
     border-bottom: solid px var(--color-secondary);
     text-align: center;
+    justify-content: center;
     margin: 2rem;
-    font-weight: 700;
-    font-size: 38px;
+    font-weight: 600;
+    font-size: 40px;
     /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_h1 {
         font-size: 50px;
-        left: 37%;
         margin: 4rem;
     }
 }
@@ -1058,71 +1040,12 @@ max-height: 100vh;
         transition: 0.3s;
     }
 
-    .flexbox {
-        margin-top: -23rem;
-    }
-
-    .flexbox-bannerh1 {
-        margin-left: -2rem;
-        margin-top: -5rem;
-        font-size: 45px;
-    }
-
-    .parrafo {
-        font-size: 23px;
-        margin-left: -2rem;
-    }
 
     .button2 {
         font-size: 25px;
         margin-left: -2rem;
     }
 
-    /* flexbox */
-    .img_logos {
-        display: flex;
-        width: 100px;
-    }
-
-    .flexbox-banner {
-        min-height: 400px;
-        position: relative;
-        text-align: left;
-        margin: 155px;
-    }
-
-    .flexbox-img {
-        margin-left: -2rem;
-    }
-
-    .flexbox-img2 {
-        width: 140%;
-    }
-
-    .contenedor_divisor_h1 {
-        font-size: 20px;
-    }
-
-    .button3 {
-        width: 10em;
-        font-size: 20px;
-    }
-
-    .productos_h1 {
-        font-size: 50px;
-        left: 20%;
-    }
-
-    .button4 {
-        text-align: center;
-        font-size: 35px;
-        width: 28rem;
-    }
-
-    .banner_instagram {
-        width: 100%;
-        height: 150px;
-    }
 
     /* PROVEEDORES */
     .contenedor_divisor_h1 {

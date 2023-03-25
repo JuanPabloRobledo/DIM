@@ -129,7 +129,7 @@ li {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .boton {
-        font-size: 17px;
+        font-size: 19px;
     }
 }
 
@@ -379,7 +379,7 @@ nav.open~.overlay {
     font-weight: 400;
     color: #000;
     font-size: 14px;
-    left: 7%;
+    left: 9.4%;
     top: 7px;
 }
 
@@ -400,8 +400,9 @@ nav.open~.overlay {
     }
 
     .barra-h1 {
-        font-size: 17px;
-        top: 10px;
+        font-size: 20px;
+        top: 9px;
+        left: 8%;
     }
 
     .barra-h1-icons {
@@ -476,7 +477,7 @@ nav.open~.overlay {
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
     margin-bottom: 4rem;
-    background-color: #000;
+    background-color: rgb(70, 130, 180);
     height: 12rem;
     display: flex;
     margin-top: 3rem;
@@ -499,13 +500,13 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 span {
-    color: var(--color-primary);
+    color: #fff;
 }
 
 
 
 .productos_titulo p {
-    color: #D3D3D3;
+    color: #eee;
     margin-left: 9rem;
     font-size: 18px;
     font-weight: 300;
@@ -514,7 +515,7 @@ nav.open~.overlay {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_titulo {
         margin-top: 4rem;
-        height: 20rem;
+        height: 16rem;
     }
 
     .productos_titulo p {
@@ -546,6 +547,13 @@ nav.open~.overlay {
     margin-bottom: 5rem;
 }
 
+.operations__tab-container h1 {
+    position: relative;
+    left: 3rem;
+    font-size: 19px;
+    margin-bottom: 1rem;
+}
+
 .operations__tab {
     /* margin-right: 1rem; */
     /* transform: translateY(-50%); */
@@ -565,7 +573,7 @@ button p {
 }
 
 .operations__tab--active {
-    color: var(--color-primary);
+    color: rgb(176, 196, 222);
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
@@ -584,7 +592,7 @@ button p {
 }
 
 .btn {
-    width: 20rem;
+    width: 15rem;
     height: 5rem;
     display: flex;
     flex-direction: column;
@@ -634,12 +642,6 @@ button p {
     button p {
         font-size: 17px;
     }
-
-    .operations__tab--active {
-        color: var(--color-primary);
-        /* background-color: var(--color-footer); */
-        /* transform: translateY(-66%); */
-    }
 }
 
 
@@ -648,8 +650,11 @@ button p {
 .grid-container {
     text-align: center;
     display: grid;
-    grid-template-rows: repeat(1, 700px);
-    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin-left: 10%;
+    grid-template-rows: repeat(4, 700px);
+    grid-template-columns: repeat(2, 30rem);
+    gap: 1rem;
 }
 
 /* 
@@ -701,7 +706,7 @@ button p {
 
 /*//////////VIDRIOS/GRIDS DE VIDRIOS ////// */
 .grid-item4 {
-    height: 700px;
+    border: 3px solid #eee;
 }
 
 .grid-item4 h1 {
@@ -712,7 +717,7 @@ button p {
 
 .grid-item4 h2 {
     font-size: 20px;
-    color: var(--color-primary);
+    color: rgb(70, 130, 180);
 }
 
 .grid-item4 p {
@@ -724,6 +729,14 @@ button p {
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
+    .grid-container {
+        text-align: center;
+        display: grid;
+        position: relative;
+        margin-left: 10%;
+        grid-template-rows: repeat(4, 800px);
+        grid-template-columns: repeat(2, 35rem);
+    }
 
     .grid-item4 h2 {
         font-size: 25px;
@@ -800,14 +813,22 @@ button p {
 }
 
 .grid-container3 {
-    margin-top: 2rem;
     display: grid;
-    grid-template-rows: repeat(2, 40rem);
-    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin-left: 10%;
+    grid-template-rows: repeat(4, 40rem);
+    grid-template-columns: repeat(2, 37rem);
+    gap: 1rem;
 }
 
 .grid-item3 {
     text-align: center;
+    border: 3px #eee solid;
+}
+
+.grid-item3:hover {
+    cursor: pointer;
+    /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
 .grid-item3 h1 {
