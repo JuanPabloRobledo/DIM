@@ -48,11 +48,11 @@ sr.reveal('.button2', {
     origin: 'bottom',
     distance: '-200px'
 });
-sr.reveal('.proveedores', {
-    duration: 1500,
-    origin: 'right',
-    distance: '-200px'
-});
+// sr.reveal('.proveedores', {
+//     duration: 1500,
+//     origin: 'right',
+//     distance: '-200px'
+// });
 sr.reveal('.card', {
     duration: 1500,
     origin: 'top',

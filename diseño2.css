@@ -474,8 +474,8 @@ nav.open~.overlay {
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
-    background-color: rgb(1, 50, 32);
-    height: 12rem;
+    background-color: rgb(83, 104, 114);
+    height: 17rem;
     display: flex;
     margin-top: 3.3rem;
     width: 100%;
@@ -489,39 +489,52 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 {
-    color: #fff;
-    font-size: 45px;
+    color: var(--color-secondary);
+    font-size: 22px;
     font-weight: 600;
     margin-left: 9rem;
     padding-top: 1rem;
 }
 
 .productos_titulo_h1 span {
-    color: #fff;
+    color: var(--color-secondary);
 }
 
+.elementor_divider {
+    height: 5px;
+    width: 7rem;
+    position: relative;
+    left: 9.1rem;
+    top: 1rem;
+    background-color: var(--color-secondary);
+}
 
 
 .productos_titulo p {
     color: #eee;
     margin-left: 9rem;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 600;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_titulo {
         margin-top: 4.4rem;
-        height: 16rem;
-    }
-
-    .productos_titulo p {
-        font-size: 25px;
-        font-weight: 300;
+        height: 25rem;
     }
 
     .productos_titulo_h1 {
-        font-size: 55px;
+        font-size: 30px;
+    }
+
+
+    .productos_titulo p {
+        font-size: 50px;
+    }
+
+    .elementor_divider {
+        height: 7px;
+        width: 10rem;
     }
 
 }
@@ -571,7 +584,7 @@ button p {
 }
 
 .operations__tab--active {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
