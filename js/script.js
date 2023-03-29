@@ -25,4 +25,3 @@ tabsContainer.addEventListener('click', function (e) {
         .querySelector(`.operations__content--${clicked.dataset.tab}`)
         .classList.add('operations__content--active');
 });
-

@@ -22,6 +22,7 @@
 }
 
 body {
+    margin-top: 3.3rem;
     background-color: #fff;
     font-family: 'Roboto Condensed', serif;
 }
@@ -367,7 +368,7 @@ nav.open~.overlay {
 .barra {
     width: 100%;
     display: flex;
-    height: 1.9rem;
+    height: 2.4rem;
     background: rgba(238, 238, 238, .3);
     position: relative;
 }
@@ -375,11 +376,11 @@ nav.open~.overlay {
 .barra-h1 {
     display: flex;
     position: relative;
-    font-weight: 400;
-    color: #000;
+    font-weight: 600;
+    color: #333;
     font-size: 16px;
     left: 9.4%;
-    top: 7px;
+    top: 10px;
 }
 
 .barra-h1-icons {
@@ -474,10 +475,15 @@ nav.open~.overlay {
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
-    background-color: rgb(83, 104, 114);
+    background-image: url(img/image00017.jpeg);
+    /* background-color: var(--color-footer); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
     height: 17rem;
     display: flex;
-    margin-top: 3.3rem;
     width: 100%;
     max-width: 100%;
 }
@@ -599,7 +605,14 @@ button p {
 .operations__content--active {
     display: grid;
     width: 100%;
-    height: 160rem;
+    height: 100rem;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+    .operations__content--active {
+        height: 150rem;
+    }
 }
 
 .btn {
@@ -664,8 +677,8 @@ button p {
     position: relative;
     margin-left: 10%;
     grid-template-rows: repeat(4, 700px);
-    grid-template-columns: repeat(2, 30rem);
-    gap: 7rem;
+    grid-template-columns: repeat(3, 21rem);
+    gap: 2rem;
 }
 
 /* 
@@ -717,26 +730,38 @@ button p {
 
 /*//////////VIDRIOS/GRIDS DE VIDRIOS ////// */
 .grid-item4 {
+    border-radius: 20px;
+    text-align: left;
     border: 3px solid #eee;
+    background-color: rgba(238, 238, 238, .3);
 }
 
 .grid-item4 h1 {
-    margin: 2rem;
-    color: var(--color-footer);
-    font-size: 40px;
+    color: #000;
+    font-size: 30px;
+    margin-left: 1rem;
+    margin-top: 7px;
 }
 
 .grid-item4 h2 {
-    font-size: 20px;
-    color: rgb(70, 130, 180);
+    font-size: 17px;
+    color: var(--color-secondary);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 600;
 }
 
 .grid-item4 p {
-    font-weight: 300;
-    color: #999;
-    font-size: 16px;
-    text-align: left;
-    padding: 40px;
+    font-weight: 400;
+    color: #000;
+    font-size: 15px;
+    padding: 14px;
+}
+
+.grid-item4 img {
+    border-radius: 20px;
+    width: 100%;
+    height: 20rem;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
@@ -745,8 +770,14 @@ button p {
         display: grid;
         position: relative;
         margin-left: 10%;
-        grid-template-rows: repeat(4, 800px);
-        grid-template-columns: repeat(2, 35rem);
+        grid-template-rows: repeat(4, 900px);
+        grid-template-columns: repeat(3, 21rem);
+        gap: 7rem;
+    }
+
+    .grid-item4 {
+        width: 25rem;
+        border-radius: 20px;
     }
 
     .grid-item4 h2 {
@@ -754,11 +785,12 @@ button p {
     }
 
     .grid-item4 p {
-        font-size: 22px;
+        font-size: 18px;
     }
 
-    .grid-item4 {
-        height: 800px;
+    .grid-item4 img {
+        width: 100%;
+        height: 50%;
     }
 }
 
@@ -1011,6 +1043,193 @@ button p {
     color: var(--color-secondary);
     margin-top: 0.5rem;
 }
+
+/* /////////////// PAGINA SOBRE NOSOTROS  ////////////// */
+
+
+/* GENERAL ELEMENTS */
+.section {
+    padding: 5rem 3rem;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    transition: transform 1s;
+    opacity: 1s;
+}
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+.section__title {
+    position: relative;
+    top: 10rem;
+    max-width: 30rem;
+    margin: 0 auto 1rem auto;
+}
+
+.section__description {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+.section__header {
+    font-size: 35px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #666;
+}
+
+/* SLIDER */
+.slider {
+    max-width: 60rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+
+    /* IN THE END */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* THIS creates the animation! */
+    transition: transform 1s;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    display: flex;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 4.2rem;
+    width: 4.2rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.slider__btn--left {
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+    right: 6%;
+    transform: translate(50%, -50%);
+}
+
+.dots {
+    position: absolute;
+    bottom: 25%;
+    left: 48%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dots__dot {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: .7rem;
+    width: .7rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /* Only necessary when overlying images */
+    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+    margin: 0;
+}
+
+.dots__dot--active {
+    /* background-color: #fff; */
+    background-color: var(--color-secondary);
+    opacity: 1;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+    width: 60%;
+    position: relative;
+}
+
+.testimonial::before {
+    content: '\201C';
+    position: absolute;
+    top: -5rem;
+    left: -6.8rem;
+    line-height: 1;
+    font-size: 10rem;
+    font-family: inherit;
+    color: var(--color-secondary);
+    z-index: -1;
+}
+
+.testimonial__header {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+    font-size: 20px;
+    margin-bottom: 3.5rem;
+    color: #666;
+}
+
+.testimonial__author {
+    margin-left: 10rem;
+    font-style: normal;
+    display: grid;
+
+}
+
+.testimonial__photo {
+    grid-row: 1 / span 2;
+    width: 6.5rem;
+    border-radius: 50%;
+}
+
+.testimonial__name {
+    font-size: 17px;
+    color: var(--color-secondary);
+    font-weight: 500;
+    align-self: end;
+    margin: 0;
+}
+
+.testimonial__location {
+    font-size: 20px;
+}
+
+.section__title--testimonials {
+    margin-bottom: 4rem;
+}
+
+
+
+
+
 
 /* ------------------------FOOTER --------------------*/
 .footer {

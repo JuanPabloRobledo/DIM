@@ -699,7 +699,7 @@ nav.open~.overlay {
 }
 
 .segundo_section section h2 {
-    font-size: 17px;
+    font-size: 14px;
     position: relative;
     text-align: center;
     font-weight: 400;
@@ -751,7 +751,7 @@ nav.open~.overlay {
     }
 
     .segundo_section section h2 {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .segundo_section_img {
@@ -993,6 +993,10 @@ nav.open~.overlay {
     margin: 0px 20px 0px 20px;
     transition: 0.3s;
 }
+
+
+
+
 
 /* ------------------------FOOTER --------------------*/
 .footer {
