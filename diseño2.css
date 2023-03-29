@@ -502,7 +502,7 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 span {
-    color: rgb(69, 177, 232);
+    color: rgb(124, 252, 0);
 }
 
 .elementor_divider {
@@ -511,7 +511,7 @@ nav.open~.overlay {
     position: relative;
     left: 9.1rem;
     top: 1rem;
-    background-color: rgb(69, 177, 232);
+    background-color: rgb(124, 252, 0);
 }
 
 
@@ -589,7 +589,7 @@ button p {
 }
 
 .operations__tab--active {
-    color: rgb(69, 177, 232);
+    color: rgb(50, 205, 50);
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
@@ -744,7 +744,7 @@ button p {
 
 .grid-item4 h2 {
     font-size: 17px;
-    color: rgb(69, 177, 232);
+    color: rgb(50, 205, 50);
     margin-left: 1rem;
     margin-top: 1rem;
     font-weight: 600;
