@@ -475,13 +475,13 @@ nav.open~.overlay {
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
-    background-color: var(--color-footer);
+    background-image: url(img/fondoparadim2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    height: 17rem;
+    height: 25rem;
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -525,7 +525,7 @@ nav.open~.overlay {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_titulo {
         margin-top: 4.4rem;
-        height: 25rem;
+        height: 35rem;
     }
 
     .productos_titulo_h1 {
@@ -1168,6 +1168,10 @@ button p {
         font-size: 35px;
     }
 
+    .primer_section2 h1 {
+        font-size: 35px;
+    }
+
     .elementor_divider {
         height: 12px;
         width: 14rem;
@@ -1175,7 +1179,7 @@ button p {
     }
 
     .segundo_section2 {
-        margin: 5rem;
+        width: 62%;
     }
 
 }
@@ -1216,6 +1220,28 @@ button p {
     background-size: cover;
     object-fit: cover;
     filter: grayscale(.7);
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .text_blackGradient {
+        height: 70rem;
+    }
+
+    .text_us {
+        border: solid #fff 12px;
+        top: 20%;
+        height: 50rem;
+    }
+
+    .text_us p {
+        padding: 120px;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 500;
+        z-index: 10;
+    }
+
+
 }
 
 /* OPINIONES */

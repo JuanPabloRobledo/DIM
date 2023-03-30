@@ -711,15 +711,15 @@ nav.open~.overlay {
     }
 
     .primer_section h3 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .primer_section h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .elementor_divider {
-        height: 12px;
+        height: 9px;
         width: 14rem;
         top: 2rem;
     }
@@ -727,31 +727,31 @@ nav.open~.overlay {
     .button3 {
         top: 6rem;
         width: 15rem;
-        padding: 20px;
-        font-size: 30px;
+        padding: 15px;
+        font-size: 28px;
     }
 
     .segundo_section_img img {
-        width: 25rem;
+        width: 20rem;
     }
 
     .segundo_section section {
-        left: 16rem;
+        left: 18rem;
         bottom: 10rem;
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 11rem;
     }
 
     .segundo_section section h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .segundo_section section span {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .segundo_section section h2 {
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .segundo_section_img {
