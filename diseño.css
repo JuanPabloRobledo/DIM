@@ -73,6 +73,34 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media screen and (max-width: 992px) {
+
+    /* WHATSAPP */
+    .float {
+        width: 120px;
+        height: 120px;
+        bottom: 100px;
+        right: 60px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 70px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .float:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color: #fff;
+    }
+
+    .my-float {
+        margin-top: 25px;
+    }
+}
+
 /*----- HEADER -------*/
 header {
     width: 100%;
