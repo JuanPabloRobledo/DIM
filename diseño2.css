@@ -1275,7 +1275,7 @@ button p {
     }
 
     .primer_section h3 {
-        color: var(--color-secondary);
+        color: #666;
         margin-bottom: 1rem;
         font-size: 45px;
     }
