@@ -309,6 +309,7 @@ li{
 }
 
 .link:after {
+    color: #fff;
     content: "";
     height: 100%;
     left: 0;
@@ -370,6 +371,7 @@ nav.open .sidebar {
 }
 
 .overlay {
+    z-index: 8;
     position: fixed;
     top: 0;
     left: -100%;
@@ -383,8 +385,8 @@ nav.open .sidebar {
 
 nav.open~.overlay {
     opacity: 1;
-    top: ;
-    20% pointer-events: auto;
+    top: 20%;
+    pointer-events: auto;
 }
 
 
@@ -1421,7 +1423,6 @@ max-height: 100vh;
         position: relative;
         display: flex;
         bottom: 70rem;
-        z-index: 15;
     }
 
     .banner-text {
