@@ -640,7 +640,7 @@ button p {
         position: relative;
         bottom: 5rem;
         width: 100%;
-        height: 25rem;
+        height: 10rem;
         display: flex;
         flex-direction: column;
         font-size: 13px;
@@ -648,14 +648,13 @@ button p {
     }
 
     .operations__tab {
-        margin-bottom: 2rem;
         background-color: transparent;
         display: flex;
         justify-content: center;
         text-align: center;
     }
 
-    .operations__tab:nth-child(2) {
+    /* .operations__tab:nth-child(2) {
         opacity: .9;
         background-image: url(img/4168.jpg);
         background-repeat: no-repeat;
@@ -677,7 +676,7 @@ button p {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }
+    } */
 
     .operations__tab-container {
         position: relative;
@@ -693,14 +692,14 @@ button p {
     .operations__tab span {
         position: relative;
         left: 40%;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 600;
     }
 
     button p {
         position: relative;
-        left: 38%;
-        font-size: 30px;
+        left: 39%;
+        font-size: 22px;
         color: #aaa;
         margin-top: 5px;
     }
@@ -713,15 +712,13 @@ button p {
 
     .operations__content {
         display: none;
-        background-color: #fff;
-        /* JUST PRESENTATIONAL */
         font-size: 1.7rem;
     }
 
     .operations__content--active {
         display: grid;
         width: 100%;
-        height: 100rem;
+        height: 470rem;
     }
 }
 
@@ -854,10 +851,34 @@ button p {
         text-align: center;
         display: grid;
         position: relative;
-        margin-left: 10%;
-        grid-template-rows: repeat(4, 700px);
-        grid-template-columns: repeat(1, 21rem);
+        margin-left: 15%;
+        grid-template-rows: repeat(4, 1200px);
+        grid-template-columns: repeat(1, 40rem);
         gap: 7rem;
+    }
+
+    .grid-item4 {
+        width: 40rem;
+        border-radius: 20px;
+    }
+
+    .grid-item4 h1 {
+        font-size: 40px;
+        margin-left: 1rem;
+        margin-top: 11px;
+    }
+
+    .grid-item4 h2 {
+        font-size: 40px;
+    }
+
+    .grid-item4 p {
+        font-size: 26px;
+    }
+
+    .grid-item4 img {
+        width: 100%;
+        height: 50%;
     }
 }
 
