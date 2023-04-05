@@ -22,7 +22,7 @@
 
 body {
     background-color: #fff;
-    font-family: 'Roboto Condensed', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -152,6 +152,7 @@ li {
 }
 
 .boton {
+    font-family: 'Roboto Condensed', serif;
     color: #fff;
     font-weight: 600;
     font-size: 14px;
@@ -485,31 +486,25 @@ nav.open~.overlay {
 
 /*BANNER*/
 .banner-h1 {
-    font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     letter-spacing: 3px;
     justify-content: center;
     position: relative;
-    display: flex;
-    bottom: 70vh;
-}
-
-.banner-text {
-    font-size: 20px;
-    color: #000;
-    padding-top: 5%;
     text-align: center;
-    position: relative;
+    display: flex;
+    bottom: 64vh;
 }
 
-.banner-text span {
-    color: var(--color-primary);
+.banner-text h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: #000;
 }
 
 .banner-text h2 {
-    margin-top: 1rem;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--color-primary);
 }
 
 .button1 {
@@ -532,11 +527,11 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .banner-h1 {
-        bottom: 65vh;
+        bottom: 60vh;
     }
 
-    .banner-text {
-        font-size: 30px;
+    .banner-text h1 {
+        font-size: 50px;
     }
 
     .banner-text h2 {
@@ -578,11 +573,14 @@ nav.open~.overlay {
 }
 
 .grid-item:first-child div h1 {
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: 500;
     margin-top: 1rem;
 }
 
 .grid-item:first-child div h2 {
+    font-weight: 500;
+    font-size: 18px;
     color: var(--color-secondary);
 }
 
@@ -591,7 +589,7 @@ nav.open~.overlay {
 .grid-item:nth-child(2) {}
 
 .button2 {
-    font-size: 1.2rem;
+    font-size: .9rem;
     padding: 10px 30px;
     background-color: var(--color-secondary);
     color: #fff;
@@ -647,18 +645,18 @@ nav.open~.overlay {
 
     .button2 {
         top: 16rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 15px 30px;
     }
 
     .grid-item:first-child div h1 {
-        font-size: 70px;
+        font-size: 50px;
         margin-top: 1rem;
     }
 
     .grid-item:first-child div h2 {
         color: var(--color-secondary);
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 
@@ -679,18 +677,18 @@ nav.open~.overlay {
     }
 
     .grid-item:first-child div h1 {
-        font-size: 70px;
+        font-size: 50px;
         margin-top: 1rem;
     }
 
     .grid-item:first-child div h2 {
-        font-size: 40px;
+        font-size: 30px;
         color: var(--color-secondary);
     }
 
     .button2 {
         top: 5rem;
-        font-size: 2.5rem;
+        font-size: 1rem;
         padding: 15px 30px;
     }
 }
@@ -699,7 +697,7 @@ nav.open~.overlay {
 /* --------- SECTION 2 --------- */
 .section2 {
     display: flex;
-    background-color: var(--color-footer);
+    background-color: #fff;
     width: 100%;
     height: 40rem;
     margin-top: 5rem;
@@ -719,14 +717,16 @@ nav.open~.overlay {
 }
 
 .primer_section h3 {
+    font-weight: 500;
+    font-size: 18px;
     color: var(--color-secondary);
     margin-bottom: 1rem;
 }
 
 .primer_section h1 {
     font-weight: 400;
-    color: #fff;
-    font-size: 25px;
+    color: #000;
+    font-size: 20px;
 }
 
 .elementor_divider {
@@ -738,27 +738,29 @@ nav.open~.overlay {
 }
 
 .button3 {
+    font-size: .9rem;
     color: #fff;
     position: relative;
     text-align: center;
     top: 3rem;
     width: 8rem;
     background-color: var(--color-secondary);
-    padding: 15px;
+    padding: 10px;
 }
 
 .button3:hover {
-    border: 2px solid #fff;
+    border: 2px solid var(--color-secondary);
     background-color: transparent;
-    color: #fff;
+    color: var(--color-secondary);
     transition: 0.1s;
 }
 
-.segundo_section_img {
+.segundo_section {
+    background-image: url(img/ejemplo\ vidrio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
-    justify-content: center;
-    margin: 11rem;
-    gap: 2rem;
 }
 
 .segundo_section_img img {
@@ -806,7 +808,7 @@ nav.open~.overlay {
     }
 
     .primer_section h1 {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .elementor_divider {
@@ -819,18 +821,7 @@ nav.open~.overlay {
         top: 4rem;
         width: 15rem;
         padding: 15px;
-        font-size: 28px;
-    }
-
-    .segundo_section_img img {
-        width: 20rem;
-    }
-
-    .segundo_section section {
-        left: 18rem;
-        bottom: 13rem;
-        width: 12rem;
-        height: 11rem;
+        font-size: 24px;
     }
 
     .segundo_section section h1 {
@@ -844,21 +835,12 @@ nav.open~.overlay {
     .segundo_section section h2 {
         font-size: 17px;
     }
-
-    .segundo_section_img {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 5rem;
-        gap: 2rem;
-        width: 25rem;
-    }
 }
 
 @media screen and (max-width: 992px) {
     .section2 {
         flex-direction: column;
-        height: 125rem;
+        height: 120rem;
         margin-top: 5rem;
     }
 
@@ -895,23 +877,10 @@ nav.open~.overlay {
     }
 
     .segundo_section_img {
-        flex-direction: column;
-        margin: 11rem;
+        width: 100%;
+        height: 100%;
+        margin-top: 70rem;
         gap: 2rem;
-    }
-
-    .segundo_section_img img {
-        width: 40rem;
-        height: 35rem;
-    }
-
-    .segundo_section section {
-
-        bottom: 53rem;
-        left: 23rem;
-
-        width: 15rem;
-        height: 10rem;
     }
 
     .segundo_section section h1 {
@@ -1007,15 +976,14 @@ nav.open~.overlay {
     text-align: center;
     justify-content: center;
     margin: 2rem;
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 30px;
     /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_h1 {
-        font-size: 50px;
-        margin: 4rem;
+        font-size: 40px;
     }
 }
 
@@ -1243,8 +1211,9 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .button4 {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding: 15px;
     }
 }
 
@@ -1306,14 +1275,14 @@ nav.open~.overlay {
 .info_div h1 {
     margin-top: 1rem;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .info_div p {
     color: #999;
     font-weight: 500;
     margin-top: 1rem;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .info_icon {
@@ -1342,14 +1311,14 @@ nav.open~.overlay {
     .info_div h1 {
         margin-top: 1rem;
         font-weight: 500;
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .info_div p {
         color: #999;
         font-weight: 500;
         margin-top: 1rem;
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .info_icon {
