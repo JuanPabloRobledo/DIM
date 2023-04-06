@@ -1527,7 +1527,7 @@ button p {
 
     .text_us p {
         padding: 50px;
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .text_us div {
@@ -1754,7 +1754,7 @@ button p {
     }
 
     .testimonial__header {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
     }
 
@@ -1791,18 +1791,18 @@ button p {
     }
 
     .section__description {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .section__header {
-        font-size: 45px;
+        font-size: 40px;
         color: #666;
     }
 
     /* SLIDER */
     .slider {
         max-width: 50rem;
-        height: 65rem;
+        height: 80rem;
     }
 
     .slide {
