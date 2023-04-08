@@ -531,11 +531,11 @@ nav.open~.overlay {
     }
 
     .banner-text h1 {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .banner-text h2 {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .button1 {
@@ -636,7 +636,7 @@ nav.open~.overlay {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .grid-container {
         justify-content: center;
-        margin: 0 10rem 0 10rem;
+        margin: 0 12rem 0 12rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr 600px);
         grid-template-rows: repeat(3, 23rem);
@@ -803,6 +803,11 @@ nav.open~.overlay {
         margin-bottom: 10rem;
     }
 
+    .primer_section {
+        margin-left: 10rem;
+        padding: 3rem;
+    }
+
     .primer_section h3 {
         font-size: 28px;
     }
@@ -901,7 +906,6 @@ nav.open~.overlay {
 
 /* ----------------PROVEEDORES---------- */
 .contenedor_divisor {
-
     width: 100%;
     height: 300px;
     background-color: #fff;
@@ -912,19 +916,19 @@ nav.open~.overlay {
     display: flex;
     position: relative;
     justify-content: center;
-    gap: 5rem;
+    gap: 9rem;
 }
 
 .img-sponsor {
-    /* filter: grayscale(100%);
-    opacity: .6; */
+    filter: grayscale(100%);
+    opacity: .9;
     width: 150px;
     height: 140px;
 }
 
 .img-sponsor1 {
-    /* filter: grayscale(100%);
-    opacity: .6; */
+    filter: grayscale(100%);
+    opacity: .9;
     width: 170px;
     height: 140px;
 }
@@ -936,13 +940,18 @@ nav.open~.overlay {
         margin: 100px;
     }
 
+    .proveedores {
+        margin-top: 15rem;
+        gap: 11rem;
+    }
+
     .contenedor_divisor {
         margin-bottom: 6rem;
     }
 
     .img-sponsor {
-        width: 200px;
-        height: 180px;
+        width: 230px;
+        height: 200px;
     }
 }
 
@@ -997,7 +1006,6 @@ nav.open~.overlay {
 
 /* -------- CARD ---------- */
 .card-principal {
-    font-family: 'Josefin Sans', sans-serif;
     display: grid;
     grid-auto-rows: 30rem;
     gap: 1rem;
@@ -1009,12 +1017,12 @@ nav.open~.overlay {
     .card-principal {
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
         gap: 0rem;
+        grid-auto-rows: 39rem;
     }
 }
 
 @media screen and (max-width: 992px) {
     .card-principal {
-        font-family: 'Josefin Sans', sans-serif;
         display: grid;
         gap: 1rem;
         grid-auto-rows: 40rem;
@@ -1103,6 +1111,7 @@ nav.open~.overlay {
     color: #fff;
     text-transform: capitalize;
     font-size: 40px;
+    font-weight: 500;
     transform: rotate(-90deg) translateX(50px) translateY(-90px);
     transition: transform .5s ease;
 }
@@ -1132,14 +1141,64 @@ nav.open~.overlay {
     margin-top: 0.5rem;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .card {
+        max-width: 450px;
+        width: 100%;
+        height: 600px;
+        background-size: 800px;
+        padding: 1rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-position-y 500ms ease;
+        background-position: center;
+        background-size: 800px;
+    }
+
+    .card:nth-child(2) {
+
+        background-size: 1000px;
+    }
+
+    .card:nth-child(3) {
+
+        background-size: 1000px;
+    }
+
+    .card:nth-child(4) {
+
+        background-size: 1000px;
+    }
+
+    .card:nth-child(5) {
+
+        background-size: 1000px;
+    }
+
+    .card:nth-child(6) {
+
+        background-size: 1100px;
+    }
+
+    .card:nth-child(7) {
+
+        background-size: 1000px;
+    }
+
+    .card:nth-child(8) {
+
+        background-size: 1000px;
+    }
+}
+
 @media screen and (max-width: 992px) {
 
     .card {
         max-width: 40rem;
         width: 100%;
         height: 40rem;
-        position: relative;
-        background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/2.jpg);
         object-fit: cover;
         background-size: 800px;
         padding: 1rem;
