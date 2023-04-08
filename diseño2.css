@@ -373,7 +373,7 @@ nav.open~.overlay {
     }
 
     .barra-h1 {
-        font-size: 20px;
+        font-size: 17px;
         top: 9px;
         left: 8%;
     }
@@ -468,19 +468,16 @@ nav.open~.overlay {
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
-    background-image: url(img/fondoparadim2.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    height: 25rem;
+    background-color: #1677be;
+    background-image: linear-gradient(160deg, #1677be 0%, #041c30 100%);
+    height: 20rem;
     display: flex;
     width: 100%;
     max-width: 100%;
 }
 
 .productos_titulo1 {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -488,14 +485,14 @@ nav.open~.overlay {
 
 .productos_titulo_h1 {
     color: #fff;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     margin-left: 9rem;
     padding-top: 1rem;
 }
 
 .productos_titulo_h1 span {
-    color: rgb(124, 252, 0);
+    color: #fff;
 }
 
 .elementor_divider {
@@ -504,37 +501,58 @@ nav.open~.overlay {
     position: relative;
     left: 9.1rem;
     top: 1rem;
-    background-color: rgb(124, 252, 0);
+    background-color: rgb(0, 191, 255);
 }
 
 
 .productos_titulo p {
     color: #fff;
     margin-left: 9rem;
-    font-size: 35px;
+    font-size: 22px;
     font-weight: 600;
+}
+
+.productos_titulo_img {
+    flex-direction: row;
+    position: relative;
+    top: 4.7rem;
+    left: 0rem;
+}
+
+.productos_titulo_img1 {
+    width: 200px;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_titulo {
-        margin-top: 4.4rem;
-        height: 35rem;
+        display: flex;
+        height: 30rem;
     }
 
     .productos_titulo_h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
 
     .productos_titulo p {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .elementor_divider {
-        height: 7px;
+        height: 5px;
         width: 10rem;
     }
 
+    .productos_titulo_img {
+        flex-direction: row;
+        position: relative;
+        top: 6.5rem;
+        left: 0rem;
+    }
+
+    .productos_titulo_img1 {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -547,13 +565,24 @@ nav.open~.overlay {
     }
 
     .productos_titulo p {
-        font-size: 65px;
+        font-size: 35px;
     }
 
     .elementor_divider {
         height: 10px;
         width: 16rem;
     }
+
+    .productos_titulo_img {
+        display: flex;
+        left: -6rem;
+        top: 43%;
+    }
+
+    .productos_titulo_img1 {
+        width: 180px;
+    }
+
 }
 
 
@@ -601,7 +630,7 @@ button p {
 }
 
 .operations__tab--active {
-    color: rgb(50, 205, 50);
+    color: #d3d3d3;
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
@@ -742,7 +771,7 @@ button p {
     }
 
     .operations__tab--active {
-        color: rgb(50, 205, 50);
+        color: #d9d9d9;
         /* background-color: var(--color-footer); */
         /* transform: translateY(-66%); */
     }
@@ -819,10 +848,14 @@ button p {
 
 /*//////////VIDRIOS/GRIDS DE VIDRIOS ////// */
 .grid-item4 {
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: left;
     /* border: 3px solid #eee; */
     background-color: rgba(238, 238, 238, .3);
+}
+
+.grid-item4:hover {
+    cursor: pointer;
     box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -835,7 +868,7 @@ button p {
 
 .grid-item4 h2 {
     font-size: 17px;
-    color: rgb(50, 205, 50);
+    color: var(--color-secondary);
     margin-left: 1rem;
     margin-top: 1rem;
     font-weight: 600;
@@ -849,7 +882,7 @@ button p {
 }
 
 .grid-item4 img {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;
     height: 50%;
 }
@@ -1292,13 +1325,14 @@ button p {
 }
 
 /* 
-/* /////////////// PAGINA SOBRE NOSOTROS  ////////////// */
+/* /////////////// PAGINA EMPRESA  ////////////// */
 
 /* --------- SECTION 2 --------- */
 .section2 {
     display: flex;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9921218487394958) 20%, rgba(255, 255, 255, 0.008928571428571397) 100%);
+    background-color: #fff;
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9921218487394958) 20%, rgba(255, 255, 255, 0.008928571428571397) 100%); */
     width: 100%;
     height: 40rem;
 }
@@ -1317,23 +1351,14 @@ button p {
 }
 
 .primer_section h3 {
-    color: rgb(124, 252, 0);
+    color: var(--color-secondary);
     margin-bottom: 1rem;
 }
 
 .primer_section h1 {
     font-weight: 500;
-    color: #fff;
+    color: #000;
     font-size: 20px;
-}
-
-.elementor_divider {
-    height: 5px;
-    width: 7rem;
-    position: relative;
-    top: 1rem;
-    right: 10rem;
-    background-color: rgb(124, 252, 0);
 }
 
 .segundo_section {
@@ -1342,6 +1367,14 @@ button p {
     background-position: center;
     background-size: cover;
     object-fit: cover;
+}
+
+.elementor_divider2 {
+    height: 7px;
+    width: 7rem;
+    position: relative;
+    top: 1rem;
+    background-color: var(--color-secondary);
 }
 
 @media screen and (max-width: 992px) {
@@ -1390,14 +1423,15 @@ button p {
 /* ------ SEGUNDO SECTION ------ */
 .section2-2 {
     display: flex;
-    background-color: #000;
+    background-color: #fff;
     width: 100%;
     height: 40rem;
 }
 
 .primer_section2 {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(4, 41, 5, 0) 100%);
+    background-color: #fff;
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(4, 41, 5, 0) 100%); */
     margin-left: 5rem;
     display: flex;
     justify-content: center;
@@ -1408,7 +1442,7 @@ button p {
 
 .primer_section2 h1 {
     font-size: 20px;
-    color: #fff;
+    color: #000;
     font-weight: 500;
 }
 
@@ -1423,11 +1457,6 @@ button p {
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-
-    .primer_section h3 {
-        color: #000;
-    }
-
     .section2 {
         height: 60rem;
     }
@@ -1441,11 +1470,13 @@ button p {
     }
 
     .primer_section h1 {
-        font-size: 30px;
+        font-size: 25px;
+        margin-bottom: 2rem;
     }
 
     .primer_section2 h1 {
-        font-size: 32px;
+        font-size: 25px;
+        margin-bottom: 2rem;
     }
 
     .elementor_divider {
@@ -1465,7 +1496,6 @@ button p {
     .section2-2 {
         flex-direction: column;
         flex-direction: column-reverse;
-        background-color: #000;
         width: 100%;
         height: 70rem;
     }
@@ -1480,7 +1510,7 @@ button p {
 
     .primer_section2 h1 {
         font-size: 35px;
-        color: #fff;
+        color: #000;
         font-weight: 500;
     }
 
@@ -1499,13 +1529,13 @@ button p {
 .text_blackGradient {
     width: 100%;
     height: 50rem;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9921218487394958) 1%, rgba(0, 0, 0, 0.7372198879551821) 46%, rgba(255, 255, 255, 0.008928571428571397) 100%);
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9921218487394958) 1%, rgba(0, 0, 0, 0.7372198879551821) 46%, rgba(255, 255, 255, 0.008928571428571397) 100%); */
 }
 
 .text_us {
     display: flex;
-    border: solid #fff 8px;
+    border: solid #000 5px;
     width: 80%;
     position: relative;
     left: 10%;
@@ -1514,7 +1544,7 @@ button p {
 
 .text_us p {
     padding: 100px;
-    color: #fff;
+    color: #000;
     font-size: 19px;
     font-weight: 500;
     z-index: 10;
@@ -1535,19 +1565,19 @@ button p {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .text_blackGradient {
-        height: 70rem;
+        height: 80rem;
     }
 
     .text_us {
-        border: solid #fff 12px;
+        border: solid #000 5px;
         top: 20%;
-        height: 50rem;
+        height: 60rem;
     }
 
     .text_us p {
         padding: 120px;
-        color: #fff;
-        font-size: 28px;
+        color: #000;
+        font-size: 24px;
         font-weight: 500;
         z-index: 10;
     }
@@ -1563,7 +1593,7 @@ button p {
     .text_us {
         display: flex;
         flex-direction: column;
-        border: solid #fff 8px;
+        border: solid #000 8px;
         width: 80%;
         position: relative;
         left: 10%;
@@ -1804,7 +1834,7 @@ button p {
     }
 
     .testimonial__text {
-        font-size: 29px;
+        font-size: 25px;
         color: #000;
     }
 

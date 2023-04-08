@@ -160,6 +160,7 @@ li {
     padding: 15px;
 }
 
+
 @media (min-width: 1920px) and (max-width: 2560px) {
     .boton {
         font-size: 19px;
@@ -522,7 +523,7 @@ nav.open~.overlay {
     border: none;
     color: #fff;
     margin: 0px 20px 0px 20px;
-    transition: 0.3s;
+    transition: 0.7s;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
