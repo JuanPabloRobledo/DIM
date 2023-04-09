@@ -503,14 +503,13 @@ nav.open~.overlay {
 }
 
 .banner-text h2 {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 500;
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .button1 {
-    font-family: 'Roboto Condensed', serif;
-    font-size: 17px;
+    font-size: 15px;
     padding: 10px 30px;
     background-color: #fff;
     color: #000;
@@ -519,10 +518,9 @@ nav.open~.overlay {
 }
 
 .button1:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     border: none;
     color: #fff;
-    margin: 0px 20px 0px 20px;
     transition: 0.7s;
 }
 

@@ -720,7 +720,7 @@ button p {
         text-align: center;
     }
 
-    /* .operations__tab:nth-child(2) {
+    .operations__tab:nth-child(2) {
         opacity: .9;
         background-image: url(img/4168.jpg);
         background-repeat: no-repeat;
@@ -742,7 +742,7 @@ button p {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    } */
+    }
 
     .operations__tab-container {
         position: relative;
@@ -868,7 +868,7 @@ button p {
 
 .grid-item4 h2 {
     font-size: 17px;
-    color: var(--color-secondary);
+    color: rgb(0, 183, 235);
     margin-left: 1rem;
     margin-top: 1rem;
     font-weight: 600;
@@ -1047,28 +1047,72 @@ button p {
 
 /* ----------------PROVEEDORES---------- */
 .contenedor_divisor {
+    margin-top: 7rem;
     width: 100%;
     height: 300px;
     background-color: #fff;
 }
 
-.contenedor_divisor_h1 {
-    font-weight: 400;
-    margin: 50px;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-}
-
 .proveedores {
+    margin-bottom: 7rem;
     display: flex;
     position: relative;
     justify-content: center;
-    gap: 5rem;
+    gap: 9rem;
 }
 
 .img-sponsor {
+    filter: grayscale(100%);
+    opacity: .9;
     width: 150px;
     height: 140px;
+}
+
+.img-sponsor1 {
+    filter: grayscale(100%);
+    opacity: .9;
+    width: 170px;
+    height: 140px;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .contenedor_divisor_h1 {
+        font-size: 3.4rem;
+        font-weight: 500;
+        margin: 100px;
+    }
+
+    .proveedores {
+        margin-top: 15rem;
+        gap: 11rem;
+    }
+
+    .contenedor_divisor {
+        margin-bottom: 6rem;
+    }
+
+    .img-sponsor {
+        width: 230px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contenedor_divisor {
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 7rem;
+    }
+
+    .proveedores {
+        margin-top: 4rem;
+        gap: 5rem;
+    }
+
+    .proveedores img {
+        width: 150px;
+        height: 130px;
+    }
 }
 
 /* ---------------------PAGINA OBRAS --------------------*/
