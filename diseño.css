@@ -400,6 +400,7 @@ nav.open .sidebar {
     padding: 30px 16px;
 }
 
+/* 
 .overlay {
     z-index: 8;
     position: fixed;
@@ -417,7 +418,7 @@ nav.open~.overlay {
     opacity: 1;
     top: 20%;
     pointer-events: auto;
-}
+} */
 
 
 /* ------- SLIDER ------- */
@@ -498,13 +499,13 @@ nav.open~.overlay {
 
 .banner-text h1 {
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 400;
     color: #000;
 }
 
 .banner-text h2 {
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-secondary);
 }
 
