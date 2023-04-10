@@ -693,40 +693,50 @@ nav.open~.overlay {
     }
 }
 
-/* background-color: rgb(175,238,238, .3);*/
-/* --------- SECTION 2 --------- */
-.section2 {
-    display: flex;
-    background-color: #fff;
+/* ----------------------- */
+.section_body_first {
+    height: 100vh;
     width: 100%;
-    height: 40rem;
-    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
-.section2-1 {
+.background-1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 22vh;
+    top: 5rem;
+    width: 79%;
+    background-color: #eee;
+    box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    border: 10px solid #000;
+}
+
+.background-1-section {
     width: 50%;
 }
 
-.primer_section {
-    margin-left: 5rem;
+.background-1-section div {
     display: flex;
-    justify-content: center;
-    text-align: left;
     flex-direction: column;
-    padding: 5rem;
+    text-align: left;
+    position: relative;
+    margin-top: 5rem;
+    left: 5rem;
 }
 
-.primer_section h3 {
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--color-secondary);
-    margin-bottom: 1rem;
-}
-
-.primer_section h1 {
-    font-weight: 400;
+.background-1-section div h1 {
     color: #000;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.background-1-section div h3 {
+    color: var(--color-secondary);
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .elementor_divider {
@@ -755,153 +765,117 @@ nav.open~.overlay {
     transition: 0.1s;
 }
 
-.segundo_section {
-    background-image: url(img/ejemplo\ vidrio.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-}
-
-.segundo_section_img img {
-    width: 15rem;
-}
-
-.segundo_section section {
-    display: flex;
+.img-1 {
     position: relative;
-    flex-direction: column;
-    justify-content: center;
-    bottom: 18rem;
-    left: 19rem;
-    background-color: #fff;
-    width: 10rem;
-    height: 10rem;
-}
-
-.segundo_section section h1 {
-    font-size: 45px;
-    color: var(--color-secondary);
-    position: relative;
-    text-align: center;
-}
-
-.segundo_section section span {
-    font-size: 30px;
-}
-
-.segundo_section section h2 {
-    font-size: 14px;
-    position: relative;
-    text-align: center;
-    font-weight: 400;
+    left: 0rem;
+    width: 700px;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-    .section2 {
-        height: 55rem;
-        margin-bottom: 10rem;
+
+    .background-1 {
+        left: 19vh;
+        top: 10rem;
+        width: 79%;
     }
 
-    .primer_section {
-        margin-left: 10rem;
-        padding: 3rem;
+    .background-1-section {
+        width: 50%;
     }
 
-    .primer_section h3 {
-        font-size: 28px;
+    .background-1-section div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        position: relative;
+        margin-top: 12rem;
+        left: 5rem;
     }
 
-    .primer_section h1 {
-        font-size: 28px;
+    .background-1-section div h1 {
+        color: #000;
+        font-size: 21px;
+        font-weight: 400;
+        margin-top: 2rem;
+    }
+
+    .background-1-section div h3 {
+        color: var(--color-secondary);
+        font-size: 29px;
+        font-weight: 600;
     }
 
     .elementor_divider {
-        height: 9px;
-        width: 14rem;
-        top: 2rem;
+        width: 10rem;
+    }
+
+    .img-1 {
+        left: 2rem;
+        width: 900px;
     }
 
     .button3 {
-        top: 4rem;
-        width: 15rem;
+        font-size: 1.1rem;
+        top: 3rem;
+        width: 10rem;
         padding: 15px;
-        font-size: 24px;
     }
 
-    .segundo_section section h1 {
-        font-size: 40px;
-    }
-
-    .segundo_section section span {
-        font-size: 30px;
-    }
-
-    .segundo_section section h2 {
-        font-size: 17px;
-    }
 }
 
 @media screen and (max-width: 992px) {
-    .section2 {
+    .background-1 {
         flex-direction: column;
-        height: 120rem;
-        margin-top: 5rem;
+        left: 5vh;
+        top: 10rem;
+        width: 80%;
     }
 
-    .section2-1 {
-        width: 90%;
+    .background-1-section {
+        width: 100%;
     }
 
-    .primer_section {
-        flex-direction: column;
-        margin-top: 5rem;
-        padding: 2rem;
+    .background-1-section div {
+        text-align: center;
+        top: 7rem;
+        left: 1rem;
     }
 
-    .primer_section h3 {
-        margin-bottom: 1rem;
-        font-size: 40px;
+    .background-1-section div h1 {
+        font-size: 26px;
+        margin: 30px;
     }
 
-    .primer_section h1 {
-        font-size: 40px;
+    .background-1-section div h3 {
+        margin-top: -10rem;
+        font-size: 60px;
     }
 
     .elementor_divider {
-        height: 10px;
-        width: 15rem;
-        top: 3rem;
+        width: 20rem;
+        position: relative;
+        left: 12rem;
+    }
+
+    .img-1 {
+        left: 2rem;
+        width: 900px;
+    }
+
+    .img-1 {
+        position: relative;
+        top: 20rem;
+        left: 0rem;
+        width: 800px;
     }
 
     .button3 {
-        top: 7rem;
-        width: 15rem;
+        font-size: 1.7rem;
+        top: 3rem;
+        left: 11.5rem;
+        width: 22rem;
         padding: 15px;
-        font-size: 28px;
     }
-
-    .segundo_section_img {
-        width: 100%;
-        height: 100%;
-        margin-top: 70rem;
-        gap: 2rem;
-    }
-
-    .segundo_section section h1 {
-        font-size: 45px;
-
-    }
-
-    .segundo_section section span {
-        font-size: 30px;
-    }
-
-    .segundo_section section h2 {
-        font-size: 20px;
-
-    }
-
 }
 
 /* ----------------PROVEEDORES---------- */
@@ -1001,6 +975,11 @@ nav.open~.overlay {
         font-size: 60px;
         margin: 4rem;
     }
+
+    .productos {
+        margin-left: 0rem;
+    }
+
 }
 
 
@@ -1028,7 +1007,7 @@ nav.open~.overlay {
         grid-auto-rows: 40rem;
         grid-template-columns: 1fr;
         background-color: #eee;
-        margin-left: 9rem;
+        margin-left: 9.5rem;
     }
 }
 
@@ -1262,7 +1241,7 @@ nav.open~.overlay {
     width: 17rem;
     font-weight: 500;
     padding: 10px 30px;
-    background-color: var(--color-footer);
+    background-color: var(--color-secondary);
     color: #fff;
     position: relative;
     text-align: center;
@@ -1290,8 +1269,6 @@ nav.open~.overlay {
         width: 25rem;
         font-weight: 500;
         padding: 10px 30px;
-        background-color: var(--color-footer);
-        color: #fff;
         position: relative;
         text-align: center;
     }
@@ -1300,8 +1277,8 @@ nav.open~.overlay {
 
 
 .button4:hover {
-    background-color: var(--color-secondary);
-    color: #fff;
+    background-color: #fff;
+    color: var(--color-secondary);
     margin: 0px 20px 0px 20px;
     transition: 0.3s;
 }
@@ -1317,6 +1294,7 @@ nav.open~.overlay {
     display: flex;
     justify-content: center;
     position: relative;
+    text-align: center;
     left: 20vh;
     top: 15vh;
     width: 80%;
