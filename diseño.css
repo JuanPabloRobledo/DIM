@@ -710,7 +710,7 @@ nav.open~.overlay {
     background-color: #eee;
     box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.3);
     height: 80vh;
-    border: 10px solid #000;
+    /* border: 10px solid #000; */
 }
 
 .background-1-section {

@@ -868,7 +868,7 @@ button p {
 
 .grid-item4 h2 {
     font-size: 17px;
-    color: var(--color-secondary);
+    color: #999;
     margin-left: 1rem;
     margin-top: 1rem;
     font-weight: 600;
@@ -935,6 +935,7 @@ button p {
     }
 
     .grid-item4 {
+        max-height: 110rem;
         width: 55rem;
         border-radius: 20px;
         background-color: rgba(238, 238, 238, .7);
@@ -962,98 +963,97 @@ button p {
 
 /*////////// TIPOS DE ABERTURAS ////// */
 .contenedor_tdv {
-    background-color: rgb(189, 236, 182, .8);
+    background-color: #fff;
     margin-top: 10rem;
     padding: 5rem 0 5rem 0;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 .h1_ventanas {
-    color: var(--color-footer);
+    padding: 20px 250px 20px 250px;
+    color: var(--color-secondary);
     display: flex;
-    justify-content: center;
-    text-align: center;
     font-size: 50px;
     font-weight: 600;
 }
 
 .p_ventanas {
     text-align: left;
-    font-weight: 500;
+    font-weight: 400;
     color: #000;
     padding: 20px 250px 20px 250px;
     font-size: 18px;
 }
 
+/* IMAGENES DE VENTANAS */
 .imagenes_ventanas {
-    width: 70%;
-    display: flex;
+    display: grid;
+    gap: 2rem;
     justify-content: center;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 400px);
+
 }
 
 .flex_img {
+    margin: 0 5rem 0 5rem;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.flex_img h1 {
-    color: var(--color-footer);
-    margin-left: 2rem;
-    font-size: 19px;
-    font-weight: 400;
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .img_tdv {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
-
-.section_final_tdv {
-    margin: 5rem;
+.titulo_img {
     display: flex;
-    gap: 5rem;
+    margin-top: 1rem;
+    color: var(--color-footer);
+    justify-content: center;
+    font-weight: 600;
+    font-size: 23px;
 }
 
-.section_final_tdv img {
-    width: 35rem;
-}
+/* -------- */
 
 @media (min-width: 1920px) and (max-width: 2560px) {
+    .h1_ventanas {
+        padding: 20px 400px 20px 400px;
+        font-size: 55px;
+    }
 
-    .section_final_tdv img {
-        width: 40rem
+    .p_ventanas {
+        padding: 20px 400px 20px 400px;
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 992px) {
 
     .h1_ventanas {
-        font-size: 50px;
+        font-size: 80px;
         font-weight: 600;
-        margin: 3rem;
     }
 
     .p_ventanas {
         font-weight: 500;
         padding: 20px 150px 20px 150px;
-        font-size: 12px;
+        font-size: 18px;
     }
 
-    .section_final_tdv {
-        margin: 5rem;
-        flex-direction: column;
-        gap: 5rem;
-    }
+    .imagenes_ventanas {
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-columns: repeat(2, 400px);
 
-    .section_final_tdv img {
-        width: 45rem;
     }
-
 }
 
 /* ----------------PROVEEDORES---------- */
