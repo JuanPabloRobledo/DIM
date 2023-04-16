@@ -991,7 +991,7 @@ button p {
 /* IMAGENES DE VENTANAS */
 .imagenes_ventanas {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     grid-template-rows: repeat(3, 300px);
     grid-template-columns: repeat(3, 400px);
@@ -999,15 +999,15 @@ button p {
 }
 
 .flex_img {
-    margin: 0 5rem 0 5rem;
+    margin: 0 7rem 0 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .img_tdv {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .titulo_img {
@@ -1015,6 +1015,7 @@ button p {
     margin-top: 1rem;
     color: var(--color-footer);
     justify-content: center;
+    text-align: center;
     font-weight: 600;
     font-size: 23px;
 }
@@ -2074,7 +2075,83 @@ button p {
     }
 }
 
+/* ///////////////////// PAGINA CONTACT US ////////// */
+.section_contactus {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
 
+.div_contactus1 {
+    background-image: url(img/image00067\ 1\ .jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.div_contactus1_h1 {
+    font-size: 40px;
+    color: #fff;
+    margin: 5rem;
+}
+
+.info_div {
+    margin-left: 5rem;
+    display: flex;
+}
+
+.info_div h1 {
+    color: #fff;
+    margin-top: .5rem;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+h1 span {
+    margin-left: 1rem;
+}
+
+h1 a {
+    font-size: 17px;
+    color: #999;
+}
+
+h1 a:hover {
+    color: var(--color-primary);
+}
+
+.info_icon {
+    color: #fff;
+    font-size: 25px;
+    margin-top: .3rem;
+}
+
+/* 
+p span {
+    color: #fff;
+    font-size: 19px;
+}
+
+p a {
+    color: #aaa;
+    font-size: 19px;
+}
+
+p a:hover {
+    color: var(--color-secondary);
+    transition: .4s;
+} */
+
+.div_contacus2 {
+    background-color: #000;
+    width: 50%;
+}
 
 
 /* ------------------------FOOTER --------------------*/
