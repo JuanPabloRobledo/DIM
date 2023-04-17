@@ -895,11 +895,110 @@ nav.open~.overlay {
     }
 }
 
+
+/* ////////// AVISO /////////////// */
+.aviso {
+    position: relative;
+    top: 5rem;
+    background-image: url(img/fondoparadim5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+}
+
+.aviso_section {
+    text-align: center;
+    position: relative;
+    top: 35%;
+    margin: 0 auto;
+}
+
+.aviso_section h1 {
+    padding: 2rem;
+    color: #fff;
+    font-size: 35px;
+}
+
+.aviso_section p {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* .button5 {
+    cursor: pointer;
+    font-size: .9rem;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    top: 3rem;
+    width: 9rem;
+    background-color: var(--color-secondary);
+    padding: 10px;
+}
+
+.button5:hover {
+    background-color: #fff;
+    color: var(--color-secondary);
+    transition: 0.1s;
+} */
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .aviso {
+        height: 45rem;
+    }
+
+    .aviso_section h1 {
+        padding: 2rem;
+        font-size: 45px;
+    }
+
+    .aviso_section p {
+        font-size: 25px;
+    }
+
+    .button3 {
+        font-size: 1.2rem;
+        top: 3rem;
+        width: 11rem;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aviso {
+        height: 80rem;
+    }
+
+    .aviso_section h1 {
+        padding: 2rem;
+        font-size: 50px;
+    }
+
+    .aviso_section p {
+        padding: 2rem;
+        margin-top: 1rem;
+        font-size: 40px;
+    }
+
+    .button3 {
+        font-size: 1.5rem;
+        top: 3rem;
+        width: 18rem;
+        padding: 15px;
+    }
+}
+
+
 /* ----------------PROVEEDORES---------- */
 .contenedor_divisor {
     width: 100%;
     height: 300px;
     background-color: #fff;
+    margin-top: 15rem;
 }
 
 .proveedores {
@@ -965,8 +1064,8 @@ nav.open~.overlay {
 
 /* --------PRODUCTOS H1----------------- */
 .productos {
-    background-color: #eee;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(-45deg, #fff 50%, #eee 50%);
+    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25); */
     padding: 10px;
 }
 
@@ -976,8 +1075,8 @@ nav.open~.overlay {
     text-align: center;
     justify-content: center;
     margin: 2rem;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 40px;
     /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
@@ -1006,7 +1105,7 @@ nav.open~.overlay {
     grid-auto-rows: 30rem;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
