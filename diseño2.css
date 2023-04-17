@@ -961,6 +961,98 @@ button p {
     }
 }
 
+/* ////////// AVISO /////////////// */
+.aviso {
+    position: relative;
+    top: 5rem;
+    background-image: url(img/fondoparadim5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+}
+
+.aviso_section {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    margin: 0 auto;
+}
+
+.aviso_section h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.aviso_section p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.button3 {
+    cursor: pointer;
+    font-size: .9rem;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    top: 3rem;
+    width: 9rem;
+    background-color: var(--color-secondary);
+    padding: 10px;
+}
+
+.button3:hover {
+    background-color: #fff;
+    color: var(--color-secondary);
+    transition: 0.1s;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .aviso {
+        height: 45rem;
+    }
+
+    .aviso_section h1 {
+        font-size: 45px;
+    }
+
+    .aviso_section p {
+        font-size: 25px;
+    }
+
+    .button3 {
+        font-size: 1.2rem;
+        top: 3rem;
+        width: 11rem;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aviso {
+        height: 80rem;
+    }
+
+    .aviso_section h1 {
+        font-size: 50px;
+    }
+
+    .aviso_section p {
+        margin-top: 1rem;
+        font-size: 40px;
+    }
+
+    .button3 {
+        font-size: 1.5rem;
+        top: 3rem;
+        width: 18rem;
+        padding: 15px;
+    }
+}
+
 /*////////// TIPOS DE ABERTURAS ////// */
 .contenedor_tdv {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
@@ -975,7 +1067,7 @@ button p {
 
 .h1_ventanas {
     padding: 20px 250px 20px 250px;
-    color: var(--color-secondary);
+    color: var(--footer);
     display: flex;
     font-size: 50px;
     font-weight: 600;
@@ -1070,13 +1162,15 @@ button p {
         justify-content: center;
         grid-template-rows: repeat(3, 400px);
         grid-template-columns: repeat(2, 400px);
+    }
 
+    .img_tdv {
+        left: 6rem;
     }
 }
 
 /* ----------------PROVEEDORES---------- */
 .contenedor_divisor {
-    margin-top: 7rem;
     width: 100%;
     height: 300px;
     background-color: #fff;
@@ -1822,7 +1916,6 @@ button p {
     margin: 0 auto;
     position: relative;
 
-    /* IN THE END */
     overflow: hidden;
 }
 
