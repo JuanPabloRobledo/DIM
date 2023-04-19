@@ -576,6 +576,7 @@ nav.open~.overlay {
 
 /* PRIMER GRID */
 .grid-item:first-child {
+    margin-top: -5rem;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -667,7 +668,7 @@ nav.open~.overlay {
     }
 
     .grid-item:first-child div h1 {
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 1rem;
     }
 
