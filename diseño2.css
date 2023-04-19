@@ -631,7 +631,7 @@ button p {
 }
 
 .operations__tab--active {
-    color: #d3d3d3;
+    color: #d9d9d9;
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
@@ -646,6 +646,18 @@ button p {
 .operations__content--active {
     display: grid;
     width: 100%;
+    /* height: 70rem; */
+}
+
+.operations__content--3 {
+    height: 120rem;
+}
+
+.operations__content--1 {
+    height: 70rem;
+}
+
+.operations__content--2 {
     height: 70rem;
 }
 
@@ -656,7 +668,15 @@ button p {
         font-size: 22px;
     }
 
-    .operations__content--active {
+    .operations__content--3 {
+        height: 160rem;
+    }
+
+    .operations__content--1 {
+        height: 100rem;
+    }
+
+    .operations__content--2 {
         height: 100rem;
     }
 }
@@ -784,8 +804,20 @@ button p {
     .operations__content--active {
         display: grid;
         width: 100%;
-        height: 580rem;
     }
+
+    .operations__content--3 {
+        height: 830rem;
+    }
+
+    .operations__content--1 {
+        height: 480rem;
+    }
+
+    .operations__content--2 {
+        height: 480rem;
+    }
+}
 }
 
 /*////////// GRID VIDRIO////// */
@@ -851,7 +883,7 @@ button p {
     border-radius: 10px;
     text-align: left;
     /* border: 3px solid #eee; */
-    background-color: rgba(238, 238, 238, .3);
+    /* background-color: rgba(238, 238, 238, .3); */
 }
 
 .grid-item4:hover {
@@ -868,7 +900,7 @@ button p {
 
 .grid-item4 h2 {
     font-size: 17px;
-    color: #999;
+    color: var(--color-secondary);
     margin-left: 1rem;
     margin-top: 1rem;
     font-weight: 600;
@@ -938,7 +970,6 @@ button p {
         max-height: 110rem;
         width: 55rem;
         border-radius: 20px;
-        background-color: rgba(238, 238, 238, .7);
     }
 
     .grid-item4 h1 {
@@ -992,16 +1023,14 @@ button p {
     font-size: 20px;
 }
 
-.button3 {
-    cursor: pointer;
+.aviso_section a {
     font-size: .9rem;
     color: #fff;
     position: relative;
     text-align: center;
     top: 3rem;
-    width: 9rem;
     background-color: var(--color-secondary);
-    padding: 10px;
+    padding: 10px 35px;
 }
 
 .button3:hover {
@@ -1023,11 +1052,11 @@ button p {
         font-size: 25px;
     }
 
-    .button3 {
+    .aviso_section a {
         font-size: 1.2rem;
         top: 3rem;
         width: 11rem;
-        padding: 15px;
+        padding: 15px 60px;
     }
 }
 
@@ -1045,11 +1074,11 @@ button p {
         font-size: 40px;
     }
 
-    .button3 {
-        font-size: 1.5rem;
+    .aviso_section a {
+        font-size: 1.8rem;
         top: 3rem;
         width: 18rem;
-        padding: 15px;
+        padding: 15px 40px;
     }
 }
 
@@ -1067,7 +1096,7 @@ button p {
 
 .h1_ventanas {
     padding: 20px 250px 20px 250px;
-    color: var(--footer);
+    color: #000;
     display: flex;
     font-size: 50px;
     font-weight: 600;
@@ -1078,7 +1107,7 @@ button p {
     font-weight: 400;
     color: #000;
     padding: 20px 250px 20px 250px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /* IMAGENES DE VENTANAS */
@@ -1135,7 +1164,7 @@ button p {
 
     .p_ventanas {
         padding: 20px 400px 20px 400px;
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .img_tdv {
@@ -1146,14 +1175,15 @@ button p {
 @media screen and (max-width: 992px) {
 
     .h1_ventanas {
+        padding: 50px 00px 50px 0px;
         font-size: 80px;
         font-weight: 600;
     }
 
     .p_ventanas {
-        font-weight: 500;
+        font-weight: 400;
         padding: 20px 150px 20px 150px;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .imagenes_ventanas {
@@ -1167,12 +1197,18 @@ button p {
     .img_tdv {
         left: 6rem;
     }
+
+    .titulo_img {
+        font-size: 22px;
+    }
 }
 
 /* ----------------PROVEEDORES---------- */
 .contenedor_divisor {
+    position: relative;
+    top: -10rem;
     width: 100%;
-    height: 300px;
+    height: 100px;
     background-color: #fff;
 }
 
@@ -1216,9 +1252,10 @@ button p {
 
 @media screen and (max-width: 992px) {
     .contenedor_divisor {
+        top: 3rem;
         width: 100%;
         height: 15rem;
-        margin-bottom: 7rem;
+        margin-bottom: 4rem;
     }
 
     .proveedores {
@@ -1354,6 +1391,7 @@ button p {
 
 /* -------- CARD ---------- */
 .card-principal2 {
+    margin-bottom: 10rem;
     background-color: #fff;
     display: grid;
     grid-auto-rows: 29rem;
@@ -2314,12 +2352,12 @@ p a:hover {
 @media screen and (max-width: 992px) {
 
     .footer__copyright {
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
     }
 
     .footer__copyright .footer__link {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -2408,11 +2446,12 @@ p a:hover {
     }
 
     .footer__item {
+        margin-top: 3rem;
         margin-right: 1rem;
     }
 
     .footer__link {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .footer__logo {
