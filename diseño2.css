@@ -344,7 +344,7 @@ nav.open~.overlay {
     display: flex;
     height: 2.4rem;
     background: rgba(238, 238, 238, .3);
-    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.25); */
     position: relative;
 }
 
@@ -614,7 +614,7 @@ nav.open~.overlay {
 .operations__tab {
     /* margin-right: 1rem; */
     /* transform: translateY(-50%); */
-    background-color: #fff;
+    color: #fff;
 }
 
 .operations__tab span {
@@ -625,13 +625,13 @@ nav.open~.overlay {
 }
 
 button p {
-    color: #aaa;
+    color: #fff;
     margin-top: 5px;
     font-size: 12px;
 }
 
 .operations__tab--active {
-    color: #d9d9d9;
+    color: #aaa;
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
@@ -682,22 +682,26 @@ button p {
 }
 
 .btn {
+    background-color: var(--color-footer);
+    border-radius: 10px;
+    margin-top: 1rem;
     width: 15rem;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     flex-direction: column;
     font-family: inherit;
     cursor: pointer;
-    border-bottom: 1px solid #D3D3D3;
+    /* border-bottom: 1px solid #D3D3D3; */
     font-size: 13px;
     font-weight: 400;
     position: relative;
     left: 3rem;
-    padding: 15px;
+    padding: 10px;
 }
 
 .btn:hover {
-    background-color: #eee;
+    color: #fff;
+    background-color: var(--color-footer);
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
@@ -819,6 +823,16 @@ button p {
     }
 }
 
+.productos_publicity {
+    background-image: url(img/publicidad_productos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-color: #fff;
+    width: 60%;
+    margin: 1rem 10rem 4rem 20rem;
+    height: 20rem;
+}
 
 /*////////// GRID VIDRIO////// */
 .grid-container {
@@ -1136,7 +1150,7 @@ button p {
 
 .titulo_img {
     padding: 10px 30px;
-    background-color: var(--color-secondary);
+    background-color: #1677be;
     display: flex;
     margin-top: 1rem;
     color: #fff;
@@ -1206,14 +1220,14 @@ button p {
 /* ----------------PROVEEDORES---------- */
 .contenedor_divisor {
     position: relative;
-    top: -10rem;
+    top: -5rem;
+    margin-bottom: 5rem;
     width: 100%;
     height: 100px;
     background-color: #fff;
 }
 
 .proveedores {
-    margin-bottom: 7rem;
     display: flex;
     position: relative;
     justify-content: center;
@@ -1415,24 +1429,24 @@ button p {
     align-items: center;
     transition: background-position-y 500ms ease;
     background-position: center;
-    background-size: 800px;
+    background-size: 600px;
 }
 
 .card:nth-child(2) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/21.jpg);
     background-position: center;
-    background-size: 800px;
+    background-size: 700px;
 }
 
 .card:nth-child(3) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/26.jpg);
-    background-position: center;
-    background-size: 800px;
+    background-position: top;
+    background-size: 700px;
 }
 
 .card:nth-child(4) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/29.jpg);
-    background-size: 800px;
+    background-size: 700px;
 }
 
 .card:nth-child(5) {
@@ -1450,7 +1464,7 @@ button p {
 .card:nth-child(7) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/17.jpg);
     background-position: center;
-    background-size: 800px;
+    background-size: 600px;
 }
 
 .card:nth-child(8) {
@@ -1459,8 +1473,44 @@ button p {
     background-size: 800px;
 }
 
+.card:nth-child(9) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/12.jpg);
+    background-position: top;
+    background-size: 800px;
+}
+
+.card:nth-child(10) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/19.jpg);
+    background-position: center;
+    background-size: 800px;
+}
+
+.card:nth-child(11) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/28.jpg);
+    background-position: center;
+    background-size: 500px;
+}
+
+.card:nth-child(12) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/31.jpg);
+    background-position: top;
+    background-size: 850px;
+}
+
+.card:nth-child(13) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/Imagen\ de\ WhatsApp\ 2023-04-18\ a\ las\ 15.44.42.jpg);
+    background-position: center;
+    background-size: 600px;
+}
+
+.card:nth-child(14) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/24.jpg);
+    background-position: top;
+    background-size: 500px;
+}
+
 .card:hover {
-    background-position-y: -100px;
+    background-position-y: -50px;
 }
 
 .card-titles {

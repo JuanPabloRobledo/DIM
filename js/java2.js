@@ -40,7 +40,7 @@ sr.reveal('.prueba2', {
 });
 sr.reveal('.prueba5', {
     duration: 1000,
-    origin: 'left',
+    origin: 'top',
     distance: '-200px'
 });
 sr.reveal('.button1', {
