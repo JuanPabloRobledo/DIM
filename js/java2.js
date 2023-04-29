@@ -53,9 +53,29 @@ sr.reveal('.prueba6', {
     origin: 'top',
     distance: '-200px'
 });
+sr.reveal('.prueba9', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '-100px'
+});
 sr.reveal('.button2', {
     duration: 2000,
     origin: 'bottom',
+    distance: '-200px'
+});
+sr.reveal('.button10', {
+    duration: 1500,
+    origin: 'top',
+    distance: '-200px'
+});
+sr.reveal('.prueba11', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '-50px'
+});
+sr.reveal('.prueba12', {
+    duration: 3000,
+    origin: 'top',
     distance: '-200px'
 });
 // sr.reveal('.proveedores', {
