@@ -48,26 +48,11 @@ sr.reveal('.button1', {
     origin: 'left',
     distance: '-200px'
 });
-sr.reveal('.prueba6', {
-    duration: 2000,
-    origin: 'top',
-    distance: '-200px'
-});
-sr.reveal('.prueba9', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '-100px'
-});
-sr.reveal('.button2', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '-200px'
-});
-sr.reveal('.button10', {
-    duration: 1500,
-    origin: 'top',
-    distance: '-200px'
-});
+// sr.reveal('.prueba6', {
+//     duration: 2000,
+//     origin: 'top',
+//     distance: '-200px'
+// });
 sr.reveal('.prueba11', {
     duration: 2000,
     origin: 'bottom',
@@ -77,6 +62,11 @@ sr.reveal('.prueba12', {
     duration: 3000,
     origin: 'top',
     distance: '-200px'
+});
+sr.reveal('.prueba0', {
+    duration: 1500,
+    origin: 'left',
+    distance: '-50px'
 });
 // sr.reveal('.proveedores', {
 //     duration: 1500,
