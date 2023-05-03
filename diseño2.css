@@ -786,7 +786,7 @@ button p {
     }
 
     .operations__content--3 {
-        height: 160rem;
+        height: 110rem;
     }
 
     .operations__content--1 {
@@ -825,7 +825,6 @@ button p {
     .btn {
         width: 25rem;
         height: 5rem;
-        padding: 30px;
     }
 
     .operations__tab span {
@@ -1132,9 +1131,9 @@ button p {
 }
 
 .div_flexbox h1 {
-    margin-left: 8rem;
+    margin-left: 15rem;
     position: relative;
-    top: 20%;
+    top: 25%;
     text-align: left;
     font-weight: 600;
     font-size: 27px;
@@ -1142,7 +1141,7 @@ button p {
 }
 
 .div_flexbox p {
-    margin-left: 8rem;
+    margin-left: 15rem;
     position: relative;
     top: 25%;
     font-size: 15px;
@@ -1151,9 +1150,9 @@ button p {
 }
 
 .div_flexbox ul {
-    margin-left: 8rem;
+    margin-left: 15rem;
     position: relative;
-    top: 25%;
+    top: 30%;
     font-size: 15px;
     display: flex;
     flex-direction: column;
@@ -1176,6 +1175,30 @@ button p {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     width: 90%;
     height: 100%;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .flexbox {
+        height: 30rem;
+    }
+
+    .div_flexbox {
+        height: 30rem;
+    }
+
+    .div_flexbox h1 {
+        margin-left: 15rem;
+        top: 25%;
+        font-size: 30px;
+    }
+
+    .div_flexbox ul {
+        margin-left: 15rem;
+        top: 30%;
+        font-size: 17px;
+    }
+
+
 }
 
 
@@ -1227,7 +1250,7 @@ button p {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .aviso {
-        height: 45rem;
+        height: 35rem;
     }
 
     .aviso_section h1 {
@@ -1341,15 +1364,16 @@ button p {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .imagenes_ventanas {
         display: grid;
+        margin-bottom: 10rem;
         gap: 2rem;
         justify-content: center;
-        grid-template-rows: repeat(3, 340px);
+        grid-template-rows: repeat(2, 300px);
         grid-template-columns: repeat(4, 340px);
     }
 
     .h1_ventanas {
         padding: 20px 400px 20px 400px;
-        font-size: 55px;
+        font-size: 40px;
     }
 
     .p_ventanas {
@@ -2327,7 +2351,7 @@ p a:hover {
 /* ------------------------FOOTER --------------------*/
 .footer {
     padding: 6rem 3rem;
-    background-color: #000;
+    background-color: var(--color-footer);
 }
 
 .footer__nav {
