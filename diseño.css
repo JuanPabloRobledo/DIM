@@ -13,6 +13,7 @@
 }
 
 * {
+    border: none;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -119,7 +120,7 @@ header {
 }
 
 .logo {
-    width: 200px;
+    width: 50px;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
@@ -133,7 +134,7 @@ header {
 .logo-link {
     cursor: pointer;
     position: relative;
-    right: 150px;
+    right: 100px;
 }
 
 .logo-link-nav {
@@ -149,6 +150,7 @@ header {
 }
 
 li {
+    position: relative;
     display: inline-block;
 }
 
@@ -169,10 +171,45 @@ li {
 }
 
 .boton:hover {
+    cursor: pointer;
     color: var(--color-secondary);
 }
 
+/* SUBLIST*/
+.sublist {
+    position: absolute;
+    background: #fff;
+    width: 130%;
+    margin-top: .5rem;
+    display: none;
+    transition: all 1.5s;
+}
 
+.sublist li a {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', serif;
+    display: block;
+    padding: 15px;
+    color: #000;
+}
+
+.list li:hover .sublist {
+    display: block;
+}
+
+.sublist li a:hover {
+    color: var(--color-secondary)
+}
+
+.bxs-chevron-down {
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+/* NAV */
 nav {
     background-color: #fff;
     position: fixed;
@@ -195,7 +232,7 @@ nav .logo {
     background-color: transparent;
     padding: 6px;
     margin-left: 20%;
-    gap: 20%;
+    gap: 30%;
     display: flex;
     transition: .9s;
     width: 80%;
@@ -306,7 +343,6 @@ li{
     color: #D3D3D3;
 }
 */
-
 .lists {
     margin-top: 10rem;
     list-style: none;
@@ -637,9 +673,9 @@ nav.open~.overlay {
 }
 
 .grid-item:nth-child(5) {
-    background-image: url(img/aluminio-aluar.jpg);
+    background-image: url(img/xxx.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
 }
 
@@ -992,9 +1028,8 @@ nav.open~.overlay {
     width: 100%;
     height: 450px;
     position: relative;
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/2.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/20.jpg);
     object-fit: cover;
-    background-size: 800px;
     padding: 1rem;
     overflow: hidden;
     display: flex;
@@ -1002,7 +1037,7 @@ nav.open~.overlay {
     align-items: center;
     transition: background-position-y 500ms ease;
     background-position: center;
-    background-size: 800px;
+    background-size: 1000px;
 }
 
 .card:nth-child(2) {
@@ -1020,6 +1055,7 @@ nav.open~.overlay {
 .card:nth-child(4) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/29.jpg);
     background-size: 800px;
+    background-position: center;
 }
 
 .card:nth-child(5) {
@@ -1037,7 +1073,7 @@ nav.open~.overlay {
 .card:nth-child(7) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/17.jpg);
     background-position: center;
-    background-size: 800px;
+    background-size: 900px;
 }
 
 .card:nth-child(8) {
