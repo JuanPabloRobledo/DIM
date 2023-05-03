@@ -661,12 +661,14 @@ nav.open~.overlay {
     .productos_titulo_img {
         flex-direction: row;
         position: relative;
-        top: 6.5rem;
-        left: 0rem;
+        top: 9.5rem;
+        ;
     }
 
     .productos_titulo_img1 {
-        width: 300px;
+        width: 200px;
+        position: relative;
+        left: 10rem;
     }
 }
 
@@ -822,7 +824,7 @@ button p {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .btn {
         width: 25rem;
-        height: 8rem;
+        height: 5rem;
         padding: 30px;
     }
 
