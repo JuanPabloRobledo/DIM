@@ -1030,7 +1030,7 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -1469,6 +1469,9 @@ nav.open~.overlay {
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
+    .titulo_h2 {
+        font-size: 19px;
+    }
 
     .info {
         display: flex;
@@ -1553,7 +1556,7 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .nuestros_productos-h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
