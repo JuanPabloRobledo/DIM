@@ -125,7 +125,7 @@ header {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .logo {
-        width: 300px;
+        width: 50px;
     }
 
 }
@@ -166,7 +166,7 @@ li {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .boton {
-        font-size: 19px;
+        font-size: 17px;
     }
 }
 
