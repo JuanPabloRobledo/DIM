@@ -209,6 +209,16 @@ li {
     top: 3px;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .sublist {
+        width: 110%;
+    }
+
+    .sublist li a {
+        font-size: 17px;
+    }
+}
+
 /* NAV */
 nav {
     background-color: #fff;

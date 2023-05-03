@@ -211,14 +211,12 @@ li {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .sublist {
-        position: absolute;
-        background: #fff;
         width: 110%;
-        margin-top: .5rem;
-        display: none;
-        transition: all 1.5s;
     }
 
+    .sublist li a {
+        font-size: 17px;
+    }
 }
 
 /* NAV */
