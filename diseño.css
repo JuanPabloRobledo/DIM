@@ -570,15 +570,17 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .banner-h1 {
+        margin-left: 10rem;
+        justify-content: left;
         bottom: 60vh;
     }
 
     .banner-text h1 {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     .banner-text h2 {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .button1 {
@@ -697,28 +699,32 @@ nav.open~.overlay {
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
+    .grid-item:first-child {
+        margin-top: 0rem;
+    }
+
     .grid-container {
         justify-content: center;
         margin: 0 12rem 0 12rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr 600px);
-        grid-template-rows: repeat(3, 23rem);
+        grid-template-rows: repeat(3, 17rem);
         gap: 1.5rem;
     }
 
     .button2 {
-        top: 16rem;
+        top: 13rem;
         font-size: 1.2rem;
         padding: 15px 30px;
     }
 
     .grid-item:first-child div h1 {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 1rem;
     }
 
     .grid-item:first-child div h2 {
-        font-size: 25px;
+        font-size: 19px;
     }
 }
 
@@ -808,16 +814,16 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .aviso {
-        height: 45rem;
+        height: 30rem;
     }
 
     .aviso_section h1 {
         padding: 2rem;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .aviso_section p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .button3 {
@@ -903,7 +909,6 @@ nav.open~.overlay {
     /* transform: translateY(-66%); */
 }
 
-
 .operations__content {
     display: none;
     font-size: 1.7rem;
@@ -966,6 +971,44 @@ nav.open~.overlay {
     height: 32rem;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .operations__tab {
+        margin-top: 1rem;
+        font-size: 19px;
+    }
+
+    .operations {
+        height: 50rem;
+        margin: 4rem auto 0 auto;
+        background-color: #fff;
+    }
+
+    .img_flexbox {
+        height: 40rem;
+    }
+
+    .div_flexbox h1 {
+        margin-left: 13rem;
+        position: relative;
+        top: 30%;
+        text-align: left;
+        font-weight: 600;
+        font-size: 35px;
+        color: #000;
+    }
+
+    .div_flexbox h2 {
+        top: 30%;
+        font-size: 16px;
+    }
+
+    .div_flexbox ul {
+        margin-left: 13rem;
+        position: relative;
+        top: 35%;
+        font-size: 16px;
+    }
+}
 
 /* --------PRODUCTOS H1----------------- */
 .productos {
@@ -1018,7 +1061,7 @@ nav.open~.overlay {
     .card-principal {
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
         gap: 0rem;
-        grid-auto-rows: 39rem;
+        grid-auto-rows: 34rem;
     }
 }
 
@@ -1143,9 +1186,8 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .card {
-        max-width: 450px;
         width: 100%;
-        height: 600px;
+        height: 500px;
         background-size: 800px;
         padding: 1rem;
         overflow: hidden;
@@ -1154,12 +1196,12 @@ nav.open~.overlay {
         align-items: center;
         transition: background-position-y 500ms ease;
         background-position: center;
-        background-size: 800px;
+        background-size: 1000px;
     }
 
     .card:nth-child(2) {
 
-        background-size: 1000px;
+        background-size: 900px;
     }
 
     .card:nth-child(3) {
@@ -1277,7 +1319,7 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .link_a_productos {
-        margin-top: 7rem;
+        margin-top: 3rem;
     }
 
     .button4 {
@@ -1309,7 +1351,7 @@ nav.open~.overlay {
 
 /* ////// SOBRE NOSOTROS /////////////// */
 .section_us {
-    back width: 100%;
+    width: 100%;
     height: 20rem;
     display: flex;
 }
@@ -1340,6 +1382,26 @@ nav.open~.overlay {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .section_us {
+        height: 25rem;
+    }
+
+    .us_h1 {
+        font-size: 35px;
+        text-align: left;
+        margin: 3rem 0 0rem 12rem;
+    }
+
+    .us p {
+        margin: 3rem 1rem 0rem 12rem;
+        font-size: 16px;
+        font-weight: 300;
+        color: #000;
+        text-align: left;
+    }
 }
 
 /* ////////// INFO //////// */
@@ -1412,8 +1474,8 @@ nav.open~.overlay {
         display: flex;
         justify-content: center;
         position: relative;
-        left: 20vh;
-        top: 15vh;
+        left: 10vh;
+        top: 0vh;
         width: 80%;
         height: 40vh;
 
@@ -1426,20 +1488,16 @@ nav.open~.overlay {
 
     .info_div h1 {
         margin-top: 1rem;
-        font-weight: 500;
         font-size: 30px;
     }
 
     .info_div p {
-        color: #999;
-        font-weight: 500;
         margin-top: 1rem;
         font-size: 16px;
     }
 
     .info_icon {
-        color: var(--color-secondary);
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
