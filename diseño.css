@@ -1407,10 +1407,6 @@ nav.open~.overlay {
 /* ////////// INFO //////// */
 
 .section_info {
-    /* background-image: url(img/fondoparadim6.jpg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 55vh;
     background-color: #fff;
     width: 100%;
@@ -1471,6 +1467,10 @@ nav.open~.overlay {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .titulo_h2 {
         font-size: 19px;
+    }
+
+    .section_info {
+        height: 45vh;
     }
 
     .info {
