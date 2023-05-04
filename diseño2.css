@@ -2301,7 +2301,7 @@ button p {
     margin-top: 1rem;
     color: #000;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .titulos h2 {
@@ -2327,6 +2327,7 @@ button p {
     grid-template-columns: repeat(1, 30% 1fr);
     grid-template-rows: 14rem;
     gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 /* PRIMER GRID */
@@ -2356,7 +2357,7 @@ button p {
 
 /* SEGUNDO GRID */
 .grid-part:nth-child(2) {
-    border-top: 1px solid #999;
+    border-left: 1px solid #999;
     background-color: #fff;
 }
 
@@ -2374,16 +2375,18 @@ button p {
 }
 
 .info_div h1 {
-    color: rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    color: #000;
     font-weight: 500;
     font-size: 17px;
 }
 
 .info_icon {
+    background-color: rgb(172, 225, 175);
     clip-path: circle(50% at 50% 50%);
-    color: var(--color-primary);
+    color: #fff;
     font-size: 40px;
-    padding: 10px;
+    padding: 15px;
 }
 
 /* MAPA */
@@ -2398,7 +2401,7 @@ button p {
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(1, 30% 1fr);
-        grid-template-rows: 10rem;
+        grid-template-rows: 15rem;
         gap: 1.5rem;
     }
 
@@ -2406,7 +2409,7 @@ button p {
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(1, 30% 1fr);
-        grid-template-rows: 12rem;
+        grid-template-rows: 15rem;
         gap: 1.5rem;
     }
 
