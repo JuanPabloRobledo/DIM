@@ -232,6 +232,13 @@ nav {
     z-index: 10;
 }
 
+@media screen and (max-width: 992px) {
+    .abajo {
+        transition: .7s;
+        background-color: ;
+    }
+}
+
 nav .logo {
     display: flex;
     align-items: center;
@@ -249,6 +256,14 @@ nav .logo {
     top: 0;
     left: 0;
     z-index: 10;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-up {
+        margin-left: 15%;
+        width: 60%;
+    }
+
 }
 
 .sidebar .material-symbols-outlined {
@@ -1713,15 +1728,15 @@ nav.open~.overlay {
     }
 
     .logo {
-        width: 400px;
+        width: 80px;
     }
 
     nav {
-        height: 11rem;
+        height: 9rem;
     }
 
     nav.abajo {
-        height: 10rem;
+        height: 7rem;
     }
 
     li.list {

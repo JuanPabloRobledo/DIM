@@ -130,7 +130,6 @@ header {
 
 }
 
-
 .logo-link {
     cursor: pointer;
     position: relative;
@@ -1468,7 +1467,7 @@ button p {
 }
 
 .section_body_first {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -1509,7 +1508,7 @@ button p {
     }
 
     .section_body_first {
-        height: 40vh;
+        height: 30vh;
         width: 100%;
     }
 }
