@@ -250,6 +250,14 @@ nav .logo {
     z-index: 10;
 }
 
+@media screen and (max-width: 992px) {
+    .nav-up {
+        margin-left: 15%;
+        width: 60%;
+    }
+
+}
+
 .sidebar .material-symbols-outlined {
     color: #fff;
 }
@@ -372,7 +380,7 @@ li{
     padding: 30px;
     position: relative;
     z-index: 2;
-    border-left: 10px solid var(--color-secondary);
+    border-left: 10px solid var(--color-primary);
     text-decoration: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -399,7 +407,7 @@ li{
 
 .link:hover:after {
     width: 100%;
-    background: var(--color-secondary);
+    background: var(--color-primary);
 }
 
 /* .list2:first-child .link:after {
@@ -598,7 +606,7 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 {
-    color: rgb(189, 218, 87);
+    color: ;
     font-size: 30px;
     font-weight: 700;
     margin-left: 9rem;
@@ -2499,15 +2507,15 @@ button p {
     }
 
     .logo {
-        width: 400px;
+        width: 80px;
     }
 
     nav {
-        height: 11rem;
+        height: 9rem;
     }
 
     nav.abajo {
-        height: 10rem;
+        height: 7rem;
     }
 
     li.list {

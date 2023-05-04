@@ -388,7 +388,7 @@ li{
     padding: 30px;
     position: relative;
     z-index: 2;
-    border-left: 10px solid var(--color-secondary);
+    border-left: 10px solid var(--color-primary);
     text-decoration: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -415,7 +415,7 @@ li{
 
 .link:hover:after {
     width: 100%;
-    background: var(--color-secondary);
+    background: var(--color-primary);
 }
 
 /* .list2:first-child .link:after {
@@ -620,8 +620,8 @@ nav.open~.overlay {
     }
 
     .button1 {
-        font-size: 22px;
-        padding: 15px 40px;
+        font-size: 30px;
+        padding: 15px 50px;
         top: 50px;
     }
 }
@@ -754,13 +754,10 @@ nav.open~.overlay {
     }
 
     .grid-item:first-child div {
-        position: relative;
-        left: 1rem;
-        top: 4rem;
+        left: 0rem;
     }
 
     .grid-item:first-child div h1 {
-        text-align: left;
         font-size: 50px;
         margin-top: 1rem;
     }
@@ -771,10 +768,10 @@ nav.open~.overlay {
     }
 
     .button2 {
-        margin-left: -2rem;
+        margin-left: -3rem;
         top: 3rem;
-        font-size: 9px;
-        padding: 15px 10px;
+        font-size: 30px;
+        padding: 15px 30px;
     }
 }
 
@@ -856,13 +853,12 @@ nav.open~.overlay {
 
     .aviso_section h1 {
         padding: 2rem;
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .aviso_section p {
         padding: 2rem;
-        margin-top: 1rem;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .button3 {
@@ -932,6 +928,17 @@ nav.open~.overlay {
 .operations__content--active {
     display: grid;
 
+}
+
+@media screen and (max-width: 992px) {
+    .operations__tab {
+        font-size: 40px;
+        margin-top: 4rem;
+    }
+
+    .operations {
+        height: 100rem;
+    }
 }
 
 /* FLEXBOX */
@@ -1025,6 +1032,58 @@ nav.open~.overlay {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .flexbox {
+        height: 80rem;
+        flex-direction: column;
+    }
+
+    .div_flexbox {
+        width: 100%;
+        height: 50%;
+    }
+
+    .div_flexbox h1 {
+        top: 0%;
+        padding: 0px 50px 0 50px;
+        margin-left: -1rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 45px;
+        color: #000;
+    }
+
+    .div_flexbox h2 {
+        padding: 50px;
+        top: 5%;
+        margin-top: 0rem;
+        margin-left: 2rem;
+        font-size: 30px;
+    }
+
+    .div_flexbox ul {
+        font-weight: 500;
+        padding: 50px;
+        margin-left: 2rem;
+        top: 5%;
+        font-size: 30px;
+
+    }
+
+    .bxs-circle {
+        color: var(--color-primary);
+        margin-right: 6px;
+    }
+
+    .img_flexbox {
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        height: 100%;
+    }
+}
+
 /* --------PRODUCTOS H1----------------- */
 .productos {
     margin-top: 3rem;
@@ -1051,9 +1110,10 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .productos_h1 {
-        font-size: 50px;
+        font-weight: 600;
+        font-size: 60px;
         margin: 5rem;
-        margin-left: 17rem;
+        margin-left: 9rem;
     }
 
     .productos {
@@ -1265,7 +1325,7 @@ nav.open~.overlay {
         align-items: center;
         transition: background-position-y 500ms ease;
         background-position: center;
-        background-size: 800px;
+        background-size: 1200px;
     }
 
     .card:nth-child(2) {
@@ -1357,7 +1417,7 @@ nav.open~.overlay {
         font-size: 30px;
         width: 25rem;
         font-weight: 500;
-        padding: 10px 30px;
+        padding: 15px 30px;
         position: relative;
         text-align: center;
     }
@@ -1416,6 +1476,42 @@ nav.open~.overlay {
         font-weight: 300;
         color: #000;
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section_us {
+        margin-top: 5rem;
+        height: 60rem;
+        flex-direction: column;
+    }
+
+    .us {
+        height: 50%;
+        width: 100%;
+    }
+
+    .us_h1 {
+        font-weight: 600;
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .us p {
+        margin: 0;
+        padding: 50px;
+        font-size: 30px;
+        font-weight: 400;
+        color: #000;
+        text-align: left;
+    }
+
+    .us_img {
+        width: 100%;
+        height: 50%;
     }
 }
 
@@ -1520,6 +1616,16 @@ nav.open~.overlay {
 }
 
 @media screen and (max-width: 992px) {
+    .titulo_h2 {
+        color: var(--color-primary);
+        font-size: 35px;
+        font-weight: 600;
+        display: flex;
+        margin-left: 0;
+        justify-content: center;
+        position: relative;
+        top: 0;
+    }
 
     .section_info {
         height: 80vh;
@@ -1555,32 +1661,6 @@ nav.open~.overlay {
         font-size: 60px;
     }
 
-}
-
-/* ///////////PRODUCTOS EN VENTA///////// */
-
-.nuestros_productos-h1 {
-    text-align: left;
-    font-size: 30px;
-    font-weight: 500;
-    margin-left: 12.3rem;
-    position: relative;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {
-    .nuestros_productos-h1 {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .nuestros_productos-h1 {
-        text-align: center;
-        margin-left: 0rem;
-        top: 0rem;
-    }
 }
 
 /* /////////////////// PROVEEDORES /////////////////  */
@@ -1629,11 +1709,11 @@ nav.open~.overlay {
         gap: 2rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 6rem);
+        grid-template-rows: repeat(2, 9rem);
     }
 
     .img_proveedores {
-        width: 100px;
+        width: 150px;
     }
 }
 
