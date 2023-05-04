@@ -1112,8 +1112,9 @@ nav.open~.overlay {
     .productos_h1 {
         font-weight: 600;
         font-size: 60px;
-        margin: 5rem;
-        margin-left: 9rem;
+        margin: 1rem 0 5rem 0;
+        display: flex;
+        justify-content: center;
     }
 
     .productos {
@@ -1618,7 +1619,7 @@ nav.open~.overlay {
 @media screen and (max-width: 992px) {
     .titulo_h2 {
         color: var(--color-primary);
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 600;
         display: flex;
         margin-left: 0;

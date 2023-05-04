@@ -606,7 +606,7 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 {
-    color: ;
+    color: rgb(189, 218, 87);
     font-size: 30px;
     font-weight: 700;
     margin-left: 9rem;
@@ -793,7 +793,7 @@ button p {
     }
 
     .operations__content--3 {
-        height: 110rem;
+        height: 125rem;
     }
 
     .operations__content--1 {
@@ -934,11 +934,11 @@ button p {
     }
 
     .operations__content--3 {
-        height: 830rem;
+        height: 340rem;
     }
 
     .operations__content--1 {
-        height: 480rem;
+        height: 590rem;
     }
 
     .operations__content--2 {
@@ -1121,90 +1121,122 @@ button p {
 
 
 /* FLEXBOX PUERTAS */
-.flexbox {
-    display: flex;
-    width: 100%;
-    height: 25rem;
-}
-
-.f12 {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.div_flexbox {
-    height: 25rem;
-    width: 50%;
-}
-
-.div_flexbox h1 {
-    margin-left: 15rem;
+.grid-madre {
+    width: 90%;
     position: relative;
-    top: 25%;
-    text-align: left;
-    font-weight: 600;
-    font-size: 27px;
-    color: #000;
+    left: 10%;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(4, 25rem);
+    grid-template-columns: repeat(2, 50%);
 }
 
-.div_flexbox p {
-    margin-left: 15rem;
-    position: relative;
-    top: 25%;
-    font-size: 15px;
-    padding-right: 20px;
-    display: flex;
-}
-
-.div_flexbox ul {
-    margin-left: 15rem;
-    position: relative;
-    top: 30%;
-    font-size: 15px;
+.grid-puertas {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.grid-info {
+    position: relative;
+    margin: 0 auto;
+}
+
+.grid-puertas h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-footer);
+}
+
+.grid-puertas ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .bxs-circle {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     margin-right: 6px;
 }
 
-.img_flexbox {
-    margin-left: 3rem;
+.img_puertas1 {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
-.img_flexbox1 {
-    margin-left: 8rem;
+.img_puertas2 {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-    .flexbox {
-        height: 30rem;
+    .grid-madre {
+        grid-template-rows: repeat(4, 35rem);
+        grid-template-columns: repeat(2, 50%);
     }
 
-    .div_flexbox {
-        height: 30rem;
+    .grid-puertas h1 {
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--color-footer);
     }
 
-    .div_flexbox h1 {
-        margin-left: 15rem;
-        top: 25%;
+    .grid-puertas ul {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .grid-madre {
+        left: 0%;
+        width: 100%;
+        grid-template-rows: repeat(4, 35rem);
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .grid-info {}
+
+    .grid-puertas h1 {
+        font-size: 60px;
+        font-weight: 600;
+        color: var(--color-footer);
+    }
+
+    .grid-puertas ul {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
         font-size: 30px;
+        font-weight: 400;
     }
 
-    .div_flexbox ul {
-        margin-left: 15rem;
-        top: 30%;
-        font-size: 17px;
+    .img_puertas1 {
+        clip-path: polygon(0 0, 70% 0, 100% 100%, 21% 100%);
+        width: 100%;
+        height: 100%;
     }
 
+    .img_puertas2 {
+        clip-path: polygon(22% 0, 100% 0, 78% 100%, 0 100%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-madre>.grid-puertas:nth-child(3) {
+        grid-row: 4;
+    }
+
+    .grid-madre>.grid-puertas:nth-child(7) {
+        grid-row: 8;
+    }
 
 }
 
@@ -1328,6 +1360,26 @@ button p {
     font-size: 15px;
 }
 
+@media screen and (max-width: 992px) {
+
+    .h1_ventanas {
+        padding: 40px;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    .p_ventanas {
+        text-align: left;
+        font-weight: 400;
+        color: #000;
+        padding: 70px;
+        font-size: 20px;
+    }
+}
+
 /* IMAGENES DE VENTANAS OLD */
 /* .imagenes_ventanas {
     display: grid;
@@ -1392,7 +1444,16 @@ button p {
 
 @media (min-width: 1920px) and (max-width: 2560px) {}
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .imagenes_ventanas {
+        display: grid;
+        gap: 1rem;
+        justify-content: center;
+        grid-template-rows: repeat(2, 900px);
+        grid-template-columns: repeat(1, 900px);
+        margin-bottom: 5rem;
+    }
+}
 
 /* ----------------PROVEEDORES---------- */
 
@@ -1451,11 +1512,11 @@ button p {
         gap: 2rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 6rem);
+        grid-template-rows: repeat(2, 9rem);
     }
 
     .img_proveedores {
-        width: 100px;
+        width: 150px;
     }
 }
 
