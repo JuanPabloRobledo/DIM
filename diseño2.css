@@ -1585,9 +1585,10 @@ button p {
 @media screen and (max-width: 992px) {
     .background-1 {
         flex-direction: column;
-        left: 5vh;
+        display: flex;
+        justify-content: center;
         top: 10rem;
-        width: 80%;
+        width: 90%;
     }
 
     .background-1-section {
@@ -1596,15 +1597,16 @@ button p {
 
     .background-1-section div {
         top: 0rem;
+        text-align: center;
     }
 
     .background-1-section div h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .background-1-section div h3 {
-        margin-top: -10rem;
-        font-size: 90px;
+        margin-top: 2rem;
+        font-size: 60px;
         font-weight: 600;
     }
 
@@ -1834,16 +1836,8 @@ button p {
         max-width: 40rem;
         width: 100%;
         height: 40rem;
-        position: relative;
-        background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/2.jpg);
-        object-fit: cover;
         background-size: 800px;
         padding: 1rem;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-position-y 500ms ease;
         background-position: center;
         background-size: 800px;
     }
@@ -2010,6 +2004,90 @@ button p {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .section_us {
+        margin: 0rem;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_us2 {
+        flex-direction: row-reverse;
+        height: 80vh;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo_h2 {
+        color: var(--color-primary);
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .us {
+        margin-top: 5rem;
+        height: 100%;
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .us_h1 {
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .us p {
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    .us_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .us_img2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text_us {
+        text-align: center;
+        margin-top: 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 180vh;
+    }
+
+    .text_us1 {
+        width: 100%;
+    }
+
+    .text_us1 h1 {
+        font-size: 50px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        margin: 4rem;
+    }
+
+    .text_us1 p {
+        font-weight: 300;
+        font-size: 35px;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .text_img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /* OPINIONES GENERAL //////////////// */
 .container-opinion {
     width: 100%;
@@ -2025,6 +2103,24 @@ button p {
     width: 40rem;
     position: relative;
     top: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+    .container-opinion {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-div-opinion {
+        width: 100%;
+    }
+
+    .img_opinion {
+        width: 100%;
+        position: relative;
+        top: 0rem;
+    }
 }
 
 /* OPINIONES */
@@ -2060,6 +2156,37 @@ button p {
     line-height: 1.3;
     font-weight: 500;
     color: #666;
+}
+
+@media screen and (max-width: 992px) {
+    .section {
+        padding: 0 7rem;
+        text-align: left;
+        transition: transform 1s;
+        opacity: 1s;
+    }
+
+    .section__title {
+        text-align: center;
+        position: relative;
+        top: 3rem;
+        margin: 0 auto 1rem auto;
+    }
+
+    .section__description {
+        font-size: 17px;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--color-primary);
+    }
+
+    .section__header {
+        font-size: 35px;
+        line-height: 1.3;
+        font-weight: 500;
+        color: #666;
+    }
 }
 
 /* SLIDER */
