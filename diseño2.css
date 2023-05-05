@@ -2014,7 +2014,7 @@ button p {
 
     .section_us2 {
         flex-direction: row-reverse;
-        height: 80vh;
+        height: 100vh;
         margin: 0rem;
         display: flex;
         flex-direction: column;
@@ -2022,24 +2022,31 @@ button p {
 
     .titulo_h2 {
         color: var(--color-primary);
-        font-size: 40px;
+        font-size: 60px;
         font-weight: 600;
     }
 
     .us {
         margin-top: 5rem;
         height: 100%;
-        padding: 50px;
+        padding: 0px;
         text-align: center;
         width: 100%;
     }
 
     .us_h1 {
-        font-weight: 500;
-        font-size: 40px;
+        position: relative;
+        top: 4rem;
+        font-weight: 600;
+        font-size: 100px;
     }
 
     .us p {
+        height: 110%;
+        padding: 80px;
+        background-color: var(--color-primary);
+        width: 100%;
+        color: #fff;
         font-size: 35px;
         font-weight: 300;
     }
@@ -2068,18 +2075,22 @@ button p {
     }
 
     .text_us1 h1 {
-        font-size: 50px;
+        position: relative;
+        top: 5rem;
+        font-size: 74px;
         font-weight: 600;
         display: flex;
         justify-content: center;
-        margin: 4rem;
+        margin: 2rem;
     }
 
     .text_us1 p {
+        background-color: var(--color-primary);
+        color: #fff;
         font-weight: 300;
         font-size: 35px;
         margin: 0;
-        padding: 30px;
+        padding: 50px;
     }
 
     .text_img {
