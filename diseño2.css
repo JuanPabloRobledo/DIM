@@ -1,7 +1,7 @@
 :root {
-    --color-primary: rgb(0, 128, 0);
+    --color-primary: #00502f;
     --color-secondary: rgb(1, 196, 1);
-    --color-tertiary: #ff585f;
+    --color-tertiary: rgb(0, 128, 0);
     --color-primary-darker: #18191b;
     --color-secondary-darker: #ffbb00;
     --color-tertiary-darker: #fd424b;
@@ -607,7 +607,7 @@ nav.open~.overlay {
 
 .productos_titulo_h1 {
     color: rgb(189, 218, 87);
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
     margin-left: 9rem;
     /* padding-top: 1rem; */
@@ -1883,15 +1883,15 @@ button p {
 
 /* ////// SOBRE NOSOTROS /////////////// */
 .section_us {
-    margin: 0rem 10rem 0 10rem;
-    height: 25rem;
+    background-color: #fff;
+    height: 30rem;
     display: flex;
 }
 
 .section_us2 {
+    background-color: #fff;
     flex-direction: row-reverse;
-    height: 25rem;
-    margin: 0 10rem 0 10rem;
+    height: 30rem;
     display: flex;
 }
 
@@ -1902,13 +1902,14 @@ button p {
 }
 
 .us {
-    padding: 70px;
+    padding: 120px;
     text-align: center;
     width: 50%;
 }
 
 .us_h1 {
-    font-weight: 500;
+    color: #000;
+    font-weight: 600;
     font-size: 30px;
 }
 
@@ -2018,9 +2019,11 @@ button p {
         height: 80vh;
         display: flex;
         flex-direction: column;
+        background-color: #fff;
     }
 
     .section_us2 {
+        background-color: #fff;
         flex-direction: row-reverse;
         height: 100vh;
         margin: 0rem;
@@ -2043,10 +2046,11 @@ button p {
     }
 
     .us_h1 {
+        color: #000;
         position: relative;
-        top: 4rem;
+        top: 0rem;
         font-weight: 600;
-        font-size: 100px;
+        font-size: 68px;
     }
 
     .us p {
@@ -2086,7 +2090,7 @@ button p {
         background-color: transparent;
         color: #000;
         position: relative;
-        top: 7rem;
+        top: 0rem;
         font-size: 68px;
         font-weight: 600;
         display: flex;
