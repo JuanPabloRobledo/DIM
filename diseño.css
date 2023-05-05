@@ -1678,6 +1678,7 @@ nav.open~.overlay {
 
 .img_proveedores {
     width: 90px;
+    filter: grayscale(.3);
 }
 
 
