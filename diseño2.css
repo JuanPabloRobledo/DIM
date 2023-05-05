@@ -1903,7 +1903,7 @@ button p {
 
 .us {
     padding: 70px;
-    text-align: left;
+    text-align: center;
     width: 50%;
 }
 
@@ -1950,10 +1950,14 @@ button p {
 }
 
 .text_us1 h1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
     font-size: 30px;
     font-weight: 500;
     position: relative;
-    margin-left: 7rem;
+    padding: 40px;
     margin-bottom: 3rem;
 }
 
@@ -2079,9 +2083,11 @@ button p {
     }
 
     .text_us1 h1 {
+        background-color: transparent;
+        color: #000;
         position: relative;
-        top: 5rem;
-        font-size: 74px;
+        top: 7rem;
+        font-size: 68px;
         font-weight: 600;
         display: flex;
         justify-content: center;
