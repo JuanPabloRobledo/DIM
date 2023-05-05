@@ -2005,6 +2005,10 @@ button p {
 }
 
 @media screen and (max-width: 992px) {
+    .elementor_divider {
+        display: none;
+    }
+
     .section_us {
         margin: 0rem;
         height: 80vh;
