@@ -85,3 +85,26 @@ sr.reveal('.banner-h1-3', {
 });
 
 
+/* ///////// Script de formulario /////*/
+
+const btnEnvio = document.getElementById('enviarCorreo');
+btnEnvio.addEventListener('click', function (e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const nombre = document.getElementById('nombre').value;
+    const mensaje = document.getElementById('mensaje').value;
+    const asunto = document.getElementById('asunto').value;
+    window.location.href = `mailto:aberturasdim@gmail.com?
+subject=Consulta&body=Nombre%3A${nombre}%0AEmail%3A${email}%0AAsunto%3A${asunto}%0AMensaje%3A${mensaje}`;
+});
+
+const btnEnvio2 = document.getElementById('enviarCorreo2');
+btnEnvio2.addEventListener('click', function (e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const nombre = document.getElementById('nombre').value;
+    const mensaje = document.getElementById('mensaje').value;
+    const asunto = document.getElementById('asunto').value;
+    window.location.href = `mailto:dvhdim@gmail.com?
+subject=Consulta&body=Nombre%3A${nombre}%0AEmail%3A${email}%0AAsunto%3A${asunto}%0AMensaje%3A${mensaje}`;
+});
