@@ -2497,6 +2497,8 @@ button p {
 
 /* ///////////////////// PAGINA CONTACT US ////////// */
 /* SECTION CONTACT*/
+.bodyContacto {}
+
 .section_contact {
     display: flex;
     height: 100vh;
@@ -2508,7 +2510,7 @@ button p {
 
 .sectionsInContact h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--color-footer);
     margin-top: 5rem;
@@ -2528,7 +2530,7 @@ form {
 input,
 textarea {
     font-family: 'Roboto Condensed', serif;
-    border-bottom: 2px solid #999;
+    border-bottom: 2px solid rgb(112, 128, 144, .2);
     margin: 15px;
     padding: 10px;
     font-size: 14px;
@@ -2539,7 +2541,7 @@ input[type="submit"] {
     border: none;
     margin-bottom: 15px;
     margin-top: 5px;
-    margin-left: 5rem;
+    margin-left: 6rem;
     width: 12rem;
     color: #fff;
     background-color: var(--color-primary);
@@ -2569,34 +2571,31 @@ textarea {
 }
 
 .infoGeneral div {
-    position: relative;
-    top: 2rem;
-    text-align: center;
     margin: 0 auto;
-    width: 50%;
+    left: 2rem;
+    border-left: 1px solid #000;
+    position: relative;
+    top: 4rem;
+    text-align: left;
+    margin: 0 auto;
+    width: 20%;
 }
 
 .infoGeneral div p {
-    margin-top: 1rem;
+    font-family: 'Roboto Condensed', serif;
+    margin-left: 1rem;
     font-size: 13px;
     font-weight: 500;
 }
 
-.bx-support {
-    background-color: #eee;
+.info_icon {
+    background-color: #fff;
     padding: 15px;
     clip-path: circle(50% at 50% 50%);
     color: var(--color-tertiary);
-    font-size: 40px;
+    font-size: 23px;
 }
 
-.bx-current-location {
-    background-color: #eee;
-    padding: 15px;
-    clip-path: circle(50% at 50% 50%);
-    color: var(--color-tertiary);
-    font-size: 40px;
-}
 
 /* MAPA */
 .mapa {
@@ -2616,158 +2615,27 @@ textarea {
 } */
 /*///////////  Division //////////*/
 .datosDeDivision {
+    margin-top: 1rem;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 45vh;
 }
 
-.divisonAluminio {
+.divisionAluminio {
+    border-top: 1px #eee solid;
     width: 50%;
     height: 100%;
 }
 
 .divisionVidrio {
-    border-left: 10px;
+    border-top: 1px #eee solid;
     width: 50%;
     height: 100%;
 }
 
 .logo_division {
     position: relative;
-    left: 40%;
-    top: 5rem;
-}
-
-/* TITULO */
-.titulos {
-    padding: 20px;
-    margin-bottom: 0rem;
-    height: 9rem;
-    top: 2rem;
-    text-align: center;
-}
-
-.titulos h1 {
-    margin-top: 1rem;
-    color: rgb(189, 218, 87);
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.titulos h2 {
-    margin-top: 1rem;
-    color: #000;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-/* SECTION GRID */
-.grid {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(1, 30% 1fr);
-    grid-template-rows: 14rem;
-    gap: 1.5rem;
-}
-
-.grid2 {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(1, 30% 1fr);
-    grid-template-rows: 14rem;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-/* PRIMER GRID */
-.grid-part:first-child {
-    background-color: var(--color-primary);
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.grid-part-div {
-    position: relative;
-    left: 15%;
-}
-
-.grid-part-h1 {
-    color: rgb(189, 218, 87);
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.grid-part-p {
-    margin-top: 1rem;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-/* SEGUNDO GRID */
-.grid-part:nth-child(2) {
-    /* border-left: 1px solid #999; */
-    background-color: #fff;
-}
-
-.info {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    top: 30%;
-}
-
-.info_div {
-    border-left: 1px solid #999;
-    width: 25%;
-}
-
-.info_div h1 {
-    margin-top: 1rem;
-    color: #000;
-    font-weight: 600;
-    font-size: 17px;
-}
-
-.info_icon {
-    background-color: #fff;
-    clip-path: circle(50% at 50% 50%);
-    color: var(--color-primary);
-    font-size: 40px;
-    padding: 15px;
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {
-    .grid {
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(1, 30% 1fr);
-        grid-template-rows: 15rem;
-        gap: 1.5rem;
-    }
-
-    .grid2 {
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(1, 30% 1fr);
-        grid-template-rows: 15rem;
-        gap: 1.5rem;
-    }
-
-    .grid-part-div {
-        position: relative;
-        left: 12%;
-    }
-
-    .grid-part-p {
-        margin-top: 1rem;
-        font-size: 15px;
-        font-weight: 300;
-    }
+    left: 41%;
 
 }
 
