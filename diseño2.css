@@ -1458,17 +1458,10 @@ button p {
 /* ----------------PROVEEDORES---------- */
 
 /* /////////////////// PROVEEDORES /////////////////  */
-.proveedores h1 {
-    margin: 4rem;
-    font-size: 20px;
-    color: #999;
-    text-align: left;
-    margin-left: 14rem;
-}
-
-
 .grid_proveedores {
-    margin: 3rem 10rem 3rem 10rem;
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
     gap: 4rem;
     display: flex;
 }
@@ -1882,6 +1875,20 @@ button p {
 
 /* 
 /* /////////////// PAGINA EMPRESA  ////////////// */
+.productos_titulo_us {
+    background-color: rgb(0, 73, 83);
+    background-image: url(img/fondo5.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgb(5, 144, 51); */
+    /* background-image: linear-gradient(160deg, #1677be 0%, #041c30 100%); */
+    height: 25rem;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
 
 /* ////// SOBRE NOSOTROS /////////////// */
 .productos_titulo2 {
@@ -1933,7 +1940,7 @@ button p {
 
 .us p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: #000;
 }
 
@@ -2015,7 +2022,7 @@ button p {
 
 
     .text_us {
-        height: 60vh;
+        height: 90vh;
     }
 
     .text_us1 p {
@@ -2189,6 +2196,32 @@ button p {
     height: 500px;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+    .h3boxcontent {
+        height: 5rem;
+        width: 12em;
+    }
+
+    .boxcontent {
+        height: 700px;
+        margin-bottom: 3rem;
+        padding-bottom: 80px;
+    }
+
+    .sec2boxcontent {
+        height: 600px;
+        width: 850px;
+    }
+
+    .sec3boxcontent {
+        height: 500px;
+        width: 820px;
+        right: 25em;
+        top: 5em;
+    }
+}
+
 @media screen and (max-width: 992px) {}
 
 /* ///////////////////// PAGINA CONTACT US ////////// */
@@ -2234,6 +2267,7 @@ textarea {
 }
 
 input[type="submit"] {
+    margin-left: 5rem;
     border: none;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -2353,7 +2387,7 @@ textarea {
     input[type="submit"] {
         margin-bottom: 15px;
         margin-top: 5px;
-        margin-left: 6rem;
+        margin-left: 7rem;
         width: 14rem;
     }
 

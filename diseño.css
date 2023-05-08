@@ -1666,7 +1666,9 @@ nav.open~.overlay {
 
 /* /////////////////// PROVEEDORES /////////////////  */
 .grid_proveedores {
-    margin: 3rem 10rem 3rem 10rem;
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
     gap: 4rem;
     display: flex;
 }
@@ -1685,7 +1687,6 @@ nav.open~.overlay {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .grid_proveedores {
         gap: 5rem;
-        margin: 3rem 10rem 3rem 16rem;
     }
 
     .proveedores h1 {
