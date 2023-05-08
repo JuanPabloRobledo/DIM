@@ -2239,11 +2239,12 @@ button p {
 
 .sectionsInContact h1 {
     text-align: center;
+    padding: 40px;
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 700;
     color: #000;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
 }
 
 .sectionsInContact2 {
@@ -2253,7 +2254,7 @@ button p {
 
 form {
     width: 700px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 input,
@@ -2261,7 +2262,7 @@ textarea {
     font-family: 'Roboto Condensed', serif;
     border-bottom: 2px solid rgb(112, 128, 144, .2);
     margin: 15px;
-    padding: 10px;
+    padding: 20px;
     font-size: 14px;
     color: #333;
 }
@@ -2296,38 +2297,42 @@ textarea {
 
 .infoGeneral {
     margin-top: 1rem;
-    width: 100%;
+    width: 80%;
 }
 
 .infoGeneral div {
-    padding: 10px;
+    /* box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12); */
+    margin: 0 auto;
+    padding: 15px;
     display: flex;
     left: 2rem;
-    border-left: 1px solid #999;
     position: relative;
     top: 0rem;
     text-align: left;
-    width: 60%;
-    height: 3rem;
+}
+
+.infoGeneral section {
+    font-family: 'Roboto Condensed', serif;
+    margin-left: 1rem;
 }
 
 .infoGeneral div p {
-    font-family: 'Roboto Condensed', serif;
-    margin-left: 1rem;
-    font-size: 16px;
+    font-size: 13px;
+    margin-top: 5px;
     font-weight: 500;
 }
 
 .infoGeneral span {
     color: #000;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     margin-right: 5px;
 }
 
 .info_icon {
-    color: var(--color-tertiary);
-    font-size: 20px;
+    color: #000;
+    font-size: 25px;
+    margin: auto 0;
 }
 
 
@@ -2348,10 +2353,10 @@ textarea {
 
 /*///////////  Division //////////*/
 .datosDeDivision {
-    margin-top: 1rem;
+    margin-top: 5rem;
     display: flex;
     width: 100%;
-    height: 45vh;
+    height: 60vh;
 }
 
 .divisionAluminio,
