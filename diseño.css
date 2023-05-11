@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb {
     height: 60px;
     bottom: 50vh;
     right: 0px;
-    background-color: #25d366;
+    background-color: var(--color-primary);
     color: #FFF;
     /* border-radius: 50px; */
     text-align: center;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
     height: 60px;
     bottom: 42vh;
     right: 0px;
-    background-color: #25d366;
+    background-color: var(--color-primary);
     color: #FFF;
     /* border-radius: 50px; */
     text-align: center;
@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb {
     width: 180px;
     right: 11.2rem;
     position: relative;
-    background-color: #25d366;
+    background-color: var(--color-primary);
     padding: 19px;
     color: #fff;
     text-decoration: none;
@@ -96,7 +96,7 @@ body::-webkit-scrollbar-thumb {
 .float:hover,
 .float2:hover {
     text-decoration: none;
-    color: #25d366;
+    color: var(--color-primary);
     background-color: #fff;
 }
 
