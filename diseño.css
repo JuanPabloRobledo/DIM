@@ -888,7 +888,6 @@ nav.open~.overlay {
 .operations__tab {
     border: none;
     background-color: #fff;
-    font-family: 'Poppins', sans-serif;
     font-size: 17px;
     font-weight: 600;
     color: var(--color-primary);
@@ -1535,11 +1534,10 @@ nav.open~.overlay {
 
 .info {
     gap: 1rem;
+    text-align: center;
     display: flex;
     justify-content: center;
-    position: relative;
-    text-align: center;
-    left: 20vh;
+    margin: 0 auto;
     width: 80%;
     /* box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.25); */
     height: 50vh;
@@ -1589,7 +1587,6 @@ nav.open~.overlay {
         display: flex;
         justify-content: center;
         position: relative;
-        left: 10vh;
         top: 0vh;
         width: 80%;
         height: 40vh;
@@ -1631,6 +1628,7 @@ nav.open~.overlay {
     .section_info {
         height: 80vh;
         width: 100%;
+        margin-top: 10rem;
         margin-bottom: 20rem;
     }
 

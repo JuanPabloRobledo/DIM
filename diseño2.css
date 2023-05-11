@@ -1877,7 +1877,7 @@ button p {
 /* /////////////// PAGINA EMPRESA  ////////////// */
 .productos_titulo_us {
     background-color: rgb(0, 73, 83);
-    background-image: url(img/image00068.jpeg);
+    background-image: url(img/edificio_fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1891,13 +1891,176 @@ button p {
 
 .texto_inicio {
     width: 100%;
-    text-align: center;
-    padding: 100px;
 }
 
 .texto_inicio p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
+    margin: 5rem;
+    padding-left: 400px;
+    padding-right: 400px;
+    text-align: center;
+}
+
+/* ////////// INFO //////// */
+
+.section_info {
+    height: 60vh;
+    width: 100%;
+}
+
+.section_info h2 {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section_info h3 {
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.titulo_h2 {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12rem;
+    position: relative;
+    top: 2rem;
+}
+
+.info {
+    background-color: rgb(144, 238, 144, .3);
+    width: 80%;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    /* box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.25); */
+    height: 30vh;
+
+}
+
+.info_div {
+    /* background-color: rgba(238, 238, 238, .4); */
+    /* box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12); */
+    padding: 30px;
+    width: 25%;
+}
+
+.info_div h1 {
+    color: #000;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.info_div p {
+    color: #000;
+    font-weight: 400;
+    margin-top: 1rem;
+    font-size: 13px;
+}
+
+.info_icons {
+    clip-path: circle(50% at 50% 50%);
+    color: #000;
+    font-size: 40px;
+    padding: 20px;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .texto_inicio p {
+        margin: 0rem;
+        padding-left: 500px;
+        padding-right: 500px;
+        text-align: center;
+    }
+
+    .titulo_h2 {
+        font-size: 19px;
+    }
+
+    .section_info {
+        height: 45vh;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0vh;
+        height: 30vh;
+
+    }
+
+    .info_div {
+        padding: 40px;
+        width: 25%;
+    }
+
+    .info_div h1 {
+        margin-top: 1rem;
+        font-size: 30px;
+    }
+
+    .info_div p {
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+
+    .info_icon {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .titulo_h2 {
+        color: var(--color-primary);
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        margin-left: 0;
+        justify-content: center;
+        position: relative;
+        top: 0;
+    }
+
+    .section_info {
+        height: 80vh;
+        width: 100%;
+        margin-bottom: 20rem;
+    }
+
+    .info {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        left: 5vh;
+        top: 5vh;
+        width: 80%;
+        height: 80vh;
+
+    }
+
+    .info_div {
+        padding: 70px;
+        width: 100%;
+    }
+
+    .info_div h1 {
+        font-size: 35px;
+    }
+
+    .info_div p {
+        font-size: 30px;
+    }
+
+    .info_icon {
+        font-size: 60px;
+    }
+
 }
 
 .section_us2 {
@@ -1914,15 +2077,20 @@ button p {
 }
 
 .us {
+    margin-left: 4rem;
     padding: 120px;
-    text-align: center;
+    text-align: left;
     width: 50%;
+}
+
+.us h3 {
+    color: var(--color-secondary);
 }
 
 .us_h1 {
     color: #000;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 50px;
 }
 
 .us p {
@@ -1933,6 +2101,7 @@ button p {
 }
 
 .us_img2 {
+    z-index: 1;
     width: 50%;
     height: 100%;
     background-image: url(img/image00066.jpeg);
@@ -1942,8 +2111,26 @@ button p {
     object-fit: cover;
 }
 
+.rebote {
+    background-color: rgb(144, 238, 144, .3);
+    position: relative;
+    bottom: 20rem;
+    left: 15rem;
+    width: 40rem;
+    height: 25rem;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .rebote {
+        bottom: 25rem;
+        left: 15rem;
+        width: 50rem;
+        height: 35rem;
+    }
+}
+
 .text_us {
-    margin-top: 5rem;
+    margin-top: -15rem;
     width: 100%;
     display: flex;
     height: 100vh;
@@ -1953,16 +2140,19 @@ button p {
     width: 50%;
 }
 
+.text_us1 h3 {
+    color: var(--color-secondary);
+    margin: 0 0 .5rem 7rem;
+}
+
 .text_us1 h1 {
-    color: #fff;
+    color: #000;
     display: flex;
-    justify-content: center;
-    background-color: var(--color-primary);
-    font-size: 30px;
-    font-weight: 500;
+    justify-content: left;
+    font-size: 35px;
+    font-weight: 600;
     position: relative;
-    padding: 40px;
-    margin-bottom: 3rem;
+    margin: 0 0 2rem 7rem;
 }
 
 .text_us1 p {
@@ -2126,39 +2316,6 @@ button p {
     }
 }
 
-/*tu hogar soñado*/
-
-.tucasasoñada {
-    padding-left: 20%;
-    background-image: linear-gradient(-45deg, #fff 50%, var(--color-primary) 50%);
-}
-
-.h3boxcontent {
-    color: #fff;
-    border-bottom: 4px solid #fff;
-    width: 10em;
-    font-size: 20px;
-    font-weight: 300;
-    padding-top: 40px;
-    margin-top: 3%;
-}
-
-/*BOX CONTENT*/
-
-.boxcontent {
-    display: flex;
-    width: 100%;
-    height: 480px;
-    margin-bottom: 1rem;
-    padding-bottom: 80px;
-    background-image: url(img/image00016.jpeg);
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.9;
-}
-
 /* 
 .sec2boxcontent {
     position: relative;
@@ -2242,6 +2399,7 @@ button p {
 }
 
 form {
+    background-color: rgb;
     width: 700px;
     margin: 0 auto;
 }
@@ -2249,7 +2407,7 @@ form {
 input,
 textarea {
     font-family: 'Roboto Condensed', serif;
-    border-bottom: 2px solid rgb(112, 128, 144, .2);
+    border-bottom: 2px solid rgb(112, 128, 144, .1);
     margin: 15px;
     padding: 20px;
     font-size: 14px;
