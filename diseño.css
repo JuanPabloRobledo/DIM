@@ -133,7 +133,33 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .float {
+        width: 120px;
+        height: 120px;
+        font-size: 60px;
+    }
+
+    .float2 {
+        width: 120px;
+        height: 120px;
+        bottom: 44.4vh;
+        font-size: 60px;
+    }
+
+    .my-float {
+        margin-top: 30px;
+    }
+
+    /* SUBMENU */
+
+    .submenu li {
+        font-size: 25px;
+        width: 300px;
+        right: 18.8rem;
+        padding: 39px;
+    }
+}
 
 /*----- HEADER -------*/
 header {
@@ -1015,7 +1041,7 @@ nav.open~.overlay {
 }
 
 .bxs-circle {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     margin-right: 6px;
 }
 
