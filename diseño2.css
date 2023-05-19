@@ -898,11 +898,11 @@ button p {
     }
 
     .operations__tab span {
-        font-size: 24px;
+        font-size: 19px;
     }
 
     button p {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -2439,7 +2439,7 @@ button p {
 .section_contact {
     margin: 0 10rem 0 10rem;
     display: flex;
-    height: 80vh;
+    height: 90vh;
 }
 
 .sectionsInContact {
@@ -2721,7 +2721,7 @@ textarea {
     }
 
     .section_contact {
-        height: 75vh;
+        height: 85vh;
     }
 
     form {
