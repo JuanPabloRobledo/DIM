@@ -231,13 +231,14 @@ li {
 
 .boton:hover {
     cursor: pointer;
-    color: var(--color-secondary);
+    color: #aaa;
 }
 
 /* SUBLIST*/
 .sublist {
     position: absolute;
     background: #fff;
+    border-radius: 10px;
     width: 130%;
     margin-top: .5rem;
     display: none;
@@ -258,7 +259,7 @@ li {
 }
 
 .sublist li a:hover {
-    color: var(--color-secondary)
+    color: #aaa;
 }
 
 .bxs-chevron-down {
@@ -1195,11 +1196,8 @@ button p {
 }
 
 .h1_ventanas {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(103deg, rgba(255, 255, 255, 1) 0%, rgba(102, 205, 105, 1) 0%, rgba(2, 79, 11, 1) 41%);
-    clip-path: polygon(0% 0%, 75% 0%, 80% 50%, 75% 100%, 0% 100%);
     padding: 20px 250px 20px 250px;
-    color: #fff;
+    color: var(--color-primary);
     display: flex;
     font-size: 30px;
     font-weight: 600;

@@ -222,13 +222,14 @@ li {
 
 .boton:hover {
     cursor: pointer;
-    color: var(--color-secondary);
+    color: #aaa;
 }
 
 /* SUBLIST*/
 .sublist {
     position: absolute;
     background: #fff;
+    border-radius: 10px;
     width: 130%;
     margin-top: .5rem;
     display: none;
@@ -249,15 +250,9 @@ li {
 }
 
 .sublist li a:hover {
-    color: var(--color-secondary)
+    color: #aaa;
 }
 
-.bxs-chevron-down {
-    color: #000;
-    font-size: 20px;
-    position: relative;
-    top: 3px;
-}
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .sublist {
@@ -601,7 +596,7 @@ nav.open~.overlay {
 }
 
 .grid-item:first-child div h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin-top: 1rem;
 }
@@ -820,7 +815,7 @@ nav.open~.overlay {
     font-size: 17px;
     font-weight: 600;
     color: var(--color-primary);
-    margin-right: 2.5rem;
+    padding: 15px;
     transform: translateY(-50%);
 }
 
@@ -871,13 +866,13 @@ nav.open~.overlay {
 
 /* FLEXBOX */
 .flexbox {
+    background-color: #fff;
     display: flex;
     width: 100%;
     height: 100%;
 }
 
 .div_flexbox {
-    margin-top: 4rem;
     width: 50%;
 }
 
@@ -1026,7 +1021,7 @@ nav.open~.overlay {
     margin: 2rem;
     margin-left: 12rem;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
@@ -1366,7 +1361,7 @@ nav.open~.overlay {
 
 .us_h1 {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     margin: 2rem 0 2rem 12rem;
 }
