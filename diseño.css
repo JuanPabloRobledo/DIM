@@ -216,7 +216,7 @@ li {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .boton {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
@@ -260,7 +260,8 @@ li {
     }
 
     .sublist li a {
-        font-size: 17px;
+        font-size: 15px;
+        padding: 18px;
     }
 }
 
@@ -439,6 +440,7 @@ nav.open~.overlay {
 } */
 
 .miSlider img {
+    opacity: .8;
     width: 100%;
     height: auto;
     max-height: 100vh;
@@ -499,7 +501,7 @@ nav.open~.overlay {
 
 .banner-text h1 {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 900;
     color: #000;
 }
 
@@ -533,11 +535,11 @@ nav.open~.overlay {
     }
 
     .banner-text h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .banner-text h2 {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .button1 {
