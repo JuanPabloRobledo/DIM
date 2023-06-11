@@ -1,7 +1,7 @@
 :root {
     --color-primary: #00502f;
     --color-secondary: rgb(1, 196, 1);
-    --color-tertiary: rgb(0, 128, 0);
+    --color-tertiary: #5c896a;
     --color-primary-darker: #18191b;
     --color-secondary-darker: #ffbb00;
     --color-tertiary-darker: #fd424b;
@@ -486,7 +486,6 @@ nav.open~.overlay {
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
-    background-color: rgb(0, 73, 83);
     background-image: url(img/fondo21.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -655,7 +654,7 @@ button p {
 }
 
 .operations__tab--active {
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     /* background-color: var(--color-footer); */
     /* transform: translateY(-66%); */
 }
@@ -882,7 +881,7 @@ button p {
 
 .grid-item4 h2 {
     font-size: 17px;
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     margin-left: 1rem;
     margin-top: 1rem;
     font-weight: 600;
@@ -1011,7 +1010,7 @@ button p {
 }
 
 .bxs-circle {
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     margin-right: 6px;
 }
 
@@ -1198,7 +1197,7 @@ button p {
 
 .h1_ventanas {
     padding: 20px 250px 20px 250px;
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     display: flex;
     font-size: 30px;
     font-weight: 600;
@@ -1357,14 +1356,14 @@ button p {
 }
 
 .background-1-section div h3 {
-    color: var(--color-primary);
-    font-size: 50px;
+    color: var(--color-tertiary);
+    font-size: 40px;
     font-weight: 600;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .background-1-section div h1 {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .background-1-section div h3 {
@@ -1682,7 +1681,6 @@ button p {
 /* 
 /* /////////////// PAGINA EMPRESA  ////////////// */
 .productos_titulo_us {
-    background-color: rgb(0, 73, 83);
     background-image: url(img/edificio_fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1723,21 +1721,12 @@ button p {
 }
 
 .section_info h3 {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     text-align: center;
 }
 
-.titulo_h2 {
-    color: var(--color-primary);
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 12rem;
-    position: relative;
-    top: 2rem;
-}
-
 .info {
-    background-color: rgb(0, 86, 63, .2);
+    background-color: var(--color-tertiary);
     width: 80%;
     gap: 1rem;
     display: flex;
@@ -1757,13 +1746,13 @@ button p {
 }
 
 .info_div h1 {
-    color: #000;
+    color: #fff;
     font-weight: 600;
     font-size: 18px;
 }
 
 .info_div p {
-    color: #000;
+    color: #fff;
     font-weight: 400;
     margin-top: 1rem;
     font-size: 13px;
@@ -1877,7 +1866,7 @@ button p {
 }
 
 .titulo_h2 {
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     font-size: 18px;
     font-weight: 600;
 }
@@ -1890,7 +1879,7 @@ button p {
 }
 
 .us h3 {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 .us_h1 {
@@ -1918,7 +1907,7 @@ button p {
 }
 
 .rebote {
-    background-color: rgb(0, 86, 63, .2);
+    background-color: var(--color-tertiary);
     position: relative;
     bottom: 20rem;
     left: 15rem;
@@ -1947,7 +1936,7 @@ button p {
 }
 
 .text_us1 h3 {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     margin: 0 0 .5rem 7rem;
 }
 

@@ -1,11 +1,12 @@
 :root {
     --color-primary: #00502f;
     --color-secondary: rgb(1, 196, 1);
-    --color-tertiary: rgb(0, 128, 0);
+    --color-tertiary: #5c896a;
     --color-primary-darker: #18191b;
     --color-primary-opacity: #5ec5763a;
     --color-footer: #37383d;
     --color-tertiary-opacity: rgb(112, 128, 144);
+    --color-whatsapp: rgb(37, 211, 102);
 }
 
 * {
@@ -501,7 +502,7 @@ nav.open~.overlay {
 
 .banner-text h1 {
     font-size: 2.5rem;
-    font-weight: 900;
+    font-weight: 600;
     color: #000;
 }
 
@@ -606,7 +607,7 @@ nav.open~.overlay {
 .grid-item:first-child div h2 {
     font-weight: 600;
     font-size: 18px;
-    color: var(--color-primary);
+    color: var(--color-tertiary);
 }
 
 /* SEGUNDO GRID */
@@ -816,7 +817,7 @@ nav.open~.overlay {
     background-color: #fff;
     font-size: 17px;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     padding: 15px;
     transform: translateY(-50%);
 }
@@ -825,7 +826,7 @@ nav.open~.overlay {
     content: "";
     width: 0;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--color-tertiary);
     position: absolute;
     bottom: 0;
     right: 50%;
@@ -841,7 +842,7 @@ nav.open~.overlay {
 
 .operations__tab--active {
     transition: .8s;
-    color: #000;
+    color: var(--color-primary);
     /* transform: translateY(-66%); */
 }
 
@@ -908,7 +909,7 @@ nav.open~.overlay {
 }
 
 .bxs-circle {
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     margin-right: 6px;
 }
 
@@ -1450,7 +1451,7 @@ nav.open~.overlay {
 }
 
 .titulo_h2 {
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     font-size: 20px;
     font-weight: 600;
     margin-left: 12rem;
@@ -1494,7 +1495,7 @@ nav.open~.overlay {
 
 .info_icon {
     clip-path: circle(50% at 50% 50%);
-    background-color: var(--color-primary);
+    background-color: var(--color-tertiary);
     color: #fff;
     font-size: 40px;
     padding: 20px;
