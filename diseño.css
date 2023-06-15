@@ -207,6 +207,12 @@ header {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .logo-link {
+        left: 5rem;
+    }
+}
+
 .logo-link-nav {
     cursor: pointer;
 }
@@ -418,7 +424,7 @@ nav.open .sidebar {
     padding: 30px 16px;
 }
 
-/* 
+
 .overlay {
     z-index: 8;
     position: fixed;
@@ -436,7 +442,7 @@ nav.open~.overlay {
     opacity: 1;
     top: 20%;
     pointer-events: auto;
-} */
+}
 
 
 /* ------- SLIDER ------- */
