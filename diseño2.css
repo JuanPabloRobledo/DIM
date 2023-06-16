@@ -38,12 +38,18 @@ body::-webkit-scrollbar-thumb {
 
 
 /* WHATSAPP */
-.float {
+.grid-wsp {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
     position: fixed;
+    right: 0px;
+    bottom: 45vh;
+}
+
+.section-grid-wsp {
     width: 60px;
     height: 60px;
-    bottom: 50vh;
-    right: 0px;
     background-color: #25d366;
     color: #FFF;
     /* border-radius: 50px; */
@@ -53,19 +59,16 @@ body::-webkit-scrollbar-thumb {
     z-index: 100;
 }
 
-.float2 {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 42vh;
-    right: 0px;
-    background-color: #25d366;
+.section-grid-wsp:hover {
+    background-color: #fff;
+}
+
+.float {
     color: #FFF;
-    /* border-radius: 50px; */
-    text-align: center;
-    font-size: 30px;
-    /* box-shadow: 2px 2px 3px #999; */
-    z-index: 100;
+}
+
+.float:hover {
+    color: #25d366;
 }
 
 /* SUBMENU */
@@ -88,77 +91,56 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
 }
 
-.float2:hover .submenu,
-.float:hover .submenu {
+.float:hover,
+.section-grid-wsp:hover .submenu {
     visibility: visible;
     opacity: 1;
 }
 
-.float:hover,
-.float2:hover {
-    text-decoration: none;
-    color: #25d366;
-    background-color: #fff;
-}
 
 .my-float {
     margin-top: 16px;
 }
 
+
 @media (min-width: 1920px) and (max-width: 2560px) {
-    .float {
+
+    .section-grid-wsp {
         width: 80px;
         height: 80px;
         font-size: 40px;
-    }
-
-    .float2 {
-        width: 80px;
-        height: 80px;
-        bottom: 42.7vh;
-        font-size: 40px;
-    }
-
-    .my-float {
-        margin-top: 19px;
     }
 
     /* SUBMENU */
 
     .submenu li {
         font-size: 18px;
-        display: block;
         width: 250px;
         right: 15.5rem;
-        padding: 25px;
+        padding: 26px;
     }
 }
 
-
 @media screen and (max-width: 992px) {
-    .float {
-        width: 120px;
-        height: 120px;
-        font-size: 60px;
+    .grid-wsp {
+        bottom: 47vh;
     }
 
-    .float2 {
-        width: 120px;
-        height: 120px;
-        bottom: 44.4vh;
-        font-size: 60px;
+    .section-grid-wsp {
+        width: 115px;
+        height: 115px;
+        font-size: 65px;
     }
 
     .my-float {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     /* SUBMENU */
-
     .submenu li {
         font-size: 25px;
         width: 300px;
-        right: 18.8rem;
+        right: 18.7rem;
         padding: 39px;
     }
 }
@@ -928,7 +910,7 @@ button p {
         display: grid;
         position: relative;
         margin-left: 5%;
-        grid-template-rows: repeat(4, 900px);
+        grid-template-rows: repeat(4, 950px);
         grid-template-columns: repeat(3, 33%);
         gap: 0rem;
     }
