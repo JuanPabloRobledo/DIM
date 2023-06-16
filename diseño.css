@@ -315,13 +315,13 @@ nav .logo {
 
 }
 
-.sidebar .material-symbols-outlined {
+/* .sidebar .material-symbols-outlined {
     color: #fff;
 }
 
 .abajo .material-symbols-outlined {
     color: #000;
-}
+} */
 
 .logo .logo-name {
     color: #333;
@@ -862,7 +862,7 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .operations__tab {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 4rem;
     }
 
@@ -982,7 +982,7 @@ nav.open~.overlay {
         justify-content: center;
         text-align: center;
         font-weight: 600;
-        font-size: 45px;
+        font-size: 35px;
         color: #000;
     }
 
@@ -1729,7 +1729,7 @@ nav.open~.overlay {
         display: flex;
         color: #000;
         margin-left: 1em;
-        font-size: 70px;
+        font-size: 80px;
         z-index: 30;
     }
 
@@ -1849,10 +1849,7 @@ max-height: 100vh;
 }
 
 /*---------------------------------------------------------------------------RESPONSIVE CON 768PX INICIO------------------------------------------------------------------------------------*/
-
 @media screen and (max-width: 768px) {}
-
-.logo .menu-icon {}
 
 /*-----------------
 
