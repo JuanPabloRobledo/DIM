@@ -2,7 +2,6 @@
     --color-primary: #00502f;
     --color-secondary: rgb(1, 196, 1);
     --color-tertiary: #5c896a;
-    --color-primary-darker: #18191b;
     --color-primary-opacity: #5ec5763a;
     --color-footer: #37383d;
     --color-tertiary-opacity: rgb(112, 128, 144);
@@ -1765,11 +1764,7 @@ nav.open~.overlay {
         overflow: hidden;
     }
 
-    /* .miSlider{
-display:none;
-transition: 2s;
-max-height: 100vh;
-}*/
+
     .miSlider img {
         width: 100%;
         height: auto;
