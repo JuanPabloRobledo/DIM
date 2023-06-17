@@ -221,7 +221,6 @@ li {
     padding: 15px;
 }
 
-
 @media (min-width: 1920px) and (max-width: 2560px) {
     .boton {
         font-size: 15px;
@@ -498,6 +497,7 @@ nav.open~.overlay {
 
 /*BANNER*/
 .banner-h1 {
+    z-index: 10;
     position: relative;
     left: 10%;
     display: flex;
