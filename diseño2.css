@@ -1904,7 +1904,7 @@ button p {
 }
 
 .rebote {
-    background-color: var(--color-tertiary);
+    background-color: rgb(208, 240, 192, .3);
     position: relative;
     bottom: 20rem;
     left: 15rem;
