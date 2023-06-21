@@ -1867,6 +1867,12 @@ button p {
     display: flex;
 }
 
+@media screen and (max-width: 992px) {
+    .section_us2 {
+        flex-direction: column;
+    }
+}
+
 .titulo_h2 {
     color: var(--color-tertiary);
     font-size: 18px;

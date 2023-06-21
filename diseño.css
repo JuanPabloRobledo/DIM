@@ -497,7 +497,6 @@ nav.open~.overlay {
 
 /*BANNER*/
 .banner-h1 {
-    z-index: 10;
     position: relative;
     left: 10%;
     display: flex;
