@@ -1708,7 +1708,7 @@ button p {
 /* ////////// INFO //////// */
 
 .section_info {
-    height: 60vh;
+    height: 40vh;
     width: 100%;
 }
 
@@ -1737,8 +1737,6 @@ button p {
 }
 
 .info_div {
-    background-color: rgba(238, 238, 238, .4);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12);
     padding: 30px;
     width: 25%;
 }
@@ -1775,7 +1773,7 @@ button p {
     }
 
     .section_info {
-        height: 45vh;
+        height: 30vh;
     }
 
     .info {
