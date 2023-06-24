@@ -1915,51 +1915,46 @@ button p {
     object-fit: cover;
 }
 
-.text_us {
-    margin-top: 5rem;
-    width: 100%;
-    display: flex;
-    height: 100vh;
-}
-
 @media (min-width: 1920px) and (max-width: 2560px) {
     .section_us2 {
         gap: 2rem;
     }
-
-    .us p {
-        width: 80%;
-    }
 }
 
 /* Tercer item*/
+.text_us {
+    gap: 1rem;
+    top: 5rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 90vh;
+}
+
 .text_us1 {
+    margin-top: 5rem;
     width: 50%;
 }
 
 .text_us1 h3 {
-    color: var(--color-tertiary);
-    margin: 0 0 .5rem 7rem;
+    color: var(--color-primary);
 }
 
 .text_us1 h1 {
     color: #000;
-    display: flex;
-    justify-content: left;
     font-size: 35px;
     font-weight: 600;
     position: relative;
-    margin: 0 0 2rem 7rem;
 }
 
 .text_us1 p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
-    margin: 0 0 .5rem 7rem;
 }
 
 .text_img {
-    background-image: url(img/mapa2.png);
+    width: 50%;
+    background-image: url(img/anima.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1983,6 +1978,13 @@ button p {
 
     .section_us2 {
         height: 35rem;
+    }
+
+    .text_us {
+        gap: 0rem;
+        top: 5rem;
+        width: 80%;
+        height: 60vh;
     }
 }
 
@@ -2012,40 +2014,6 @@ button p {
         color: var(--color-primary);
         font-size: 60px;
         font-weight: 600;
-    }
-
-}
-
-.sec4boxcontent {
-    position: relative;
-    right: 100px;
-    width: 700px;
-    height: 500px;
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {
-
-    .h3boxcontent {
-        height: 5rem;
-        width: 12em;
-    }
-
-    .boxcontent {
-        height: 700px;
-        margin-bottom: 3rem;
-        padding-bottom: 80px;
-    }
-
-    .sec2boxcontent {
-        height: 600px;
-        width: 850px;
-    }
-
-    .sec3boxcontent {
-        height: 500px;
-        width: 820px;
-        right: 25em;
-        top: 5em;
     }
 }
 
