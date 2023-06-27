@@ -1,19 +1,10 @@
-/*! @license ScrollReveal v4.0.9
 
-	Copyright 2021 Fisssion LLC.
-
-	Licensed under the GNU General Public License 3.0 for
-	compatible open source projects and non-commercial use.
-
-	For commercial sites, themes, projects, and applications,
-	keep your source code private/proprietary by purchasing
-	a commercial license from https://scrollrevealjs.org/
-*/
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global = global || self, global.ScrollReveal = factory());
-}(this, function () { 'use strict';
+		typeof define === 'function' && define.amd ? define(factory) :
+			(global = global || self, global.ScrollReveal = factory());
+}(this, function () {
+	'use strict';
 
 	var defaults = {
 		delay: 0,
@@ -42,20 +33,20 @@
 			bottom: 0,
 			left: 0
 		},
-		afterReset: function afterReset() {},
-		afterReveal: function afterReveal() {},
-		beforeReset: function beforeReset() {},
-		beforeReveal: function beforeReveal() {}
+		afterReset: function afterReset() { },
+		afterReveal: function afterReveal() { },
+		beforeReset: function beforeReset() { },
+		beforeReveal: function beforeReveal() { }
 	};
 
 	function failure() {
 		document.documentElement.classList.remove('sr');
 
 		return {
-			clean: function clean() {},
-			destroy: function destroy() {},
-			reveal: function reveal() {},
-			sync: function sync() {},
+			clean: function clean() { },
+			destroy: function destroy() { },
+			reveal: function reveal() { },
+			sync: function sync() { },
 			get noop() {
 				return true
 			}
@@ -103,9 +94,9 @@
 		return typeof window.Node === 'object'
 			? x instanceof window.Node
 			: x !== null &&
-					typeof x === 'object' &&
-					typeof x.nodeType === 'number' &&
-					typeof x.nodeName === 'string'
+			typeof x === 'object' &&
+			typeof x.nodeType === 'number' &&
+			typeof x.nodeName === 'string'
 	}
 
 	/*! @license is-dom-node-list v1.2.1
@@ -139,10 +130,10 @@
 		return typeof window.NodeList === 'object'
 			? x instanceof window.NodeList
 			: x !== null &&
-					typeof x === 'object' &&
-					typeof x.length === 'number' &&
-					regex.test(prototypeToString) &&
-					(x.length === 0 || isDomNode(x[0]))
+			typeof x === 'object' &&
+			typeof x.length === 'number' &&
+			regex.test(prototypeToString) &&
+			(x.length === 0 || isDomNode(x[0]))
 	}
 
 	/*! @license Tealight v0.3.6
@@ -170,20 +161,20 @@
 	*/
 
 	function tealight(target, context) {
-	  if ( context === void 0 ) { context = document; }
+		if (context === void 0) { context = document; }
 
-	  if (target instanceof Array) { return target.filter(isDomNode); }
-	  if (isDomNode(target)) { return [target]; }
-	  if (isDomNodeList(target)) { return Array.prototype.slice.call(target); }
-	  if (typeof target === "string") {
-	    try {
-	      var query = context.querySelectorAll(target);
-	      return Array.prototype.slice.call(query);
-	    } catch (err) {
-	      return [];
-	    }
-	  }
-	  return [];
+		if (target instanceof Array) { return target.filter(isDomNode); }
+		if (isDomNode(target)) { return [target]; }
+		if (isDomNodeList(target)) { return Array.prototype.slice.call(target); }
+		if (typeof target === "string") {
+			try {
+				var query = context.querySelectorAll(target);
+				return Array.prototype.slice.call(query);
+			} catch (err) {
+				return [];
+			}
+		}
+		return [];
 	}
 
 	function isObject(x) {
@@ -208,7 +199,7 @@
 
 	function logger(message) {
 		var details = [], len = arguments.length - 1;
-		while ( len-- > 0 ) details[ len ] = arguments[ len + 1 ];
+		while (len-- > 0) details[len] = arguments[len + 1];
 
 		if (this.constructor.debug && console) {
 			var report = "%cScrollReveal: " + message;
@@ -220,10 +211,12 @@
 	function rinse() {
 		var this$1 = this;
 
-		var struct = function () { return ({
-			active: [],
-			stale: []
-		}); };
+		var struct = function () {
+			return ({
+				active: [],
+				stale: []
+			});
+		};
 
 		var elementIds = struct();
 		var sequenceIds = struct();
@@ -520,7 +513,7 @@
 		var style = document.documentElement.style;
 
 		function getPrefixedCssProperty(name, source) {
-			if ( source === void 0 ) source = style;
+			if (source === void 0) source = style;
 
 			if (name && typeof name === 'string') {
 				if (properties[name]) {
@@ -558,7 +551,7 @@
 
 		inline.generated = inlineMatch.some(function (m) { return m.match(/visibility\s?:\s?visible/i); })
 			? inline.computed
-			: inlineMatch.concat( ['visibility: visible']).map(function (m) { return m.trim(); }).join('; ') + ';';
+			: inlineMatch.concat(['visibility: visible']).map(function (m) { return m.trim(); }).join('; ') + ';';
 
 		/**
 		 * Generate opacity styles
@@ -759,7 +752,7 @@
 	 * @param {Node}   [el]  Element to receive styles.
 	 * @param {string} [declaration] Styles to apply.
 	 */
-	function applyStyle (el, declaration) {
+	function applyStyle(el, declaration) {
 		declaration.split(';').forEach(function (pair) {
 			var ref = pair.split(':');
 			var property = ref[0];
@@ -835,7 +828,7 @@
 
 	function deepAssign(target) {
 		var sources = [], len = arguments.length - 1;
-		while ( len-- > 0 ) sources[ len ] = arguments[ len + 1 ];
+		while (len-- > 0) sources[len] = arguments[len + 1];
 
 		if (isObject(target)) {
 			each(sources, function (source) {
@@ -857,7 +850,7 @@
 	}
 
 	function isMobile(agent) {
-		if ( agent === void 0 ) agent = navigator.userAgent;
+		if (agent === void 0) agent = navigator.userAgent;
 
 		return /Android|iPhone|iPad|iPod/i.test(agent)
 	}
@@ -910,7 +903,7 @@
 	}
 
 	function animate(element, force) {
-		if ( force === void 0 ) force = {};
+		if (force === void 0) force = {};
 
 		var pristine = force.pristine || this.pristine;
 		var delayed =
@@ -994,7 +987,7 @@
 	}
 
 	function sequence(element, pristine) {
-		if ( pristine === void 0 ) pristine = this.pristine;
+		if (pristine === void 0) pristine = this.pristine;
 
 		/**
 		 * We first check if the element should reset.
@@ -1038,8 +1031,8 @@
 			 */
 			if (
 				!seq.blocked.head &&
-				i === [].concat( revealed.head ).pop() &&
-				i >= [].concat( visible.body ).shift()
+				i === [].concat(revealed.head).pop() &&
+				i >= [].concat(visible.body).shift()
 			) {
 				cue.call(this, seq, i, -1, pristine);
 				return animate.call(this, element, { reveal: true, pristine: pristine })
@@ -1047,8 +1040,8 @@
 
 			if (
 				!seq.blocked.foot &&
-				i === [].concat( revealed.foot ).shift() &&
-				i <= [].concat( visible.body ).pop()
+				i === [].concat(revealed.foot).shift() &&
+				i <= [].concat(visible.body).pop()
 			) {
 				cue.call(this, seq, i, +1, pristine);
 				return animate.call(this, element, { reveal: true, pristine: pristine })
@@ -1119,8 +1112,8 @@
 
 	function reveal(target, options, syncing) {
 		var this$1 = this;
-		if ( options === void 0 ) options = {};
-		if ( syncing === void 0 ) syncing = false;
+		if (options === void 0) options = {};
+		if (syncing === void 0) syncing = false;
 
 		var containerBuffer = [];
 		var sequence$$1;
@@ -1250,7 +1243,7 @@
 
 	function getContainerId(node) {
 		var collections = [], len = arguments.length - 1;
-		while ( len-- > 0 ) collections[ len ] = arguments[ len + 1 ];
+		while (len-- > 0) collections[len] = arguments[len + 1];
 
 		var id = null;
 		each(collections, function (collection) {
@@ -1369,7 +1362,7 @@
 	}
 
 	function isElementVisible(element) {
-		if ( element === void 0 ) element = {};
+		if (element === void 0) element = {};
 
 		var container = this.store.containers[element.containerId];
 		if (!container) { return }
@@ -1406,8 +1399,8 @@
 		elements
 	) {
 		var this$1 = this;
-		if ( event === void 0 ) event = { type: 'init' };
-		if ( elements === void 0 ) elements = this.store.elements;
+		if (event === void 0) event = { type: 'init' };
+		if (elements === void 0) elements = this.store.elements;
 
 		miniraf(function () {
 			var stale = event.type === 'init' || event.type === 'resize';
@@ -1473,7 +1466,7 @@
 	var instance;
 
 	function ScrollReveal(options) {
-		if ( options === void 0 ) options = {};
+		if (options === void 0) options = {};
 
 		var invokedWithoutNew =
 			typeof this === 'undefined' ||
