@@ -1390,36 +1390,6 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {}
 
-.gridMision-Vision {
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    width: 80%;
-    height: 15rem;
-    margin: 0 auto;
-}
-
-.gridMision-Vision div {
-    position: relative;
-    top: 2rem;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.gridMision-Vision div h1 {
-    font-weight: 700;
-    font-size: 25px;
-    color: var(--color-tertiary);
-}
-
-.gridMision-Vision div p {
-    margin-top: 1px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #000;
-}
-
 /* ////////// INFO //////// */
 
 .section_info {
