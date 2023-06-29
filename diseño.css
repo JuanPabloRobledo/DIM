@@ -125,13 +125,13 @@ body::-webkit-scrollbar-thumb {
     }
 
     .section-grid-wsp {
-        width: 115px;
-        height: 115px;
-        font-size: 65px;
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
     }
 
     .my-float {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     /* SUBMENU */
@@ -180,6 +180,17 @@ header {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .logo {
+        width: 50px;
+        padding: 8px;
+    }
+
+    .abajo .logo {
+        width: 70px;
+    }
+}
+
 .logo-link {
     position: relative;
     left: 13rem;
@@ -194,7 +205,7 @@ header {
 
 @media screen and (max-width: 992px) {
     .logo-link {
-        left: 5rem;
+        left: 3rem;
     }
 }
 
@@ -316,19 +327,12 @@ nav .logo {
 
 }
 
-/* .sidebar .material-symbols-outlined {
-    color: #fff;
-}
-
-.abajo .material-symbols-outlined {
-    color: #000;
-} */
-
 .logo .logo-name {
     color: #333;
     font-size: 22px;
     font-weight: 500;
 }
+
 
 .logo .material-symbols-outlined {
     visibility: hidden;
@@ -359,6 +363,15 @@ nav .logo {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+
+    .link {
+        color: #000;
+        font-size: 20px;
+        padding: 20px;
+    }
 }
 
 .link:hover {
@@ -394,6 +407,12 @@ nav .sidebar {
     background-color: #fff;
     box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 992px) {
+    nav .sidebar {
+        height: 100vh;
+    }
 }
 
 nav.open .sidebar {
@@ -559,22 +578,29 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .banner-h1 {
-        bottom: 47vh;
-        margin-left: 2rem;
+        bottom: 50vh;
+    }
+
+    .banner-text {
+        width: 70%;
     }
 
     .banner-text h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .banner-text h2 {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .button1 {
-        font-size: 25px;
-        padding: 15px 50px;
-        top: 50px;
+        font-size: 15px;
+        padding: 15px 40px;
+        top: 30px;
+    }
+
+    .barras {
+        visibility: hidden;
     }
 }
 
@@ -582,7 +608,8 @@ nav.open~.overlay {
 
 .grid-container {
     justify-content: center;
-    margin: 0 10rem 0 10rem;
+    margin: 0 auto;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(1, 1fr 400px);
     grid-template-rows: 10rem 16rem 16rem;
@@ -653,7 +680,7 @@ nav.open~.overlay {
 }
 
 .grid-item:nth-child(5) {
-    background-image: url(img/section.jpg);
+    background-image: url(img/se);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -677,7 +704,6 @@ nav.open~.overlay {
 
     .grid-container {
         justify-content: center;
-        margin: 0 12rem 0 12rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr 600px);
         grid-template-rows: 10rem 20rem 20rem;
@@ -702,12 +728,16 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .grid-container {
-        justify-content: center;
-        margin: -15rem 5rem 0 5rem;
+        width: 80%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 10rem 10rem 20rem 20rem 20rem 20rem;
+        grid-template-rows: 5rem 10rem 20rem 20rem 20rem 20rem;
         gap: 1.5rem;
+    }
+
+    .grid-item:first-child {
+        text-align: center;
     }
 
     .grid-item:first-child div {
@@ -715,19 +745,20 @@ nav.open~.overlay {
     }
 
     .grid-item:first-child div h1 {
-        font-size: 50px;
-        margin-top: 1rem;
+        font-size: 30px;
+        margin-top: 0rem;
     }
 
     .grid-item:first-child div h2 {
-        text-align: left;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .button2 {
-        margin-left: -3rem;
+        left: 16rem;
+        margin: 0 auto;
         top: 3rem;
-        font-size: 30px;
+        width: 100%;
+        font-size: 18px;
         padding: 15px 30px;
     }
 }
@@ -795,12 +826,12 @@ nav.open~.overlay {
 
     .aviso_section h1 {
         padding: 2rem;
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .aviso_section p {
         padding: 2rem;
-        font-size: 35px;
+        font-size: 18px;
     }
 
     .button3 {
@@ -859,8 +890,8 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .operations__tab {
-        font-size: 30px;
-        margin-top: 4rem;
+        font-size: 20px;
+        margin-top: 2rem;
     }
 
     .operations {
@@ -964,46 +995,47 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .flexbox {
+        margin-top: 5rem;
         height: 80rem;
         flex-direction: column;
     }
 
     .div_flexbox {
-        width: 100%;
+        width: 70%;
         height: 50%;
+        margin: 0 auto;
     }
 
     .div_flexbox h1 {
         top: 0%;
-        padding: 0px 50px 0 50px;
-        margin-left: -1rem;
+        margin: 0 auto;
         position: relative;
         display: flex;
         justify-content: center;
         text-align: center;
         font-weight: 600;
-        font-size: 35px;
+        font-size: 25px;
         color: #000;
     }
 
     .div_flexbox h2 {
         padding: 50px;
         top: 5%;
-        margin-top: 0rem;
-        margin-left: 2rem;
-        font-size: 30px;
+        margin: 0 auto;
+        font-size: 25px;
     }
 
     .div_flexbox ul {
         font-weight: 500;
         padding: 50px;
-        margin-left: 2rem;
+        margin: 0 auto;
         top: 5%;
-        font-size: 30px;
+        font-size: 25px;
 
     }
 
     .bxs-circle {
+        font-size: 15px;
         color: var(--color-primary);
         margin-right: 6px;
     }
@@ -1041,7 +1073,7 @@ nav.open~.overlay {
 @media screen and (max-width: 992px) {
     .productos_h1 {
         font-weight: 600;
-        font-size: 60px;
+        font-size: 30px;
         margin: 1rem 0 5rem 0;
         display: flex;
         justify-content: center;
@@ -1344,8 +1376,8 @@ nav.open~.overlay {
     }
 
     .button4 {
-        font-size: 30px;
-        width: 25rem;
+        font-size: 20px;
+        width: 20rem;
         font-weight: 500;
         padding: 15px 30px;
         position: relative;
@@ -1378,9 +1410,20 @@ nav.open~.overlay {
     color: #666;
 }
 
-@media (min-width: 1920px) and (max-width: 2560px) {}
+@media screen and (max-width: 992px) {
 
-@media screen and (max-width: 992px) {}
+    .us {
+        position: relative;
+        bottom: 12rem;
+        height: 15rem;
+    }
+
+    .us p {
+        margin-top: 1px;
+        font-size: 18px;
+    }
+
+}
 
 /* ////////// INFO //////// */
 
@@ -1482,8 +1525,8 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .titulo_h2 {
-        color: var(--color-primary);
-        font-size: 30px;
+        color: var(--color-tertiary);
+        font-size: 20px;
         font-weight: 600;
         display: flex;
         margin-left: 0;
@@ -1493,10 +1536,9 @@ nav.open~.overlay {
     }
 
     .section_info {
-        height: 80vh;
+        height: 110vh;
         width: 100%;
-        margin-top: 10rem;
-        margin-bottom: 20rem;
+        margin-top: 15rem;
     }
 
     .info {
@@ -1511,16 +1553,15 @@ nav.open~.overlay {
     }
 
     .info_div {
-        padding: 70px;
         width: 100%;
     }
 
     .info_div h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .info_div p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .info_icon {
@@ -1723,7 +1764,7 @@ p {
         display: flex;
         color: #000;
         margin-left: 1em;
-        font-size: 80px;
+        font-size: 50px;
         z-index: 30;
     }
 
