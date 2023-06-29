@@ -653,7 +653,7 @@ nav.open~.overlay {
 }
 
 .grid-item:nth-child(5) {
-    background-image: url(img/xxx.jpg);
+    background-image: url(img/section.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1360,9 +1360,9 @@ nav.open~.overlay {
     height: 15rem;
     text-align: center;
     margin: auto;
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .us h2 {

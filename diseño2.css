@@ -1688,13 +1688,13 @@ button p {
 
 .texto_inicio {
     text-align: center;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
-    height: 20rem;
+    height: 25rem;
+    padding: 5rem;
 }
 
 .texto_inicio p {
-    padding: 5rem;
     font-size: 16px;
     font-weight: 500;
 }
