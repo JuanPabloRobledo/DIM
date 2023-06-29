@@ -43,11 +43,6 @@ sr.reveal('.prueba5', {
     origin: 'top',
     distance: '-200px'
 });
-sr.reveal('.button1', {
-    duration: 3000,
-    origin: 'left',
-    distance: '-200px'
-});
 // sr.reveal('.prueba6', {
 //     duration: 2000,
 //     origin: 'top',
