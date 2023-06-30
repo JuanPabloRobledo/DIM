@@ -1712,7 +1712,8 @@ button p {
 }
 
 .texto_inicio p {
-    font-size: 16px;
+    color: #000;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -1775,6 +1776,7 @@ button p {
 }
 
 .firstSection section div p {
+    color: #000;
     margin-top: .5rem;
     font-size: 15px;
     font-weight: 500;
@@ -2133,63 +2135,154 @@ textarea {
 }
 
 /* ------------------------FOOTER --------------------*/
-.footer {
-    padding: 6rem 3rem;
-    background-color: var(--color-footer);
+/* FOOTER */
+footer {
+    background-color: #333333;
+    width: 100%;
+    height: 30rem;
 }
 
-.footer__nav {
-    list-style: none;
+.gridFooter {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 80%;
+}
+
+.navFooter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
+    flex-direction: column;
 }
 
-.footer__item {
-    margin-right: 4rem;
+.navFooter h1,
+h3,
+ul,
+p {
+    color: #fff;
 }
 
-.footer__link {
-    font-size: 15px;
+.navFooter h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.navFooter p {
     color: #eee;
-    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: .5rem;
 }
 
-.footer__link:hover {
-    color: var(--color-secondary);
-    transition: .5s;
+.navFooter ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: .5rem;
 }
 
-.footer__logo {
-    height: 5rem;
-    display: block;
+.navFooter ul li a {
+    cursor: pointer;
+}
+
+.navFooter ul li a:hover {
+    color: var(--color-tertiary);
+    transition: .3s;
+}
+
+.navFooter div {
+    position: relative;
+    top: 20%;
+    width: 50%;
     margin: 0 auto;
-    margin-bottom: 5rem;
 }
 
-.footer__copyright {
+.navFooter .redes {
+    gap: 1rem;
+    width: 50%;
+    display: flex;
+
+}
+
+.iconsFooter {
+    position: relative;
+    right: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+
+.iconsFooter :hover {
+    transition: .3s;
+    color: var(--color-tertiary);
+}
+
+.logoFooter {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    width: 30%;
+}
+
+.fondoFooter {
+    width: 90%;
+    height: 5rem;
+    border-top: #6666 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.fondoFooter h3 {
     font-size: 15px;
-    color: #aaa;
-    text-align: center;
+    font-weight: 500;
 }
 
-.footer__copyright .footer__link {
-    font-size: 15px;
+.fondoFooter a {
+    color: var(--color-tertiary);
 }
 
+.fondoFooter a:hover {
+    color: #666;
+    transition: .3s;
+}
 
 @media screen and (max-width: 992px) {
 
-    .footer__copyright {
-        font-size: 35px;
-        text-align: center;
+    footer {
+        height: 60%;
     }
 
-    .footer__copyright .footer__link {
-        font-size: 35px;
+    .gridFooter {
+        gap: 0rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 80%;
+    }
+
+    .navFooter h3 {
+        font-size: 25px;
+    }
+
+    .navFooter p {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+
+    .navFooter ul li {
+        margin-top: 1rem;
+    }
+
+    .iconsFooter {
+        font-size: 30px;
+    }
+
+    .fondoFooter h3 {
+        font-size: 18px;
     }
 }
-
 
 /*---------------------------------------------------------------------------RESPONSIVE CON 1500PX INICIO------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1500px) {}

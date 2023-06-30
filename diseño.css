@@ -1678,6 +1678,41 @@ p {
     transition: .3s;
 }
 
+@media screen and (max-width: 992px) {
+
+    footer {
+        height: 60%;
+    }
+
+    .gridFooter {
+        gap: 0rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 80%;
+    }
+
+    .navFooter h3 {
+        font-size: 25px;
+    }
+
+    .navFooter p {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+
+    .navFooter ul li {
+        margin-top: 1rem;
+    }
+
+    .iconsFooter {
+        font-size: 30px;
+    }
+
+    .fondoFooter h3 {
+        font-size: 18px;
+    }
+}
+
 /*---------------------------------------------------------------------------RESPONSIVE CON 1500PX INICIO------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1500px) {}
 
