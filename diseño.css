@@ -1586,8 +1586,7 @@ footer {
 
 .navFooter h1,
 h3,
-ul,
-p {
+ul {
     color: #fff;
 }
 
@@ -1605,6 +1604,7 @@ p {
 }
 
 .navFooter ul li {
+    color: #fff;
     display: flex;
     flex-direction: column;
     font-size: 15px;
