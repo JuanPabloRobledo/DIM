@@ -35,3 +35,8 @@ function muestraSlides(n) {
     slides[indice - 1].style.display = 'block';
     barras[indice - 1].className += ' active';
 }
+
+
+window.addEventListener("load", function () {
+    this.document.getElementById("loader").classList.toggle("loader2")
+})
