@@ -1950,12 +1950,12 @@ ul {
     top: 0;
     left: 0;
     z-index: 100000;
-    clip-path: circle(150% at 100% 0);
-    transition: clip-path 3s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: clip-path 2s ease-in-out;
 }
 
 .loader2 {
-    clip-path: circle(0% at 100% 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 /*---------------------------------------------------------------------------RESPONSIVE CON 768PX INICIO------------------------------------------------------------------------------------*/
