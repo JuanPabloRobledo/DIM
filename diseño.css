@@ -1593,11 +1593,12 @@ ul {
     font-size: 20px;
     font-weight: 500;
     margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 
 .navFooter p {
     color: #eee;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     margin-top: .5rem;
 }
@@ -1606,7 +1607,7 @@ ul {
     color: #fff;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     margin-top: .5rem;
 }
@@ -1664,8 +1665,9 @@ ul {
 }
 
 .fondoFooter h3 {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999;
 }
 
 .fondoFooter a {
