@@ -274,7 +274,7 @@ li {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .sublist {
-        width: 110%;
+        width: 160%;
     }
 
     .sublist li a {
