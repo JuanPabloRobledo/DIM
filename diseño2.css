@@ -977,6 +977,7 @@ nav.open~.overlay {
 }
 
 .gridDoors2 {
+    text-align: right;
     width: 70%;
     height: 20rem;
     margin: 0 auto;
@@ -989,6 +990,7 @@ nav.open~.overlay {
     .gridDoors,
     .gridDoors2 {
         width: 60%;
+        height: 20rem;
     }
 }
 
@@ -1085,22 +1087,32 @@ nav.open~.overlay {
 }
 
 .fondoPuertasHigh {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     width: 100%;
     height: 25rem;
-    background-image: url(img/fondopuertas.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-content: center;
+    align-items: center;
 }
 
+/* inicio de pagina */
 .fondoPuertasLow {
+    border-radius: 3rem;
+    border: 10px solid var(--color-tertiary);
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.flotante1 {
+    width: 200px;
+    position: relative;
+    left: 110%;
+    margin-top: 5rem;
 }
 
 .fondoPuertasLow h1 {
@@ -1118,6 +1130,27 @@ nav.open~.overlay {
     font-weight: 500;
     font-size: 20px;
     margin-top: 1rem;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .fondoPuertasHigh {
+        margin-bottom: 0rem;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .fondoPuertasLow h1 {
+        font-size: 45px;
+    }
+
+    .flotante1 {
+        width: 250px;
+        margin-top: 0rem;
+    }
+
+    .fondoPuertasLow {
+        height: 70%;
+    }
 }
 
 /* ////////// AVISO /////////////// */
@@ -1536,11 +1569,11 @@ nav.open~.overlay {
         background-size: 800px;
         padding: 1rem;
         transition: background-position-y 500ms ease;
-        background-size: 1000px;
+        background-size: 850px;
     }
 
     .card:nth-child(2) {
-        background-size: 1000px;
+        background-size: 700px;
     }
 
     .card:nth-child(3) {
@@ -1552,11 +1585,11 @@ nav.open~.overlay {
     }
 
     .card:nth-child(5) {
-        background-size: 1000px;
+        background-size: 500px;
     }
 
     .card:nth-child(6) {
-        background-size: 1000px;
+        background-size: 800px;
     }
 
     .card:nth-child(7) {
@@ -1567,9 +1600,18 @@ nav.open~.overlay {
         background-size: 1000px;
     }
 
+    .card:nth-child(9) {
+        background-size: 1000px;
+    }
+
     .card:nth-child(12) {
         background-size: 1100px;
         background-position: top;
+    }
+
+    .card:nth-child(14) {
+        background-size: 500px;
+        background-position: center;
     }
 }
 
