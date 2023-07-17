@@ -1613,6 +1613,7 @@ ul {
 }
 
 .navFooter ul li a {
+    color: #eee;
     cursor: pointer;
 }
 
