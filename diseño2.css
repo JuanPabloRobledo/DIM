@@ -1550,7 +1550,7 @@ nav.open~.overlay {
 }
 
 .card-objects p {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     margin-top: 0.5rem;
 }
 
