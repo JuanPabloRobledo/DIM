@@ -1554,7 +1554,9 @@ nav.open~.overlay {
 }
 
 .card-objects p {
-    color: var(--color-tertiary);
+    color: #eee;
+    font-size: 15px;
+    font-weight: 500;
     margin-top: 0.5rem;
 }
 
@@ -1616,6 +1618,14 @@ nav.open~.overlay {
     .card:nth-child(14) {
         background-size: 500px;
         background-position: center;
+    }
+
+    .card-titles h1 {
+        font-size: 30px;
+    }
+
+    .card-objects p {
+        font-size: 20px;
     }
 }
 
