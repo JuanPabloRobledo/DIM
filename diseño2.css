@@ -753,7 +753,7 @@ nav.open~.overlay {
 }
 
 .high2 {
-    height: 20rem;
+    height: 30rem;
 }
 
 .high h1 {
@@ -969,17 +969,19 @@ nav.open~.overlay {
 
 /* -------------------GRID PUERTAS------------- */
 .gridDoors {
-    width: 70%;
+    background-color: #fff;
+    width: 100%;
     margin: 0 auto;
-    height: 20rem;
+    height: 35rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .gridDoors2 {
+    background-color: #fff;
     text-align: right;
-    width: 70%;
-    height: 20rem;
+    width: 100%;
+    height: 35rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -989,8 +991,7 @@ nav.open~.overlay {
 
     .gridDoors,
     .gridDoors2 {
-        width: 60%;
-        height: 20rem;
+        width: 100%;
     }
 }
 
@@ -1014,7 +1015,7 @@ nav.open~.overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -1044,7 +1045,8 @@ nav.open~.overlay {
 }
 
 .bgGromanti {
-    /* background-color: #79aebb; */
+    background-color: #79aebb;
+    filter: grayscale(.2);
 }
 
 .spanNexo {
@@ -1052,7 +1054,8 @@ nav.open~.overlay {
 }
 
 .bgNexo {
-    /* background-color: #4e793c; */
+    background-color: #4e793c;
+    filter: grayscale(.2);
 }
 
 .spanPavir {
@@ -1060,7 +1063,8 @@ nav.open~.overlay {
 }
 
 .bgPavir {
-    /* background-color: #e30613; */
+    background-color: #e30613;
+    filter: grayscale(.2);
 }
 
 .spanHierromas {
@@ -1068,10 +1072,11 @@ nav.open~.overlay {
 }
 
 .bgHierromas {
-    /* background-color: #3186b7; */
+    background-color: #fff;
 }
 
 .imgDoors {
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.22);
     width: 250px;
     display: flex;
     justify-content: center;
@@ -1090,8 +1095,7 @@ nav.open~.overlay {
     margin-bottom: 10rem;
     width: 100%;
     height: 25rem;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -1128,7 +1132,7 @@ nav.open~.overlay {
 .fondoPuertasLow p {
     color: #000;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 1rem;
 }
 
@@ -1136,7 +1140,7 @@ nav.open~.overlay {
     .fondoPuertasHigh {
         margin-bottom: 0rem;
         width: 100%;
-        height: 30rem;
+        height: 35rem;
     }
 
     .fondoPuertasLow h1 {
