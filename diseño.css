@@ -619,9 +619,7 @@ nav.open~.overlay {
 
 /* PRIMER GRID */
 .grid-item:first-child {
-    margin-top: -5rem;
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     text-align: left;
@@ -630,33 +628,31 @@ nav.open~.overlay {
 .grid-item:first-child div {
     position: relative;
     left: 3rem;
-    top: 4rem;
 }
 
 .grid-item:first-child div h1 {
+    text-transform: uppercase;
     font-size: 25px;
-    font-weight: 500;
-    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--color-tertiary);
 }
 
 .grid-item:first-child div h2 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
-    color: var(--color-tertiary);
+    color: #000;
 }
 
 /* SEGUNDO GRID */
 
-.grid-item:nth-child(2) {}
-
 .button2 {
-    font-size: .9rem;
+    font-size: 15px;
     font-weight: 500;
     padding: 10px 30px;
     background-color: var(--color-primary);
     color: #fff;
     position: relative;
-    top: 7rem;
+    top: 5rem;
     left: 3rem;
 }
 
@@ -695,9 +691,6 @@ nav.open~.overlay {
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-    .grid-item:first-child {
-        margin-top: 0rem;
-    }
 
     .grid-item:first-child div {
         top: 2rem;
@@ -720,10 +713,6 @@ nav.open~.overlay {
     .grid-item:first-child div h1 {
         font-size: 30px;
         margin-top: 0rem;
-    }
-
-    .grid-item:first-child div h2 {
-        font-size: 19px;
     }
 }
 
@@ -773,7 +762,7 @@ nav.open~.overlay {
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    height: 25rem;
+    height: 30rem;
     width: 100%;
 }
 
@@ -800,7 +789,7 @@ nav.open~.overlay {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .aviso {
-        height: 30rem;
+        height: 40rem;
     }
 
     .aviso_section h1 {
@@ -859,10 +848,11 @@ nav.open~.overlay {
 }
 
 .operations__tab {
-    border: none;
+    letter-spacing: .2rem;
     background-color: transparent;
-    font-size: 17px;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
     color: #000;
     padding: 15px;
 }
@@ -874,7 +864,7 @@ nav.open~.overlay {
 }
 
 .operations__tab--active {
-    transition: .8s;
+    transition: .4s;
     color: var(--color-tertiary);
     /* transform: translateY(-66%); */
 }
@@ -984,44 +974,28 @@ li {
 }
 
 /* --------PRODUCTOS H1----------------- */
-.productos {
-    margin-top: 3rem;
-    ;
-    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25); */
-    padding: 10px;
-}
-
 .productos_h1 {
+    width: 70%;
+    margin: 0 auto;
+    height: 15rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
-    margin: 2rem;
-    margin-left: 12rem;
-    font-weight: 500;
-    font-size: 25px;
-    /* box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.2); */
 }
 
-@media (min-width: 1920px) and (max-width: 2560px) {
-    .productos_h1 {
-        font-size: 30px;
-    }
+.productos_h1 h2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
 }
 
-@media screen and (max-width: 992px) {
-    .productos_h1 {
-        font-weight: 600;
-        font-size: 30px;
-        margin: 1rem 0 5rem 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .productos {
-        margin-left: 0rem;
-    }
-
+.productos_h1 h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-tertiary);
 }
-
 
 /* -------- CARD ---------- */
 .card-principal {
@@ -1323,60 +1297,12 @@ li {
 
 }
 
-/* ////// SOBRE NOSOTROS /////////////// */
-/* 
-.us {
-    height: 15rem;
-    text-align: center;
-    margin: auto;
-    width: 60%;
-    margin: 0 auto;
-    padding: 4rem;
-}
-
-.us h2 {
-    color: var(--color-tertiary);
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.us p {
-    margin-top: 1px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #666;
-}
-
-@media screen and (max-width: 992px) {
-
-    .us {
-        position: relative;
-        bottom: 12rem;
-        height: 15rem;
-    }
-
-    .us p {
-        margin-top: 1px;
-        font-size: 18px;
-    }
-
-} */
-
 /* ////////// INFO //////// */
 
 .section_info {
     height: 55vh;
     background-color: #fff;
     width: 100%;
-}
-
-.titulo_h2 {
-    color: var(--color-tertiary);
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 12rem;
-    position: relative;
-    top: 2rem;
 }
 
 .info {
@@ -1402,7 +1328,7 @@ li {
 .info_div h1 {
     color: #000;
     margin-top: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 22px;
 }
 
@@ -1422,9 +1348,6 @@ li {
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-    .titulo_h2 {
-        font-size: 19px;
-    }
 
     .section_info {
         height: 45vh;
