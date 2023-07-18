@@ -1481,7 +1481,7 @@ li {
 
 /* ------------------------FOOTER --------------------*/
 footer {
-    background-color: rgb(245, 245, 245);
+    background-color: #333;
     width: 100%;
     height: 30rem;
 }
@@ -1503,7 +1503,7 @@ footer {
 h3,
 ul {
     font-weight: 700;
-    color: #333;
+    color: #fff;
 }
 
 .navFooter h3 {
@@ -1514,14 +1514,13 @@ ul {
 }
 
 .navFooter p {
-    color: #333;
+    color: #eee;
     font-size: 13px;
     font-weight: 500;
     margin-top: .5rem;
 }
 
 .navFooter ul li {
-    color: #333;
     display: flex;
     flex-direction: column;
     font-size: 13px;
@@ -1530,7 +1529,7 @@ ul {
 }
 
 .navFooter ul li a {
-    color: #333;
+    color: #eee;
     cursor: pointer;
 }
 
@@ -1556,7 +1555,7 @@ ul {
 .iconsFooter {
     position: relative;
     right: 50%;
-    color: #000;
+    color: var(--color-tertiary);
     font-size: 25px;
 }
 
