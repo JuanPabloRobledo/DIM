@@ -489,7 +489,7 @@ nav.open~.overlay {
 
 .barra {
     cursor: pointer;
-    height: 2px;
+    height: 5px;
     width: 25px;
     background: #dcdde1;
     display: inline-block;
@@ -497,7 +497,7 @@ nav.open~.overlay {
 }
 
 .active {
-    background-color: var(--color-secondary);
+    background-color: #000;
 }
 
 .fade {
@@ -999,29 +999,12 @@ li {
 
 /* -------- CARD ---------- */
 .card-principal {
+    margin: 1rem;
+    background-color: #fff;
     display: grid;
-    grid-auto-rows: 30rem;
+    grid-auto-rows: 29rem;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    /* background-color: #eee; */
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {
-    .card-principal {
-        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-        gap: 0rem;
-        grid-auto-rows: 34rem;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .card-principal {
-        display: grid;
-        gap: 1rem;
-        grid-auto-rows: 40rem;
-        grid-template-columns: 1fr;
-        margin-left: 9.5rem;
-    }
 }
 
 .card {
@@ -1030,7 +1013,7 @@ li {
     width: 100%;
     height: 450px;
     position: relative;
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/20.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra7.jpg);
     object-fit: cover;
     padding: 1rem;
     overflow: hidden;
@@ -1039,53 +1022,53 @@ li {
     align-items: center;
     transition: background-position-y 500ms ease;
     background-position: center;
-    background-size: 1000px;
+    background-size: 400px;
 }
 
 .card:nth-child(2) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/21.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra8.jpg);
     background-position: center;
-    background-size: 800px;
+    background-size: 400px;
 }
 
 .card:nth-child(3) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/26.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra2.jpg);
     background-position: center;
     background-size: 800px;
 }
 
 .card:nth-child(4) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/29.jpg);
-    background-size: 800px;
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra1.jpg);
+    background-size: 400px;
     background-position: center;
 }
 
 .card:nth-child(5) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/5.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra4.jpeg);
     background-position: center;
-    background-size: 800px;
+    background-size: 600px;
 }
 
 .card:nth-child(6) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/11.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/26.jpg);
     background-position: center;
-    background-size: 800px;
+    background-size: 700px;
 }
 
 .card:nth-child(7) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/17.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/21.jpg);
     background-position: center;
-    background-size: 900px;
+    background-size: 700px;
 }
 
 .card:nth-child(8) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/4.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/29.jpg);
     background-position: center;
-    background-size: 800px;
+    background-size: 700px;
 }
 
 .card:hover {
-    background-position-y: -100px;
+    background-position-y: -50px;
 }
 
 .card-titles {
@@ -1102,8 +1085,7 @@ li {
 .card-titles h1 {
     color: #fff;
     text-transform: capitalize;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 20px;
     transform: rotate(-90deg) translateX(50px) translateY(-90px);
     transition: transform .5s ease;
 }
@@ -1129,28 +1111,33 @@ li {
 }
 
 .card-objects p {
-    color: var(--color-secondary);
+    color: #eee;
+    font-size: 15px;
+    font-weight: 500;
     margin-top: 0.5rem;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
+    .card-principal {
+        grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+        grid-auto-rows: 40rem;
+    }
+
     .card {
+        max-width: 450px;
         width: 100%;
-        height: 500px;
+        height: 600px;
+        position: relative;
+        object-fit: cover;
         background-size: 800px;
         padding: 1rem;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: background-position-y 500ms ease;
-        background-position: center;
-        background-size: 1000px;
+        background-size: 550px;
     }
 
     .card:nth-child(2) {
 
-        background-size: 900px;
+        background-size: 550px;
     }
 
     .card:nth-child(3) {
@@ -1160,27 +1147,35 @@ li {
 
     .card:nth-child(4) {
 
-        background-size: 1000px;
+        background-size: 550px;
     }
 
     .card:nth-child(5) {
 
-        background-size: 1000px;
+        background-size: 850px;
     }
 
     .card:nth-child(6) {
 
-        background-size: 1100px;
+        background-size: 900px;
     }
 
     .card:nth-child(7) {
 
-        background-size: 1000px;
+        background-size: 900px;
     }
 
     .card:nth-child(8) {
 
-        background-size: 1000px;
+        background-size: 900px;
+    }
+
+    .card-titles h1 {
+        font-size: 30px;
+    }
+
+    .card-objects p {
+        font-size: 20px;
     }
 }
 
@@ -1240,7 +1235,6 @@ li {
 
 /* CONTENEDOR A PAGINA */
 .link_a_productos {
-    margin-top: 2rem;
     margin-bottom: 5rem;
     display: flex;
     align-items: center;
@@ -1488,7 +1482,7 @@ li {
 
 /* ------------------------FOOTER --------------------*/
 footer {
-    background-color: #333333;
+    background-color: rgb(245, 245, 245);
     width: 100%;
     height: 30rem;
 }
@@ -1509,34 +1503,35 @@ footer {
 .navFooter h1,
 h3,
 ul {
-    color: #fff;
+    font-weight: 700;
+    color: #333;
 }
 
 .navFooter h3 {
+    font-weight: 700;
     font-size: 20px;
-    font-weight: 500;
     margin-top: .5rem;
     margin-bottom: 1rem;
 }
 
 .navFooter p {
-    color: #eee;
+    color: #333;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: .5rem;
 }
 
 .navFooter ul li {
-    color: #fff;
+    color: #333;
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: .5rem;
 }
 
 .navFooter ul li a {
-    color: #eee;
+    color: #333;
     cursor: pointer;
 }
 
@@ -1562,7 +1557,7 @@ ul {
 .iconsFooter {
     position: relative;
     right: 50%;
-    color: #fff;
+    color: #000;
     font-size: 25px;
 }
 
