@@ -711,7 +711,7 @@ nav.open~.overlay {
     }
 
     .grid-item:first-child div h1 {
-        font-size: 30px;
+        font-size: 35px;
         margin-top: 0rem;
     }
 }
@@ -994,6 +994,12 @@ li {
     font-size: 30px;
     font-weight: 700;
     color: var(--color-tertiary);
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .productos_h1 h1 {
+        font-size: 35px;
+    }
 }
 
 /* -------- CARD ---------- */
