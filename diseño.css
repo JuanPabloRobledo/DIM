@@ -663,28 +663,28 @@ nav.open~.overlay {
 }
 
 .grid-item:nth-child(3) {
-    background-image: url(img/image00018.jpeg);
+    background-image: url(img/fotosfichas_WATERJET_1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .grid-item:nth-child(4) {
-    background-image: url(img/image00023.jpeg);
+    background-image: url(img/aluminiopuerta.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .grid-item:nth-child(5) {
-    background-image: url(img/se);
+    background-image: url(img/vidrio_colorglass.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .grid-item:nth-child(6) {
-    background-image: url(img/image00063.jpeg);
+    background-image: url(img/aluminiopuerta2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -902,11 +902,13 @@ nav.open~.overlay {
 
 .div_flexbox {
     width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text_flexbox {
-    position: relative;
-    top: 25%;
     width: 70%;
     margin: 0 auto;
 }
@@ -919,7 +921,7 @@ nav.open~.overlay {
 }
 
 .text_flexbox p,
-li {
+.text_flexbox li {
     font-size: 15px;
     color: #666;
 }

@@ -696,11 +696,12 @@ nav.open~.overlay {
 
 .esquemadeapertura {
     box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.45);
-    width: 90%;
+    width: 100%;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     .firstAluminio {
+        height: 40rem;
         width: 60%;
     }
 }
@@ -753,7 +754,7 @@ nav.open~.overlay {
 }
 
 .high2 {
-    height: 30rem;
+    height: 35rem;
 }
 
 .high h1 {
@@ -766,6 +767,7 @@ nav.open~.overlay {
 }
 
 .high p {
+    margin-top: 2rem;
     color: #000;
     font-size: 15px;
     font-weight: 500;
@@ -775,7 +777,7 @@ nav.open~.overlay {
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: url(img/fondoparadim5.jpg);
+    background-image: url(img/blue-pattern.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -1735,7 +1737,7 @@ nav.open~.overlay {
 
 .gridMision-Vision div h1 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
     color: var(--color-tertiary);
 }
 
