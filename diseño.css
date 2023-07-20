@@ -139,7 +139,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 25px;
         width: 300px;
         right: 18.7rem;
-        padding: 39px;
+        padding: 30px;
     }
 }
 
@@ -206,7 +206,7 @@ header {
 
 @media screen and (max-width: 992px) {
     .logo-link {
-        left: 3rem;
+        left: 0rem;
     }
 }
 
@@ -538,6 +538,7 @@ nav.open~.overlay {
     font-size: 18px;
     font-weight: 400;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .button1 {
@@ -587,17 +588,17 @@ nav.open~.overlay {
     }
 
     .banner-text h1 {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     .banner-text h2 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .button1 {
-        font-size: 15px;
-        padding: 15px 40px;
-        top: 30px;
+        font-size: 30px;
+        padding: 30px 40px;
+        top: 60px;
     }
 
     .barras {
@@ -718,11 +719,13 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .grid-container {
+        position: relative;
+        top: -10rem;
         width: 80%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 5rem 10rem 20rem 20rem 20rem 20rem;
+        grid-template-rows: 10rem 10rem 30rem 30rem 30rem 30rem;
         gap: 1.5rem;
     }
 
@@ -731,25 +734,27 @@ nav.open~.overlay {
     }
 
     .grid-item:first-child div {
+        position: relative;
+        top: -5rem;
         left: 0rem;
     }
 
     .grid-item:first-child div h1 {
-        font-size: 30px;
+        font-size: 70px;
         margin-top: 0rem;
     }
 
     .grid-item:first-child div h2 {
-        font-size: 20px;
+        font-size: 40px;
     }
 
     .button2 {
-        left: 16rem;
+        left: 25%;
         margin: 0 auto;
         top: 3rem;
         width: 100%;
-        font-size: 18px;
-        padding: 15px 30px;
+        font-size: 30px;
+        padding: 30px 40px;
     }
 }
 
@@ -811,17 +816,20 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .aviso {
-        height: 50rem;
+        height: 70vh;
     }
 
     .aviso_section h1 {
-        padding: 2rem;
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .aviso_section p {
         padding: 2rem;
-        font-size: 18px;
+        font-size: 40px;
+        text-transform: uppercase;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 500;
     }
 
     .button3 {
@@ -880,12 +888,12 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .operations__tab {
-        font-size: 20px;
+        font-size: 40px;
         margin-top: 2rem;
     }
 
     .operations {
-        height: 100rem;
+        height: 100vh;
     }
 }
 
@@ -950,28 +958,34 @@ nav.open~.overlay {
 
     .div_flexbox {
         width: 100%;
-        height: 30rem;
+        height: 50rem;
     }
 
     .text_flexbox {
-        top: 15%;
-        width: 50%;
+        top: 10%;
+        width: 80%;
         text-align: center;
     }
 
     .text_flexbox h1 {
+        font-size: 60px;
+    }
+
+    .text_flexbox li {
         font-size: 30px;
     }
 
-    .text_flexbox p,
-    li {
-        font-size: 18px;
+    .img_flexbox {
+        clip-path: none;
+        width: 100%;
+        height: 100%;
     }
 
-    .img_flexbox {
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-        width: 100%;
+    .bxs-circle {
+        font-size: 20px;
+        margin-right: 6px;
     }
+
 }
 
 /* --------PRODUCTOS H1----------------- */
@@ -1001,6 +1015,26 @@ nav.open~.overlay {
 @media (min-width: 1920px) and (max-width: 2560px) {
     .productos_h1 h1 {
         font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .productos_h1 {
+        text-align: center;
+        height: 30rem;
+    }
+
+    .productos_h1 h2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #000;
+    }
+
+    .productos_h1 h1 {
+        text-transform: uppercase;
+        font-size: 70px;
+        font-weight: 700;
+        color: var(--color-tertiary);
     }
 }
 
@@ -1188,19 +1222,20 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
 
+    .card-principal {
+        margin: 2rem;
+        grid-auto-rows: 50vh;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .card {
-        max-width: 40rem;
+        max-width: 100%;
         width: 100%;
-        height: 40rem;
+        height: 100%;
         object-fit: cover;
         background-size: 800px;
         padding: 1rem;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-position-y 500ms ease;
-        background-position: center;
         background-size: 1200px;
     }
 
@@ -1211,7 +1246,7 @@ nav.open~.overlay {
 
     .card:nth-child(3) {
 
-        background-size: 1000px;
+        background-size: 1650px;
     }
 
     .card:nth-child(4) {
@@ -1221,22 +1256,31 @@ nav.open~.overlay {
 
     .card:nth-child(5) {
 
-        background-size: 1000px;
+        background-size: 1400px;
     }
 
     .card:nth-child(6) {
 
-        background-size: 1100px;
+        background-size: 1500px;
     }
 
     .card:nth-child(7) {
 
-        background-size: 1000px;
+        background-size: 1500px;
     }
 
     .card:nth-child(8) {
 
-        background-size: 1000px;
+        background-size: 1500px;
+    }
+
+    .card-titles h1 {
+        font-size: 50px;
+    }
+
+    .card-objects p {
+        font-size: 30px;
+        margin-top: 2rem;
     }
 }
 
@@ -1280,18 +1324,14 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .link_a_productos {
-        margin: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+        margin: 10rem;
     }
 
     .button4 {
-        font-size: 20px;
-        width: 20rem;
+        font-size: 30px;
+        width: 25rem;
         font-weight: 500;
-        padding: 15px 30px;
+        padding: 30px 40px;
         position: relative;
         text-align: center;
     }
@@ -1397,9 +1437,8 @@ nav.open~.overlay {
     }
 
     .section_info {
-        height: 110vh;
+        height: 90vh;
         width: 100%;
-        margin-top: 15rem;
     }
 
     .info {
@@ -1418,15 +1457,15 @@ nav.open~.overlay {
     }
 
     .info_div h1 {
-        font-size: 30px;
+        font-size: 60px;
     }
 
     .info_div p {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .info_icon {
-        font-size: 60px;
+        font-size: 90px;
     }
 
 }
@@ -1467,23 +1506,16 @@ nav.open~.overlay {
 }
 
 @media screen and (max-width: 992px) {
-    .proveedores h1 {
-        margin: 5rem 0 5rem 0;
-        margin-left: 0rem;
-        text-align: center;
-        font-size: 12px;
-    }
 
     .grid_proveedores {
-        margin: 0px 5rem 3rem 5rem;
-        gap: 2rem;
+        gap: 4rem;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 9rem);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 20rem);
     }
 
     .img_proveedores {
-        width: 150px;
+        width: 300px;
     }
 }
 
@@ -1607,35 +1639,46 @@ ul {
 @media screen and (max-width: 992px) {
 
     footer {
-        height: 60%;
+        height: 120vh;
     }
 
     .gridFooter {
+        width: 70%;
         gap: 0rem;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10rem, 30rem, 30rem, 30rem, 20rem);
         height: 80%;
     }
 
     .navFooter h3 {
-        font-size: 25px;
+        margin-top: 2rem;
+        font-size: 45px;
     }
 
-    .navFooter p {
-        font-size: 15px;
-        margin-top: 1rem;
-    }
-
-    .navFooter ul li {
+    .navFooter p,
+    .navFooter ul li a {
+        color: rgb(211, 211, 211);
+        font-size: 35px;
+        font-weight: 400;
         margin-top: 1rem;
     }
 
     .iconsFooter {
-        font-size: 30px;
+        font-size: 60px;
+    }
+
+    .logoFooter {
+        top: 40%;
+        left: 25%;
+        width: 40%;
+    }
+
+    .fondoFooter {
+        height: 10rem;
     }
 
     .fondoFooter h3 {
-        font-size: 18px;
+        font-size: 25px;
     }
 }
 
