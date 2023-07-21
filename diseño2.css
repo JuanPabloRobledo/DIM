@@ -1806,6 +1806,7 @@ textarea {
     margin: 10px;
     padding: 15px;
     font-size: 13px;
+    font-weight: 600;
     color: #333;
 }
 
@@ -1927,13 +1928,32 @@ textarea {
 
 /* MAPA */
 .mapa {
-    position: relative;
-    display: flex;
+    grid-template-columns: 30% 70%;
+    display: grid;
     width: 100%;
     height: 60vh;
-    background-color: #000;
+    background-color: #fff;
 }
 
+.mapa div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa a {
+    background-color: var(--color-primary);
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.mapa a:hover {
+    background-color: #fff;
+    transition: .3s;
+    color: var(--color-primary);
+}
 
 @media screen and (max-width: 992px) {
     .section_contact {
@@ -2075,7 +2095,7 @@ textarea {
 
 /* ------------------------FOOTER --------------------*/
 footer {
-    background-color: #333;
+    background-color: #ebebeb;
     width: 100%;
     height: 30rem;
 }
@@ -2097,7 +2117,7 @@ footer {
 h3,
 ul {
     font-weight: 700;
-    color: #fff;
+    color: #333;
 }
 
 .navFooter h3 {
@@ -2108,23 +2128,23 @@ ul {
 }
 
 .navFooter p {
-    color: #eee;
-    font-size: 15px;
+    color: #666;
+    font-size: 13px;
     font-weight: 500;
     margin-top: .5rem;
 }
 
 .navFooter ul li {
-    color: #eee;
+    color: #666;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     margin-top: .5rem;
 }
 
 .navFooter ul li a {
-    color: #eee;
+    color: #666;
     cursor: pointer;
 }
 
@@ -2183,7 +2203,7 @@ ul {
 }
 
 .fondoFooter a {
-    color: var(--color-tertiary);
+    color: rgb(0, 183, 235);
 }
 
 .fondoFooter a:hover {

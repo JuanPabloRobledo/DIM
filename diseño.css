@@ -1521,7 +1521,7 @@ nav.open~.overlay {
 
 /* ------------------------FOOTER --------------------*/
 footer {
-    background-color: #333;
+    background-color: #ebebeb;
     width: 100%;
     height: 30rem;
 }
@@ -1543,7 +1543,7 @@ footer {
 h3,
 ul {
     font-weight: 700;
-    color: #fff;
+    color: #333;
 }
 
 .navFooter h3 {
@@ -1554,7 +1554,7 @@ ul {
 }
 
 .navFooter p {
-    color: #eee;
+    color: #666;
     font-size: 13px;
     font-weight: 500;
     margin-top: .5rem;
@@ -1569,7 +1569,7 @@ ul {
 }
 
 .navFooter ul li a {
-    color: #eee;
+    color: #666;
     cursor: pointer;
 }
 
@@ -1628,7 +1628,7 @@ ul {
 }
 
 .fondoFooter a {
-    color: var(--color-tertiary);
+    color: rgb(0, 183, 235);
 }
 
 .fondoFooter a:hover {
