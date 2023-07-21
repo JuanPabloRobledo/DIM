@@ -761,6 +761,9 @@ nav.open~.overlay {
 
 /* ////////// AVISO /////////////// */
 .aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-image: url(img/fondoparadim5.jpg);
     background-repeat: no-repeat;
@@ -774,9 +777,6 @@ nav.open~.overlay {
 
 .aviso_section {
     text-align: center;
-    position: relative;
-    top: 35%;
-    margin: 0 auto;
 }
 
 .aviso_section h1 {
