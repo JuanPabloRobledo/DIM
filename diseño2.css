@@ -139,7 +139,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 25px;
         width: 300px;
         right: 18.7rem;
-        padding: 39px;
+        padding: 30px;
     }
 }
 
@@ -182,7 +182,7 @@ header {
 
 @media screen and (max-width: 992px) {
     .logo {
-        width: 50px;
+        width: 120px;
         padding: 8px;
     }
 
@@ -488,9 +488,11 @@ nav.open~.overlay {
     }
 
     .barra-h1 {
-        font-size: 25px;
+        font-size: 30px;
+        font-weight: 800;
         top: 17px;
         left: 8%;
+        width: 100%;
     }
 
 }
@@ -502,7 +504,7 @@ nav.open~.overlay {
 
 /* ////////// TITULO A PRODUCTOS /////////// */
 .productos_titulo {
-    background-image: url(img/fondo21.jpg);
+    background-image: url(img/backgroundSecond.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -522,9 +524,9 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 {
-    color: rgb(189, 218, 87);
+    color: rgb(154, 205, 50);
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 9rem;
     /* padding-top: 1rem; */
 }
@@ -539,14 +541,14 @@ nav.open~.overlay {
     position: relative;
     left: 9.1rem;
     top: 1rem;
-    background-color: rgb(189, 218, 87);
+    background-color: rgb(154, 205, 50);
 }
 
 
 .productos_titulo p {
     color: #fff;
     margin-left: 9rem;
-    font-size: 22 px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -597,15 +599,19 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .productos_titulo {
-        height: 60rem;
+        height: 80rem;
+    }
+
+    .productos_titulo1 {
+        width: 50%;
     }
 
     .productos_titulo_h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .productos_titulo p {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .elementor_divider {

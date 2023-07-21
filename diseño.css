@@ -183,12 +183,12 @@ header {
 
 @media screen and (max-width: 992px) {
     .logo {
-        width: 50px;
+        width: 120px;
         padding: 8px;
     }
 
     .abajo .logo {
-        width: 70px;
+        width: 100px;
     }
 }
 
@@ -1705,7 +1705,7 @@ ul {
         display: flex;
         color: #000;
         margin-left: 1em;
-        font-size: 50px;
+        font-size: 90px;
         z-index: 30;
     }
 
@@ -1714,17 +1714,12 @@ ul {
         z-index: 30;
     }
 
-    .logo {
-        left: 0;
-        width: 80px;
-    }
-
     nav {
-        height: 9rem;
+        height: 10rem;
     }
 
     nav.abajo {
-        height: 7rem;
+        height: 8rem;
     }
 
     li.list {
