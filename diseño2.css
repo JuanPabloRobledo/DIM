@@ -151,12 +151,13 @@ header {
 /* BORRAR EN CASO DE CAMBIO */
 .abajo {
     transition: .6s;
-    background: #fff;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     z-index: 20;
 }
 
 .abajo .boton {
-    color: var(--color-footer);
+    color: #000;
 }
 
 .logo {
