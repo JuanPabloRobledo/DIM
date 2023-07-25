@@ -1552,8 +1552,20 @@ nav.open~.overlay {
     background-size: 400px;
 }
 
+.card:nth-child(15) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra9.jpg);
+    background-position: top;
+    background-size: 400px;
+}
+
+.card:nth-child(16) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA10.jpg);
+    background-position: center;
+    background-size: 650px;
+}
+
 .card:hover {
-    background-position-y: -50px;
+    background-position-y: -30px;
 }
 
 .card-titles {
@@ -1660,6 +1672,14 @@ nav.open~.overlay {
     .card:nth-child(14) {
         background-size: 500px;
         background-position: center;
+    }
+
+    .card:nth-child(15) {
+        background-size: 600px;
+    }
+
+    .card:nth-child(16) {
+        background-size: 800px;
     }
 
     .card-titles h1 {
