@@ -74,6 +74,31 @@ body::-webkit-scrollbar-thumb {
     transition: .4s;
 }
 
+.submenuPhone {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+}
+
+.submenuPhone li {
+    font-size: 40px;
+    display: block;
+    width: 140%;
+    left: 29rem;
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.link:hover .submenuPhone {
+    visibility: visible;
+    opacity: 1;
+}
+
 .submenu li {
     font-size: 15px;
     display: block;
@@ -143,6 +168,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+
 /*----- HEADER -------*/
 header {
     width: 100%;
@@ -188,7 +214,7 @@ header {
     }
 
     .abajo .logo {
-        width: 70px;
+        width: 100px;
     }
 }
 
@@ -206,7 +232,7 @@ header {
 
 @media screen and (max-width: 992px) {
     .logo-link {
-        left: 3rem;
+        left: 0rem;
     }
 }
 
@@ -345,57 +371,18 @@ nav .logo {
     padding: 0px;
 }
 
-.list2 {
-    float: none;
-    width: 100%;
-}
-
 .link {
-    color: #000;
+    color: #333;
     font-size: 40px;
     font-weight: 600;
     display: block;
     width: 100%;
-    padding: 30px;
-    position: relative;
-    z-index: 2;
-    border-left: 10px solid var(--color-primary);
-    text-decoration: none;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-@media screen and (max-width: 992px) {
-
-    .link {
-        color: #000;
-        font-size: 20px;
-        padding: 20px;
-    }
+    padding: 40px;
+    z-index: 2
 }
 
 .link:hover {
-    border-bottom: 0px;
-    color: #fff;
-}
-
-.link:after {
-    color: #fff;
-    content: "";
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0px;
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    z-index: -1;
-}
-
-.link:hover:after {
-    width: 100%;
-    background: var(--color-primary);
+    color: var(--color-tertiary);
 }
 
 nav .sidebar {
@@ -404,7 +391,7 @@ nav .sidebar {
     top: 0;
     left: -100%;
     height: 40vh;
-    width: 100%;
+    width: 50%;
     background-color: #fff;
     box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
@@ -444,9 +431,10 @@ nav.open .sidebar {
 
 nav.open~.overlay {
     opacity: 1;
-    top: 20%;
+    top: 0%;
     pointer-events: auto;
 }
+
 
 
 
@@ -467,7 +455,6 @@ nav.open~.overlay {
     font-weight: 600;
     color: #333;
     font-size: 14px;
-    left: 9.4%;
     top: 10px;
 }
 
@@ -492,7 +479,6 @@ nav.open~.overlay {
         font-size: 30px;
         font-weight: 800;
         top: 17px;
-        left: 8%;
         width: 100%;
     }
 
@@ -608,11 +594,11 @@ nav.open~.overlay {
     }
 
     .productos_titulo_h1 {
-        font-size: 70px;
+        font-size: 90px;
     }
 
     .productos_titulo p {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .elementor_divider {
@@ -622,12 +608,12 @@ nav.open~.overlay {
 
     .productos_titulo_img {
         display: flex;
-        left: -6rem;
+        left: -15rem;
         top: 43%;
     }
 
     .productos_titulo_img1 {
-        width: 180px;
+        width: 220px;
     }
 
 }
@@ -717,34 +703,28 @@ nav.open~.overlay {
 
     .firstAluminio {
         grid-template-columns: repeat(1, 1fr);
-        width: 80%;
-        height: 80rem;
+        width: 90%;
+        height: 160rem;
         gap: 2rem;
     }
 
     .firstAluminio section {
         position: relative;
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
     }
 
     .firstAluminio section div h1 {
-        font-size: 70px;
+        font-size: 90px;
     }
 
-    .mov1 {
-        position: relative;
-        top: 20%;
-    }
-
-    .mov2 {
-        position: relative;
-        bottom: 20%;
+    .firstAluminio section div h3 {
+        font-size: 50px;
     }
 
     .firstAluminio section div p,
     .firstAluminio div li {
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 400;
     }
 }
@@ -778,6 +758,26 @@ nav.open~.overlay {
     color: #000;
     font-size: 15px;
     font-weight: 500;
+}
+
+@media (max-width: 991px) {
+
+    .high {
+        width: 80%;
+        height: 30rem;
+    }
+
+    .high2 {
+        height: 130rem;
+    }
+
+    .high h1 {
+        font-size: 70px;
+    }
+
+    .high p {
+        font-size: 40px;
+    }
 }
 
 .bg_gA {
@@ -840,6 +840,24 @@ nav.open~.overlay {
 .gridAluminio section ul li:hover {
     transition: .4s;
     color: var(--color-tertiary);
+}
+
+@media (max-width: 991px) {
+    .gridAluminio {
+        height: 120rem;
+        width: 80%;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .gridAluminio section ul {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .gridAluminio section ul li {
+        height: 7rem;
+    }
 }
 
 /*////////// GRID VIDRIO////// */
@@ -2362,7 +2380,7 @@ ul {
         display: flex;
         color: #000;
         margin-left: 1em;
-        font-size: 50px;
+        font-size: 90px;
         z-index: 30;
     }
 
@@ -2371,80 +2389,16 @@ ul {
         z-index: 30;
     }
 
-    .logo {
-        left: 0;
-        width: 80px;
-    }
-
     nav {
-        height: 9rem;
+        height: 10rem;
     }
 
     nav.abajo {
-        height: 7rem;
+        height: 8rem;
     }
 
     li.list {
         border-bottom: solid 3px var(--color-secondary);
-    }
-
-    /* ------- SLIDER ------- */
-    .slide-contenedor {
-        max-width: 100%;
-        max-height: 100vh;
-        width: 100%;
-        height: auto;
-        position: relative;
-        overflow: hidden;
-    }
-
-
-    .miSlider img {
-        width: 100%;
-        height: auto;
-        max-height: 100vh;
-        height: 80vh;
-        object-fit: cover;
-        vertical-align: top;
-        transition: 4s;
-        object-position: center;
-    }
-
-    .barras {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40%;
-    }
-
-    .barra {
-        cursor: pointer;
-        height: 5px;
-        width: 25px;
-        background: #dcdde1;
-        display: inline-block;
-        margin-left: 3px;
-    }
-
-    .active {
-        background-color: var(--color-secondary);
-    }
-
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4;
-        }
-
-        to {
-            opacity: 1;
-        }
     }
 
 

@@ -67,29 +67,6 @@
 
 	var mount = { success: success, failure: failure };
 
-	/*! @license is-dom-node v1.0.4
-
-		Copyright 2018 Fisssion LLC.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in all
-		copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-		SOFTWARE.
-
-	*/
 	function isDomNode(x) {
 		return typeof window.Node === 'object'
 			? x instanceof window.Node
@@ -99,29 +76,6 @@
 			typeof x.nodeName === 'string'
 	}
 
-	/*! @license is-dom-node-list v1.2.1
-
-		Copyright 2018 Fisssion LLC.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in all
-		copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-		SOFTWARE.
-
-	*/
 
 	function isDomNodeList(x) {
 		var prototypeToString = Object.prototype.toString.call(x);
@@ -135,30 +89,6 @@
 			regex.test(prototypeToString) &&
 			(x.length === 0 || isDomNode(x[0]))
 	}
-
-	/*! @license Tealight v0.3.6
-
-		Copyright 2018 Fisssion LLC.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in all
-		copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-		SOFTWARE.
-
-	*/
 
 	function tealight(target, context) {
 		if (context === void 0) { context = document; }
@@ -286,44 +216,6 @@
 		each(sequenceIds.stale, function (staleId) { return delete this$1.store.sequences[staleId]; });
 	}
 
-	/*! @license Rematrix v0.3.0
-
-		Copyright 2018 Julian Lloyd.
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in
-		all copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-		THE SOFTWARE.
-	*/
-	/**
-	 * @module Rematrix
-	 */
-
-	/**
-	 * Transformation matrices in the browser come in two flavors:
-	 *
-	 *  - `matrix` using 6 values (short)
-	 *  - `matrix3d` using 16 values (long)
-	 *
-	 * This utility follows this [conversion guide](https://goo.gl/EJlUQ1)
-	 * to expand short form matrices to their equivalent long form.
-	 *
-	 * @param  {array} source - Accepts both short and long form matrices.
-	 * @return {array}
-	 */
 	function format(source) {
 		if (source.constructor !== Array) {
 			throw new TypeError('Expected array.')
@@ -343,15 +235,6 @@
 		}
 		throw new RangeError('Expected array with either 6 or 16 values.')
 	}
-
-	/**
-	 * Returns a matrix representing no transformation. The product of any matrix
-	 * multiplied by the identity matrix will be the original matrix.
-	 *
-	 * > **Tip:** Similar to how `5 * 1 === 5`, where `1` is the identity.
-	 *
-	 * @return {array}
-	 */
 	function identity() {
 		var matrix = [];
 		for (var i = 0; i < 16; i++) {
@@ -360,19 +243,6 @@
 		return matrix
 	}
 
-	/**
-	 * Returns a 4x4 matrix describing the combined transformations
-	 * of both arguments.
-	 *
-	 * > **Note:** Order is very important. For example, rotating 45°
-	 * along the Z-axis, followed by translating 500 pixels along the
-	 * Y-axis... is not the same as translating 500 pixels along the
-	 * Y-axis, followed by rotating 45° along on the Z-axis.
-	 *
-	 * @param  {array} m - Accepts both short and long form matrices.
-	 * @param  {array} x - Accepts both short and long form matrices.
-	 * @return {array}
-	 */
 	function multiply(m, x) {
 		var fm = format(m);
 		var fx = format(x);
@@ -393,17 +263,6 @@
 		return product
 	}
 
-	/**
-	 * Attempts to return a 4x4 matrix describing the CSS transform
-	 * matrix passed in, but will return the identity matrix as a
-	 * fallback.
-	 *
-	 * > **Tip:** This method is used to convert a CSS matrix (retrieved as a
-	 * `string` from computed styles) to its equivalent array format.
-	 *
-	 * @param  {string} source - `matrix` or `matrix3d` CSS Transform value.
-	 * @return {array}
-	 */
 	function parse(source) {
 		if (typeof source === 'string') {
 			var match = source.match(/matrix(3d)?\(([^)]+)\)/);
@@ -415,12 +274,6 @@
 		return identity()
 	}
 
-	/**
-	 * Returns a 4x4 matrix describing X-axis rotation.
-	 *
-	 * @param  {number} angle - Measured in degrees.
-	 * @return {array}
-	 */
 	function rotateX(angle) {
 		var theta = Math.PI / 180 * angle;
 		var matrix = identity();
@@ -432,12 +285,7 @@
 		return matrix
 	}
 
-	/**
-	 * Returns a 4x4 matrix describing Y-axis rotation.
-	 *
-	 * @param  {number} angle - Measured in degrees.
-	 * @return {array}
-	 */
+
 	function rotateY(angle) {
 		var theta = Math.PI / 180 * angle;
 		var matrix = identity();
@@ -465,16 +313,6 @@
 
 		return matrix
 	}
-
-	/**
-	 * Returns a 4x4 matrix describing 2D scaling. The first argument
-	 * is used for both X and Y-axis scaling, unless an optional
-	 * second argument is provided to explicitly define Y-axis scaling.
-	 *
-	 * @param  {number} scalar    - Decimal multiplier.
-	 * @param  {number} [scalarY] - Decimal multiplier.
-	 * @return {array}
-	 */
 	function scale(scalar, scalarY) {
 		var matrix = identity();
 
@@ -626,20 +464,7 @@
 		if (config.rotate.z) { transformations.push(rotateZ(config.rotate.z)); }
 		if (config.scale !== 1) {
 			if (config.scale === 0) {
-				/**
-				 * The CSS Transforms matrix interpolation specification
-				 * basically disallows transitions of non-invertible
-				 * matrixes, which means browsers won't transition
-				 * elements with zero scale.
-				 *
-				 * That’s inconvenient for the API and developer
-				 * experience, so we simply nudge their value
-				 * slightly above zero; this allows browsers
-				 * to transition our element as expected.
-				 *
-				 * `0.0002` was the smallest number
-				 * that performed across browsers.
-				 */
+
 				transformations.push(scale(0.0002));
 			} else {
 				transformations.push(scale(config.scale));

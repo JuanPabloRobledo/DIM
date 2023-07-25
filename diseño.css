@@ -74,6 +74,31 @@ body::-webkit-scrollbar-thumb {
     transition: .4s;
 }
 
+.submenuPhone {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+}
+
+.submenuPhone li {
+    font-size: 40px;
+    display: block;
+    width: 140%;
+    left: 29rem;
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.link:hover .submenuPhone {
+    visibility: visible;
+    opacity: 1;
+}
+
 .submenu li {
     font-size: 15px;
     display: block;
@@ -346,57 +371,18 @@ nav .logo {
     padding: 0px;
 }
 
-.list2 {
-    float: none;
-    width: 100%;
-}
-
 .link {
-    color: #000;
+    color: #333;
     font-size: 40px;
     font-weight: 600;
     display: block;
     width: 100%;
-    padding: 30px;
-    position: relative;
-    z-index: 2;
-    border-left: 10px solid var(--color-primary);
-    text-decoration: none;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-@media screen and (max-width: 992px) {
-
-    .link {
-        color: #000;
-        font-size: 20px;
-        padding: 20px;
-    }
+    padding: 40px;
+    z-index: 2
 }
 
 .link:hover {
-    border-bottom: 0px;
-    color: #fff;
-}
-
-.link:after {
-    color: #fff;
-    content: "";
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0px;
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    z-index: -1;
-}
-
-.link:hover:after {
-    width: 100%;
-    background: var(--color-primary);
+    color: var(--color-tertiary);
 }
 
 nav .sidebar {
@@ -405,7 +391,7 @@ nav .sidebar {
     top: 0;
     left: -100%;
     height: 40vh;
-    width: 100%;
+    width: 50%;
     background-color: #fff;
     box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
@@ -445,7 +431,7 @@ nav.open .sidebar {
 
 nav.open~.overlay {
     opacity: 1;
-    top: 20%;
+    top: 0%;
     pointer-events: auto;
 }
 
