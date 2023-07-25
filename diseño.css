@@ -82,19 +82,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .submenuPhone li {
-    font-size: 40px;
     display: block;
-    width: 140%;
+    width: 100%;
     left: 29rem;
     position: relative;
     background-color: #fff;
-    padding: 30px;
-    color: #000;
     text-decoration: none;
 }
 
-.nav-link:hover,
-.link:hover .submenuPhone {
+.submenuPhone li a {
+    font-size: 40px;
+    color: #333;
+    font-weight: 600;
+}
+
+.abrirSubMenu:hover .submenuPhone {
     visibility: visible;
     opacity: 1;
 }
@@ -365,13 +367,16 @@ nav .logo {
     visibility: hidden;
 }
 
+/* MENU RESPONSIVE*/
 .lists {
     margin-top: 10rem;
     list-style: none;
+    display: flex;
+    flex-direction: column;
     padding: 0px;
 }
 
-.link {
+.lists li a {
     color: #333;
     font-size: 40px;
     font-weight: 600;
@@ -381,7 +386,7 @@ nav .logo {
     z-index: 2
 }
 
-.link:hover {
+.lists li a:hover {
     color: var(--color-tertiary);
 }
 

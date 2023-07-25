@@ -82,19 +82,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .submenuPhone li {
-    font-size: 40px;
     display: block;
-    width: 140%;
+    width: 100%;
     left: 29rem;
     position: relative;
     background-color: #fff;
-    padding: 30px;
-    color: #000;
     text-decoration: none;
 }
 
-.nav-link:hover,
-.link:hover .submenuPhone {
+.submenuPhone li a {
+    font-size: 40px;
+    color: #333;
+    font-weight: 600;
+}
+
+.abrirSubMenu:hover .submenuPhone {
     visibility: visible;
     opacity: 1;
 }
@@ -365,13 +367,16 @@ nav .logo {
     visibility: hidden;
 }
 
+/* MENU RESPONSIVE*/
 .lists {
     margin-top: 10rem;
     list-style: none;
+    display: flex;
+    flex-direction: column;
     padding: 0px;
 }
 
-.link {
+.lists li a {
     color: #333;
     font-size: 40px;
     font-weight: 600;
@@ -381,7 +386,7 @@ nav .logo {
     z-index: 2
 }
 
-.link:hover {
+.lists li a:hover {
     color: var(--color-tertiary);
 }
 
@@ -434,8 +439,6 @@ nav.open~.overlay {
     top: 0%;
     pointer-events: auto;
 }
-
-
 
 
 /* ------- body ------------------- */
@@ -704,7 +707,7 @@ nav.open~.overlay {
     .firstAluminio {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
-        height: 160rem;
+        height: 150rem;
         gap: 2rem;
     }
 
@@ -723,9 +726,13 @@ nav.open~.overlay {
     }
 
     .firstAluminio section div p,
-    .firstAluminio div li {
+    .firstAluminio section div li {
         font-size: 40px;
-        font-weight: 400;
+        font-weight: 500;
+    }
+
+    .rotate section:nth-of-type(2) {
+        order: 2;
     }
 }
 
@@ -965,7 +972,7 @@ nav.open~.overlay {
         display: grid;
         position: relative;
         margin-left: 5%;
-        grid-template-rows: repeat(4, 1500px);
+        grid-template-rows: repeat(4, 1700px);
         grid-template-columns: repeat(1, 40rem);
         gap: 7rem;
     }
@@ -1033,6 +1040,31 @@ nav.open~.overlay {
     font-size: 30px;
 }
 
+@media screen and (max-width: 992px) {
+    .vidriosEspeciales {
+        display: grid;
+        width: 100%;
+        height: 60rem;
+        grid-template-columns: 100%;
+    }
+
+    .vidriosEspeciales2 {
+        display: grid;
+        width: 100%;
+        height: 60rem;
+        grid-template-columns: 100%;
+    }
+
+    .vidriosEspeciales2 div:nth-of-type(1) {
+        order: 2;
+    }
+
+    .vidriosEspeciales2 div h1,
+    .vidriosEspeciales div h1 {
+        font-size: 60px;
+    }
+
+}
 
 .ve_b1 {
     background-image: url(img/SOLARE.jpg);
@@ -1104,7 +1136,11 @@ nav.open~.overlay {
     .gridDoors2 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        height: 40rem;
+        height: 120rem;
+    }
+
+    .gridDoors2 div:nth-of-type(1) {
+        order: 1;
     }
 }
 
@@ -1136,6 +1172,26 @@ nav.open~.overlay {
     font-weight: 500;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+
+    /* contenido dentro del grid */
+    .doors {
+        width: 80%;
+    }
+
+    .doors h1 {
+        font-size: 70px;
+    }
+
+    .doors p {
+        font-size: 40px;
+    }
+
+    .doors ul {
+        font-size: 40px;
+    }
 }
 
 /*proveedores de puertas*/
@@ -1184,6 +1240,12 @@ nav.open~.overlay {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 992px) {
+    .imgDoors {
+        width: 500px;
+    }
+}
+
 .doorsimg {
     display: flex;
     align-items: center;
@@ -1198,6 +1260,7 @@ nav.open~.overlay {
     justify-content: center;
     align-items: center;
 }
+
 
 /* inicio de pagina */
 .fondoPuertasLow {
@@ -1253,6 +1316,41 @@ nav.open~.overlay {
 
     .fondoPuertasLow {
         height: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .fondoPuertasHigh {
+        margin-top: 10rem;
+        height: 80rem;
+        flex-direction: column;
+    }
+
+    .fondoPuertasHigh div:nth-child(1) {
+        order: 2;
+    }
+
+    /* inicio de pagina */
+    .fondoPuertasLow {
+        width: 90%;
+    }
+
+    .flotante1 {
+        width: 300px;
+        position: relative;
+        left: -10rem;
+        top: -10rem;
+        margin-top: 0rem;
+    }
+
+    .fondoPuertasLow h1 {
+        padding: 30px;
+        font-size: 70px;
+    }
+
+    .fondoPuertasLow p {
+        font-size: 35px;
+        padding: 30px;
     }
 }
 
@@ -1332,7 +1430,7 @@ nav.open~.overlay {
     }
 
     .aviso_section h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .aviso_section p {
@@ -1347,45 +1445,6 @@ nav.open~.overlay {
         padding: 15px 40px;
     }
 }
-
-/*////////// TIPOS DE ABERTURAS ////// */
-
-/* IMAGENES DE VENTANAS NEW */
-.imagenes_ventanas {
-    display: grid;
-    gap: 1rem;
-    justify-content: center;
-    grid-template-rows: repeat(1, 500px);
-    grid-template-columns: repeat(2, 500px);
-    margin-bottom: 5rem;
-}
-
-.flex_img {
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.img_apertura {
-    width: 100%;
-    height: 100%;
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {}
-
-@media screen and (max-width: 992px) {
-    .imagenes_ventanas {
-        display: grid;
-        gap: 1rem;
-        justify-content: center;
-        grid-template-rows: repeat(2, 900px);
-        grid-template-columns: repeat(1, 900px);
-        margin-bottom: 5rem;
-    }
-}
-
-/* ----------------PROVEEDORES---------- */
 
 /* /////////////////// PROVEEDORES /////////////////  */
 .proveedores {
@@ -1462,6 +1521,16 @@ nav.open~.overlay {
     font-size: 40px;
     font-weight: 900;
     text-align: center;
+}
+
+@media (max-width: 991px) {
+    .tituloObras {
+        height: 50rem;
+    }
+
+    .tituloObras h1 {
+        font-size: 70px;
+    }
 }
 
 /* -------- CARD ---------- */
@@ -1711,21 +1780,20 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .card-principal2 {
-        display: grid;
-        gap: 3rem;
-        grid-auto-rows: 40rem;
-        grid-template-columns: 1fr;
-        margin-left: 10rem;
+        margin: 2rem;
+        grid-auto-rows: 50vh;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .card {
-        max-width: 40rem;
+        max-width: 100%;
         width: 100%;
-        height: 40rem;
+        height: 100%;
+        object-fit: cover;
         background-size: 800px;
         padding: 1rem;
-        background-position: center;
-        background-size: 800px;
+        background-size: 1200px;
     }
 
     .card:nth-child(2) {
@@ -1761,6 +1829,15 @@ nav.open~.overlay {
     .card:nth-child(8) {
 
         background-size: 1000px;
+    }
+
+    .card-titles h1 {
+        font-size: 50px;
+    }
+
+    .card-objects p {
+        font-size: 30px;
+        margin-top: 2rem;
     }
 }
 
@@ -1805,6 +1882,24 @@ nav.open~.overlay {
 
 }
 
+@media screen and (max-width: 992px) {
+
+    .gridEnvios {
+        height: 80rem;
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .envios p {
+        font-size: 40px;
+    }
+
+    .h1Rotate {
+        font-size: 100px;
+        margin-top: 5rem;
+    }
+}
+
 /* /////////////// PAGINA EMPRESA  ////////////// */
 .productos_titulo_us {
     background-image: url(img/edificio_fondo.jpg);
@@ -1830,6 +1925,21 @@ nav.open~.overlay {
     color: #000;
     font-size: 15px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+    .productos_titulo_us {
+        height: 60vh;
+    }
+
+    .texto_inicio {
+        width: 80%;
+        height: 90rem;
+    }
+
+    .texto_inicio p {
+        font-size: 40px;
+    }
 }
 
 /* GRID MISION VISION */
@@ -1864,7 +1974,22 @@ nav.open~.overlay {
     color: #000;
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .gridMision-Vision {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        height: 120rem;
+    }
+
+    .gridMision-Vision div h1 {
+        font-size: 70px;
+    }
+
+    .gridMision-Vision div p {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+}
 
 /* first section */
 .firstSection {
@@ -1898,7 +2023,22 @@ nav.open~.overlay {
 }
 
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .firstSection {
+        width: 90%;
+        margin: 0 auto;
+        height: 100rem;
+    }
+
+    .firstSection section div h1 {
+        font-size: 70px;
+    }
+
+    .firstSection section div p {
+        font-size: 40px;
+    }
+
+}
 
 /* ///////////////////// PAGINA CONTACT US ////////// */
 .sectionsInContact {
@@ -1958,6 +2098,38 @@ textarea {
     justify-content: center;
 }
 
+@media screen and (max-width: 992px) {
+    form {
+        height: 50vh;
+        gap: 2rem;
+        width: 90%;
+    }
+
+    input,
+    textarea {
+        margin: 0;
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    input[type="submit"] {
+        width: 25rem;
+        position: relative;
+        top: 3rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 300px;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
 /* SECTION CONTACT*/
 
 .sectionsInContact2 {
@@ -1995,6 +2167,7 @@ textarea {
     display: flex;
     width: 100%;
 }
+
 
 .infoGeneral div,
 .infoGeneral2 div {
@@ -2036,6 +2209,50 @@ textarea {
     margin: auto 0;
 }
 
+@media screen and (max-width: 992px) {
+    .datosGeneral {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .datos {
+        height: 70rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo_division {
+        width: 50%;
+    }
+
+    .infoGeneral {
+        width: 60%;
+    }
+
+    .infoGeneral2 {
+        height: 30rem;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .infoGeneral div p,
+    .infoGeneral2 div p {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .infoGeneral span,
+    .infoGeneral2 span {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+
+    .info_icon {
+        font-size: 70px;
+    }
+}
 
 /* MAPA */
 .mapa {
@@ -2066,126 +2283,6 @@ textarea {
     color: var(--color-primary);
 }
 
-@media screen and (max-width: 992px) {
-    .section_contact {
-        margin: 0 10em 0 10rem;
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    .sectionsInContact {
-        width: 100%;
-    }
-
-    .sectionsInContact h1 {
-        font-size: 50px;
-        margin-bottom: 2rem;
-    }
-
-    .sectionsInContact2 {
-        width: 100%;
-    }
-
-    .datos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 5rem;
-        width: 100%;
-    }
-
-    form {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    input,
-    textarea {
-        border-bottom: 2px solid rgb(112, 128, 144, .5);
-        margin: 30px;
-        padding: 20px;
-        font-size: 17px;
-    }
-
-    input[type="submit"] {
-        margin-left: 2rem;
-        width: 16.5rem;
-    }
-
-    input {
-        width: 600px;
-    }
-
-    textarea {
-        min-height: 200px;
-        max-height: 300px;
-        min-width: 600px;
-        max-width: 600px;
-    }
-
-    .infoGeneral {
-        margin: 0 auto;
-        width: 20%;
-    }
-
-    .infoGeneral2 {
-        margin-top: 1rem;
-        width: 100%;
-    }
-
-    .infoGeneral div,
-    .infoGeneral2 div {
-        /* box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12); */
-        margin: 0 auto;
-        padding: 15px;
-        display: flex;
-        left: 2rem;
-        position: relative;
-        top: 0rem;
-        text-align: left;
-    }
-
-    .infoGeneral section,
-    .infoGeneral2 section {
-        font-family: 'Roboto Condensed', serif;
-        margin-left: 1rem;
-    }
-
-    .infoGeneral div p,
-    .infoGeneral2 div p {
-        font-size: 25px;
-        margin-top: 5px;
-        font-weight: 500;
-    }
-
-    .infoGeneral span,
-    .infoGeneral2 span {
-        color: #000;
-        font-weight: 600;
-        font-size: 35px;
-        margin-right: 5px;
-    }
-
-    .info_icon {
-        color: #000;
-        font-size: 45px;
-        margin: auto 0;
-    }
-
-    .logo_division {}
-
-    /* MAPA */
-    .mapa {
-        filter: grayscale(.7);
-        position: relative;
-        display: flex;
-
-        width: 100%;
-        height: 60vh;
-        background-color: #000;
-    }
-}
 
 @media (min-width: 1920px) and (max-width: 2560px) {
 
@@ -2201,6 +2298,25 @@ textarea {
 
     .info_icon {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* MAPA */
+    .mapa {
+        grid-template-columns: 100%;
+        display: grid;
+        height: 80vh;
+    }
+
+    .mapa div:nth-of-type(1) {
+        order: 2;
+    }
+
+    .mapa a {
+        padding: 30px 40px;
+        font-size: 30px;
     }
 }
 
@@ -2325,35 +2441,46 @@ ul {
 @media screen and (max-width: 992px) {
 
     footer {
-        height: 60%;
+        height: 120vh;
     }
 
     .gridFooter {
+        width: 70%;
         gap: 0rem;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10rem, 30rem, 30rem, 30rem, 20rem);
         height: 80%;
     }
 
     .navFooter h3 {
-        font-size: 25px;
+        margin-top: 2rem;
+        font-size: 45px;
     }
 
-    .navFooter p {
-        font-size: 15px;
-        margin-top: 1rem;
-    }
-
-    .navFooter ul li {
+    .navFooter p,
+    .navFooter ul li a {
+        color: rgb(211, 211, 211);
+        font-size: 35px;
+        font-weight: 400;
         margin-top: 1rem;
     }
 
     .iconsFooter {
-        font-size: 30px;
+        font-size: 60px;
+    }
+
+    .logoFooter {
+        top: 40%;
+        left: 25%;
+        width: 40%;
+    }
+
+    .fondoFooter {
+        height: 10rem;
     }
 
     .fondoFooter h3 {
-        font-size: 18px;
+        font-size: 25px;
     }
 }
 
