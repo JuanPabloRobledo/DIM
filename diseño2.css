@@ -1633,7 +1633,7 @@ nav.open~.overlay {
 .card:nth-child(11) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra1.jpg);
     background-position: center;
-    background-size: 500px;
+    background-size: 400px;
 }
 
 .card:nth-child(12) {
@@ -1645,7 +1645,7 @@ nav.open~.overlay {
 .card:nth-child(13) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/Imagen\ de\ WhatsApp\ 2023-04-18\ a\ las\ 15.44.42.jpg);
     background-position: center;
-    background-size: 600px;
+    background-size: 400px;
 }
 
 .card:nth-child(14) {
@@ -1661,9 +1661,81 @@ nav.open~.overlay {
 }
 
 .card:nth-child(16) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA12.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(17) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA13.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(18) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA14.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(19) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA15.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(20) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA16.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(21) {
     background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA10.jpg);
     background-position: center;
     background-size: 650px;
+}
+
+.card:nth-child(22) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA18.jpg);
+    background-position: center;
+    background-size: 650px;
+}
+
+.card:nth-child(23) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA20.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(24) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA22.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(25) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA23.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(26) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA24.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(27) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA25.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(28) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA26.jpg);
+    background-position: center;
+    background-size: 400px;
 }
 
 .card:hover {
@@ -1766,14 +1838,20 @@ nav.open~.overlay {
         background-size: 1000px;
     }
 
+    .card:nth-child(11) {
+        background-size: 600px;
+    }
+
     .card:nth-child(12) {
         background-size: 1100px;
-        background-position: top;
+    }
+
+    .card:nth-child(13) {
+        background-size: 600px;
     }
 
     .card:nth-child(14) {
         background-size: 500px;
-        background-position: center;
     }
 
     .card:nth-child(15) {
@@ -1781,7 +1859,55 @@ nav.open~.overlay {
     }
 
     .card:nth-child(16) {
-        background-size: 800px;
+        background-size: 500px;
+    }
+
+    .card:nth-child(17) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(18) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(19) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(20) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(21) {
+        background-size: 850px;
+    }
+
+    .card:nth-child(22) {
+        background-size: 850px;
+    }
+
+    .card:nth-child(23) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(24) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(25) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(26) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(27) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(28) {
+        background-size: 500px;
     }
 
     .card-titles h1 {
@@ -1867,8 +1993,57 @@ nav.open~.overlay {
     }
 
     .card:nth-child(16) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(17) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(18) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(19) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(20) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(21) {
+        background-size: 1500px;
+    }
+
+    .card:nth-child(22) {
         background-size: 1400px;
     }
+
+    .card:nth-child(23) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(24) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(25) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(26) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(27) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(28) {
+        background-size: 900px;
+    }
+
 
     .card-titles h1 {
         font-size: 50px;
