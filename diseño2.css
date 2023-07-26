@@ -2279,7 +2279,7 @@ textarea {
 
     .infoGeneral div p,
     .infoGeneral2 div p {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 20px;
     }
 
@@ -2290,7 +2290,7 @@ textarea {
     }
 
     .info_icon {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .infoGeneral section,
