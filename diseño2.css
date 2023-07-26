@@ -451,6 +451,11 @@ nav.open~.overlay {
     position: relative;
 }
 
+.barra div {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .barra-h1 {
     display: flex;
     position: relative;
@@ -2286,6 +2291,25 @@ textarea {
 
     .info_icon {
         font-size: 70px;
+    }
+
+    .infoGeneral section,
+    .infoGeneral2 section {
+        text-align: center;
+    }
+
+    .infoGeneral div,
+    .infoGeneral2 div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo_division {
+        width: 30%;
+        position: relative;
+        left: 2rem;
+        margin-bottom: 5rem;
     }
 }
 
