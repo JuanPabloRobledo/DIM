@@ -74,33 +74,6 @@ body::-webkit-scrollbar-thumb {
     transition: .4s;
 }
 
-.submenuPhone {
-    visibility: hidden;
-    position: absolute;
-    opacity: 0;
-    transition: .4s;
-}
-
-.submenuPhone li {
-    display: block;
-    width: 100%;
-    left: 29rem;
-    position: relative;
-    background-color: #fff;
-    text-decoration: none;
-}
-
-.submenuPhone li a {
-    font-size: 40px;
-    color: #333;
-    font-weight: 600;
-}
-
-.abrirSubMenu:hover .submenuPhone {
-    visibility: visible;
-    opacity: 1;
-}
-
 .submenu li {
     font-size: 15px;
     display: block;
@@ -378,7 +351,7 @@ nav .logo {
 
 .lists li a {
     color: #333;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     display: block;
     width: 100%;
@@ -388,6 +361,33 @@ nav .logo {
 
 .lists li a:hover {
     color: var(--color-tertiary);
+}
+
+.submenuPhone {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+}
+
+.submenuPhone li {
+    display: block;
+    width: 100%;
+    left: 29rem;
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.submenuPhone li a {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.abrirSubMenu:hover .submenuPhone {
+    visibility: visible;
+    opacity: 1;
 }
 
 nav .sidebar {
@@ -439,7 +439,6 @@ nav.open~.overlay {
     top: 0%;
     pointer-events: auto;
 }
-
 
 /* ------- body ------------------- */
 .barra {
@@ -707,7 +706,7 @@ nav.open~.overlay {
     .firstAluminio {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
-        height: 150rem;
+        height: 160rem;
         gap: 2rem;
     }
 
@@ -725,14 +724,25 @@ nav.open~.overlay {
         font-size: 50px;
     }
 
-    .firstAluminio section div p,
-    .firstAluminio section div li {
-        font-size: 40px;
+    .firstAluminio section div p {
+        margin-top: 5rem;
+        font-size: 30px;
         font-weight: 500;
+    }
+
+    .firstAluminio section div li {
+        font-size: 30px;
+        margin-top: 2rem;
     }
 
     .rotate section:nth-of-type(2) {
         order: 2;
+    }
+
+    .firstAluminio_img {
+        position: relative;
+        top: -10rem;
+        width: 100%;
     }
 }
 
@@ -775,7 +785,7 @@ nav.open~.overlay {
     }
 
     .high2 {
-        height: 130rem;
+        height: 100rem;
     }
 
     .high h1 {
@@ -783,7 +793,7 @@ nav.open~.overlay {
     }
 
     .high p {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -851,7 +861,7 @@ nav.open~.overlay {
 
 @media (max-width: 991px) {
     .gridAluminio {
-        height: 120rem;
+        height: 110rem;
         width: 80%;
         flex-direction: column-reverse;
         gap: 1rem;
@@ -1136,7 +1146,7 @@ nav.open~.overlay {
     .gridDoors2 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        height: 120rem;
+        height: 100rem;
     }
 
     .gridDoors2 div:nth-of-type(1) {
@@ -1186,11 +1196,11 @@ nav.open~.overlay {
     }
 
     .doors p {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .doors ul {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -1435,7 +1445,7 @@ nav.open~.overlay {
 
     .aviso_section p {
         margin-top: 1rem;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .aviso_section a {
@@ -1791,44 +1801,68 @@ nav.open~.overlay {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        background-size: 800px;
         padding: 1rem;
-        background-size: 1200px;
+        background-size: 1600px;
     }
 
     .card:nth-child(2) {
-
-        background-size: 1000px;
+        background-size: 1200px;
     }
 
     .card:nth-child(3) {
-
-        background-size: 1000px;
+        background-size: 1450px;
     }
 
     .card:nth-child(4) {
-
-        background-size: 1000px;
+        background-size: 1600px;
     }
 
     .card:nth-child(5) {
-
         background-size: 1000px;
     }
 
     .card:nth-child(6) {
-
-        background-size: 1100px;
+        background-size: 1450px;
     }
 
     .card:nth-child(7) {
-
-        background-size: 1000px;
+        background-size: 1450px;
     }
 
     .card:nth-child(8) {
+        background-size: 1450px;
+    }
 
-        background-size: 1000px;
+    .card:nth-child(9) {
+        background-size: 1400px;
+    }
+
+    .card:nth-child(10) {
+        background-size: 1450px;
+    }
+
+    .card:nth-child(11) {
+        background-size: 1050px;
+    }
+
+    .card:nth-child(12) {
+        background-size: 1900px;
+    }
+
+    .card:nth-child(13) {
+        background-size: 1050px;
+    }
+
+    .card:nth-child(14) {
+        background-size: 1050px;
+    }
+
+    .card:nth-child(15) {
+        background-size: 1050px;
+    }
+
+    .card:nth-child(16) {
+        background-size: 1400px;
     }
 
     .card-titles h1 {
@@ -2431,7 +2465,7 @@ ul {
 }
 
 .fondoFooter a {
-    color: rgb(0, 183, 235);
+    color: var(--color-tertiary);
 }
 
 .fondoFooter a:hover {
@@ -2442,7 +2476,7 @@ ul {
 @media screen and (max-width: 992px) {
 
     footer {
-        height: 120vh;
+        height: 100vh;
     }
 
     .gridFooter {
@@ -2460,8 +2494,8 @@ ul {
 
     .navFooter p,
     .navFooter ul li a {
-        color: rgb(211, 211, 211);
-        font-size: 35px;
+        color: #333;
+        font-size: 30px;
         font-weight: 400;
         margin-top: 1rem;
     }
@@ -2473,7 +2507,7 @@ ul {
     .logoFooter {
         top: 40%;
         left: 25%;
-        width: 40%;
+        width: 20%;
     }
 
     .fondoFooter {
@@ -2481,6 +2515,7 @@ ul {
     }
 
     .fondoFooter h3 {
+        width: 80%;
         font-size: 25px;
     }
 }

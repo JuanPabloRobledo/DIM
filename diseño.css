@@ -74,33 +74,6 @@ body::-webkit-scrollbar-thumb {
     transition: .4s;
 }
 
-.submenuPhone {
-    visibility: hidden;
-    position: absolute;
-    opacity: 0;
-    transition: .4s;
-}
-
-.submenuPhone li {
-    display: block;
-    width: 100%;
-    left: 29rem;
-    position: relative;
-    background-color: #fff;
-    text-decoration: none;
-}
-
-.submenuPhone li a {
-    font-size: 40px;
-    color: #333;
-    font-weight: 600;
-}
-
-.abrirSubMenu:hover .submenuPhone {
-    visibility: visible;
-    opacity: 1;
-}
-
 .submenu li {
     font-size: 15px;
     display: block;
@@ -378,7 +351,7 @@ nav .logo {
 
 .lists li a {
     color: #333;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     display: block;
     width: 100%;
@@ -388,6 +361,33 @@ nav .logo {
 
 .lists li a:hover {
     color: var(--color-tertiary);
+}
+
+.submenuPhone {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+}
+
+.submenuPhone li {
+    display: block;
+    width: 100%;
+    left: 29rem;
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.submenuPhone li a {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.abrirSubMenu:hover .submenuPhone {
+    visibility: visible;
+    opacity: 1;
 }
 
 nav .sidebar {
@@ -450,13 +450,6 @@ nav.open~.overlay {
     position: relative;
     overflow: hidden;
 }
-
-/* 
-.miSlider {
-    display: none;
-    transition: 2s;
-    max-height: 100vh;
-} */
 
 .miSlider img {
     filter: brightness(80%);
@@ -1620,7 +1613,7 @@ ul {
 }
 
 .fondoFooter a {
-    color: rgb(0, 183, 235);
+    color: var(--color-tertiary);
 }
 
 .fondoFooter a:hover {
@@ -1631,7 +1624,7 @@ ul {
 @media screen and (max-width: 992px) {
 
     footer {
-        height: 120vh;
+        height: 100vh;
     }
 
     .gridFooter {
@@ -1649,8 +1642,8 @@ ul {
 
     .navFooter p,
     .navFooter ul li a {
-        color: rgb(211, 211, 211);
-        font-size: 35px;
+        color: #333;
+        font-size: 30px;
         font-weight: 400;
         margin-top: 1rem;
     }
@@ -1662,7 +1655,7 @@ ul {
     .logoFooter {
         top: 40%;
         left: 25%;
-        width: 40%;
+        width: 20%;
     }
 
     .fondoFooter {
@@ -1670,6 +1663,7 @@ ul {
     }
 
     .fondoFooter h3 {
+        width: 80%;
         font-size: 25px;
     }
 }
