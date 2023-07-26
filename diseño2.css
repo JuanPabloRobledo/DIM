@@ -1934,11 +1934,11 @@ nav.open~.overlay {
 
     .texto_inicio {
         width: 80%;
-        height: 90rem;
+        height: 50rem;
     }
 
     .texto_inicio p {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -1978,7 +1978,7 @@ nav.open~.overlay {
     .gridMision-Vision {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
-        height: 120rem;
+        height: 80rem;
     }
 
     .gridMision-Vision div h1 {
@@ -1987,7 +1987,7 @@ nav.open~.overlay {
 
     .gridMision-Vision div p {
         margin-top: 10px;
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -2027,7 +2027,7 @@ nav.open~.overlay {
     .firstSection {
         width: 90%;
         margin: 0 auto;
-        height: 100rem;
+        height: 80rem;
     }
 
     .firstSection section div h1 {
@@ -2035,7 +2035,8 @@ nav.open~.overlay {
     }
 
     .firstSection section div p {
-        font-size: 40px;
+        margin-top: 5rem;
+        font-size: 30px;
     }
 
 }
