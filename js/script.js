@@ -25,3 +25,18 @@ tabsContainer.addEventListener('click', function (e) {
         .querySelector(`.operations__content--${clicked.dataset.tab}`)
         .classList.add('operations__content--active');
 });
+
+
+const openModal = document.querySelector('.hero__cta');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal__close');
+
+openModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.add('modal--show');
+});
+
+closeModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.remove('modal--show');
+});
