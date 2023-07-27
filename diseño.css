@@ -537,10 +537,10 @@ nav.open~.overlay {
 }
 
 .button1:hover {
-    background-color: #fff;
+    background-color: var(--color-tertiary);
     border: none;
-    color: #000;
-    transition: 0.7s;
+    color: #fff;
+    transition: 0.4s;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
@@ -643,9 +643,9 @@ nav.open~.overlay {
 }
 
 .button2:hover {
-    background-color: transparent;
-    color: var(--color-primary);
-    transition: 0.1s;
+    background-color: var(--color-tertiary);
+    color: #fff;
+    transition: 0.4s;
 }
 
 .grid-item:nth-child(3) {
@@ -1408,10 +1408,10 @@ nav.open~.overlay {
 }
 
 .button4:hover {
-    background-color: #fff;
-    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    color: #fff;
     margin: 0px 20px 0px 20px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {

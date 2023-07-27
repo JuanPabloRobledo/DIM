@@ -518,8 +518,8 @@ nav.open~.overlay {
 }
 
 .productos_titulo_h1 {
-    color: rgb(154, 205, 50);
-    font-size: 40px;
+    color: #fff;
+    font-size: 70px;
     font-weight: 900;
     margin-left: 9rem;
     /* padding-top: 1rem; */
@@ -535,7 +535,7 @@ nav.open~.overlay {
     position: relative;
     left: 9.1rem;
     top: 1rem;
-    background-color: rgb(154, 205, 50);
+    background-color: var(--color-tertiary);
 }
 
 
@@ -857,11 +857,6 @@ nav.open~.overlay {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.gridAluminio section ul li:hover {
-    transition: .4s;
-    color: var(--color-tertiary);
 }
 
 @media (max-width: 991px) {
@@ -2116,13 +2111,13 @@ nav.open~.overlay {
 
 /* /////////////// PAGINA EMPRESA  ////////////// */
 .productos_titulo_us {
-    background-image: url(img/edificio_fondo.jpg);
+    background-image: url(img/fondoparadim.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     /* background-color: rgb(5, 144, 51); */
     /* background-image: linear-gradient(160deg, #1677be 0%, #041c30 100%); */
-    height: 20rem;
+    height: 30rem;
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -2285,8 +2280,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #fff;
-    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    color: #fff;
     transition: .6s;
     cursor: pointer;
 }
@@ -2370,6 +2365,10 @@ textarea {
     width: 40%;
 }
 
+.logo_division2 {
+    width: 50%;
+}
+
 .infoGeneral {
     margin: 0 auto;
     width: 100%;
@@ -2441,6 +2440,10 @@ textarea {
         width: 50%;
     }
 
+    .logo_division2 {
+        width: 60%;
+    }
+
     .infoGeneral {
         width: 60%;
     }
@@ -2497,6 +2500,10 @@ textarea {
     background-color: #fff;
 }
 
+.ubiDim {
+    padding: 2rem;
+}
+
 .mapa div {
     display: flex;
     justify-content: center;
@@ -2512,9 +2519,9 @@ textarea {
 }
 
 .mapa a:hover {
-    background-color: #fff;
+    background-color: var(--color-tertiary);
     transition: .3s;
-    color: var(--color-primary);
+    color: #fff;
 }
 
 
