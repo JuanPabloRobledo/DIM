@@ -649,14 +649,14 @@ nav.open~.overlay {
 }
 
 .grid-item:nth-child(3) {
-    background-image: url(img/fotosfichas_WATERJET_1.jpg);
+    background-image: url(img/obra3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .grid-item:nth-child(4) {
-    background-image: url(img/aluminiopuerta.png);
+    background-image: url(img/OBRA29.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -670,7 +670,7 @@ nav.open~.overlay {
 }
 
 .grid-item:nth-child(6) {
-    background-image: url(img/aluminiopuerta2.png);
+    background-image: url(img/OBRA16.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1633,7 +1633,8 @@ footer {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 80%;
 }
 
@@ -1746,7 +1747,7 @@ ul {
     }
 
     .gridFooter {
-        width: 70%;
+        width: 100%;
         gap: 0rem;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(10rem, 30rem, 30rem, 30rem, 20rem);
