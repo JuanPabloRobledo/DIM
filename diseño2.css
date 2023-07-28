@@ -1733,6 +1733,78 @@ nav.open~.overlay {
     background-size: 400px;
 }
 
+.card:nth-child(29) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA28.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(30) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra30.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(31) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra31.jpg);
+    background-position: center;
+    background-size: 500px;
+}
+
+.card:nth-child(32) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra32.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(33) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra33.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(34) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra34.jpg);
+    background-position: center;
+    background-size: 380px;
+}
+
+.card:nth-child(35) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra35.jpg);
+    background-position: center;
+    background-size: 650px;
+}
+
+.card:nth-child(36) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA29.jpg);
+    background-position: center;
+    background-size: 650px;
+}
+
+.card:nth-child(37) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA36.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.card:nth-child(38) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA37.jpg);
+    background-position: center;
+    background-size: 650px;
+}
+
+.card:nth-child(39) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA38.jpg);
+    background-position: center;
+    background-size: 600px;
+}
+
+.card:nth-child(40) {
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA39.jpg);
+    background-position: center;
+    background-size: 400px;
+}
+
 .card:hover {
     background-position-y: -30px;
 }
@@ -1905,6 +1977,58 @@ nav.open~.overlay {
         background-size: 500px;
     }
 
+    .card:nth-child(28) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(29) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(30) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(31) {
+        background-size: 600px;
+    }
+
+    .card:nth-child(32) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(33) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(34) {
+        background-size: 500px;
+    }
+
+    .card:nth-child(35) {
+        background-size: 850px;
+    }
+
+    .card:nth-child(36) {
+        background-size: 850px;
+    }
+
+    .card:nth-child(37) {
+        background-size: 600px;
+    }
+
+    .card:nth-child(38) {
+        background-size: 850px;
+    }
+
+    .card:nth-child(39) {
+        background-size: 800px;
+    }
+
+    .card:nth-child(40) {
+        background-size: 600px;
+    }
+
     .card-titles h1 {
         font-size: 30px;
     }
@@ -2039,6 +2163,53 @@ nav.open~.overlay {
         background-size: 900px;
     }
 
+    .card:nth-child(29) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(30) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(31) {
+        background-size: 1000px;
+    }
+
+    .card:nth-child(32) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(33) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(34) {
+        background-size: 900px;
+    }
+
+    .card:nth-child(35) {
+        background-size: 1400px;
+    }
+
+    .card:nth-child(36) {
+        background-size: 1500px;
+    }
+
+    .card:nth-child(37) {
+        background-size: 1200px;
+    }
+
+    .card:nth-child(38) {
+        background-size: 1500px;
+    }
+
+    .card:nth-child(39) {
+        background-size: 1100px;
+    }
+
+    .card:nth-child(40) {
+        background-size: 1300px;
+    }
 
     .card-titles h1 {
         font-size: 50px;
