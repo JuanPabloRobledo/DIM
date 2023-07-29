@@ -2816,7 +2816,7 @@ ul {
 .iconsFooter {
     position: relative;
     right: 50%;
-    color: var(--color-tertiary);
+    color: #333;
     font-size: 25px;
 }
 
