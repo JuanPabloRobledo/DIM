@@ -985,7 +985,7 @@ nav.open~.overlay {
 
 .modal__close:hover {
     transition: .3s;
-    color: var(--color-secondary);
+    color: rgb(0, 183, 235);
 }
 
 /* FLEXBOX */
