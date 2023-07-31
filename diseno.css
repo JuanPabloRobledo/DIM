@@ -705,12 +705,11 @@ nav.open~.overlay {
 @media screen and (max-width: 992px) {
     .grid-container {
         position: relative;
-        top: -10rem;
         width: 80%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 10rem 10rem 30rem 30rem 30rem 30rem;
+        grid-template-rows: 40rem 10rem 30rem 30rem 30rem 30rem;
         gap: 1.5rem;
     }
 
@@ -736,7 +735,7 @@ nav.open~.overlay {
     .button2 {
         left: 25%;
         margin: 0 auto;
-        top: 3rem;
+        top: 0rem;
         width: 100%;
         font-size: 30px;
         padding: 30px 40px;
@@ -873,8 +872,10 @@ nav.open~.overlay {
 
 @media screen and (max-width: 992px) {
     .operations__tab {
+        position: relative;
+        top: -10rem;
         font-size: 40px;
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
 
     .operations {
