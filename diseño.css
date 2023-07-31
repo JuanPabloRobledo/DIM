@@ -469,7 +469,7 @@ nav.open~.overlay {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
 }
 
 .barra {
