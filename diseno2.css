@@ -163,7 +163,7 @@ header {
 
 .logo {
     transition: .5s;
-    width: 75px;
+    width: 65px;
     padding: 5px;
 }
 
@@ -2895,10 +2895,12 @@ ul {
     }
 
     .fondoFooter {
+        margin-top: 10rem;
         height: 10rem;
     }
 
     .fondoFooter h3 {
+        margin: 0 auto;
         width: 80%;
         font-size: 25px;
     }
