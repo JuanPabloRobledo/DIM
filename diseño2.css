@@ -1788,19 +1788,19 @@ nav.open~.overlay {
 }
 
 .card:nth-child(38) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA37.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra37.jpg);
     background-position: center;
     background-size: 650px;
 }
 
 .card:nth-child(39) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA38.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra38.jpg);
     background-position: center;
     background-size: 600px;
 }
 
 .card:nth-child(40) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA39.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra39.jpg);
     background-position: center;
     background-size: 400px;
 }
