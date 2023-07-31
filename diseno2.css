@@ -2430,7 +2430,9 @@ form {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 0 auto;
+    position: relative;
+    left: 10%;
+    margin-bottom: 5rem;
 }
 
 input,
