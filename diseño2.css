@@ -1734,7 +1734,7 @@ nav.open~.overlay {
 }
 
 .card:nth-child(29) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA28.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra28.jpg);
     background-position: center;
     background-size: 400px;
 }
@@ -1782,7 +1782,7 @@ nav.open~.overlay {
 }
 
 .card:nth-child(37) {
-    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/OBRA36.jpg);
+    background: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 /0.3), rgb(0 0 0 / 0.3)), url(img/obra36.jpg);
     background-position: center;
     background-size: 400px;
 }
